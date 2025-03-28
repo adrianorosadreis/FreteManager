@@ -1,0 +1,7 @@
+2025-03-27 19:43:09.9451|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'ValorFrete' on entity type 'Pedido'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-27 19:43:10.6397|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-27 19:44:00.6636|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: adr@adr.com 
+2025-03-27 19:44:55.2481|0|INFO|FreteManager.Controllers.ClientesController|Cliente criado com ID 5 
+2025-03-27 19:51:15.9472|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'ValorFrete' on entity type 'Pedido'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-27 19:51:16.7229|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-27 19:51:29.9562|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: adr@adr.com 
