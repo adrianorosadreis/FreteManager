@@ -1,6 +1,5 @@
 ﻿using FreteManager.Models;
 using FreteManager.Repositories;
-using FreteManager.Services;
 using static FreteManager.Models.FreteModels;
 
 namespace FreteManager.Services
@@ -53,7 +52,7 @@ namespace FreteManager.Services
             pedido.Status = StatusPedido.EmProcessamento;
 
             // Calcular o frete automaticamente
-            pedido.ValorFrete = await CalcularFreteAsync(pedido.Origem, pedido.Destino);
+            pedido.ValorFrete = await CalcularFreteParaPedidoAsync(pedido);
 
             // Salvar o pedido
             return await _pedidoRepository.AdicionarAsync(pedido);
@@ -80,7 +79,7 @@ namespace FreteManager.Services
             // Recalcular o frete se a origem ou destino foram alterados
             if (pedido.Origem != pedidoExistente.Origem || pedido.Destino != pedidoExistente.Destino)
             {
-                pedido.ValorFrete = await CalcularFreteParaPedidoAsync(pedido.Origem, pedido.Destino);
+                pedido.ValorFrete = await CalcularFreteParaPedidoAsync(pedido);
             }
 
             await _pedidoRepository.AtualizarAsync(pedido);

@@ -256,6 +256,59 @@
         }
       }
     },
+    "/api/Frete/calcular-frete": {
+      "post": {
+        "tags": [
+          "Frete"
+        ],
+        "summary": "Calcula o frete usando parâmetros detalhados como dimensões e peso",
+        "requestBody": {
+          "description": "Parâmetros completos para cálculo de frete",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ParametrosFrete"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ParametrosFrete"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ParametrosFrete"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "number",
+                  "format": "double"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "number",
+                  "format": "double"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "number",
+                  "format": "double"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Pedidos": {
       "get": {
         "tags": [
@@ -651,6 +704,57 @@
           "senha": {
             "minLength": 1,
             "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "PacoteFrete": {
+        "type": "object",
+        "properties": {
+          "altura": {
+            "type": "number",
+            "format": "double"
+          },
+          "largura": {
+            "type": "number",
+            "format": "double"
+          },
+          "comprimento": {
+            "type": "number",
+            "format": "double"
+          },
+          "peso": {
+            "type": "number",
+            "format": "double"
+          },
+          "quantidade": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ParametrosFrete": {
+        "type": "object",
+        "properties": {
+          "cepOrigem": {
+            "type": "string",
+            "nullable": true
+          },
+          "cepDestino": {
+            "type": "string",
+            "nullable": true
+          },
+          "valorDeclarado": {
+            "type": "number",
+            "format": "double"
+          },
+          "pacotes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PacoteFrete"
+            },
+            "nullable": true
           }
         },
         "additionalProperties": false

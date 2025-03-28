@@ -4,5 +4,58 @@
         <name>FreteManager</name>
     </assembly>
     <members>
+        <member name="T:FreteManager.Controllers.FreteController">
+            <summary>
+            Controlador para operações de cálculo de frete
+            </summary>
+        </member>
+        <member name="M:FreteManager.Controllers.FreteController.CalcularFrete(FreteManager.Models.FreteModels.ParametrosFrete)">
+            <summary>
+            Calcula o frete usando parâmetros detalhados como dimensões e peso
+            </summary>
+            <param name="parametros">Parâmetros completos para cálculo de frete</param>
+            <returns>Valor do frete em reais</returns>
+        </member>
+        <member name="T:FreteManager.Services.FreteService">
+            Serviço que integra com a Frenet API para cálculo de frete com sistema de cache
+        </member>
+        <member name="M:FreteManager.Services.FreteService.#ctor(System.Net.Http.HttpClient,Microsoft.Extensions.Configuration.IConfiguration,Microsoft.Extensions.Logging.ILogger{FreteManager.Services.FreteService},Microsoft.Extensions.Caching.Memory.IMemoryCache)">
+            Inicializa uma nova instância do serviço Frenet
+        </member>
+        <member name="M:FreteManager.Services.FreteService.CalcularFreteDetalhadoAsync(FreteManager.Models.FreteModels.ParametrosFrete)">
+            Método principal que realiza o cálculo detalhado de frete
+        </member>
+        <member name="M:FreteManager.Services.FreteService.CalcularFreteFallback(FreteManager.Models.FreteModels.ParametrosFrete)">
+            <summary>
+            Método de fallback que calcula um valor aproximado de frete quando a API falha
+            </summary>
+        </member>
+        <member name="M:FreteManager.Services.FreteService.GerarChaveCache(FreteManager.Models.FreteModels.ParametrosFrete)">
+            <summary>
+            Gera uma chave única para o cache baseada nos parâmetros de frete
+            </summary>
+        </member>
+        <member name="T:FreteManager.Services.FrenetResponse">
+            <summary>
+            Classe para deserialização da resposta da Frenet API
+            </summary>
+        </member>
+        <member name="T:FreteManager.Services.FrenetShippingService">
+            <summary>
+            Representa uma opção de serviço de frete na resposta da Frenet
+            </summary>
+        </member>
+        <member name="M:FreteManager.Services.IFreteService.CalcularFreteDetalhadoAsync(FreteManager.Models.FreteModels.ParametrosFrete)">
+            <summary>
+            Calcula o frete com informações detalhadas de dimensões, peso e valor
+            </summary>
+            <param name="parametros">Parâmetros completos para cálculo</param>
+            <returns>Valor do frete em reais</returns>
+        </member>
+        <member name="M:FreteManager.Services.PedidoService.CalcularFreteParaPedidoAsync(FreteManager.Models.Pedido)">
+            <summary>
+            Calcula o frete para um pedido específico, considerando suas características
+            </summary>
+        </member>
     </members>
 </doc>

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FreteManager")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1372c755b46e80e39e43fb92951742eeb12d983d")]
 [assembly: System.Reflection.AssemblyProductAttribute("FreteManager")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FreteManager")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -141,6 +141,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "FreteManager.Controllers.FreteController",
+    "Method": "CalcularFrete",
+    "RelativePath": "api/Frete/calcular-frete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "parametros",
+        "Type": "FreteManager.Models.FreteModels\u002BParametrosFrete",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Decimal",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "FreteManager.Controllers.PedidosController",
     "Method": "GetPedidos",
     "RelativePath": "api/Pedidos",

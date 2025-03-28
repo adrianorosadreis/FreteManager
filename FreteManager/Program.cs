@@ -35,7 +35,7 @@ builder.Logging.ClearProviders();
 builder.Host.UseNLog();
 
 // Add services to the container.
-builder.Services.AddControllersWithViews();
+builder.Services.AddControllers();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -47,12 +47,20 @@ builder.Services.AddScoped<IPedidoService, PedidoService>();
 builder.Services.AddScoped<IFreteService, FreteService>();
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IFreteService, FreteService>();
 
-builder.Services.AddHttpClient<IFreteService, FreteService>(client =>
-{
-    // Configurar URL base para API de frete (em um cenário real)
-    // client.BaseAddress = new Uri("https://api.frete.com/");
-});
+// Adicionar HttpClient para o serviço Frete
+builder.Services.AddHttpClient<IFreteService, FreteService>();
+
+// Adicionar cache de memória
+builder.Services.AddMemoryCache();
+
+
+//builder.Services.AddHttpClient<IFreteService, FreteService>(client =>
+//{
+//    // Configurar URL base para API de frete (em um cenário real)
+//    // client.BaseAddress = new Uri("https://api.frete.com/");
+//});
 
 builder.Services.AddAuthentication(options =>
 {

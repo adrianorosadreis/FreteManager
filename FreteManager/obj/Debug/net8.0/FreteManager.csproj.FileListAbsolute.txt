@@ -149,11 +149,7 @@ C:\dev\FreteManager\FreteManager\obj\Debug\net8.0\FreteManager.AssemblyInfoInput
 C:\dev\FreteManager\FreteManager\obj\Debug\net8.0\FreteManager.AssemblyInfo.cs
 C:\dev\FreteManager\FreteManager\obj\Debug\net8.0\FreteManager.csproj.CoreCompileInputs.cache
 C:\dev\FreteManager\FreteManager\obj\Debug\net8.0\FreteManager.MvcApplicationPartsAssemblyInfo.cache
-C:\dev\FreteManager\FreteManager\obj\Debug\net8.0\FreteManager.RazorAssemblyInfo.cache
-C:\dev\FreteManager\FreteManager\obj\Debug\net8.0\FreteManager.RazorAssemblyInfo.cs
-C:\dev\FreteManager\FreteManager\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\dev\FreteManager\FreteManager\obj\Debug\net8.0\scopedcss\bundle\FreteManager.styles.css
-C:\dev\FreteManager\FreteManager\obj\Debug\net8.0\scopedcss\projectbundle\FreteManager.bundle.scp.css
 C:\dev\FreteManager\FreteManager\obj\Debug\net8.0\staticwebassets.build.json
 C:\dev\FreteManager\FreteManager\obj\Debug\net8.0\staticwebassets.development.json
 C:\dev\FreteManager\FreteManager\obj\Debug\net8.0\staticwebassets.build.endpoints.json
@@ -182,3 +178,4 @@ C:\dev\FreteManager\FreteManager\obj\Debug\net8.0\FreteManager.MvcApplicationPar
 C:\dev\FreteManager\FreteManager\bin\Debug\net8.0\FreteManager.xml
 C:\dev\FreteManager\FreteManager\obj\Debug\net8.0\FreteManager.xml
 C:\dev\FreteManager\FreteManager\bin\Debug\net8.0\nlog.config
+C:\dev\FreteManager\FreteManager\obj\Debug\net8.0\FreteManager.sourcelink.json

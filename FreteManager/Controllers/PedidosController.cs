@@ -216,7 +216,8 @@ namespace FreteManager.Controllers
                     return BadRequest("Origem e destino são obrigatórios");
                 }
 
-                var valorFrete = await _pedidoService.CalcularFreteAsync(origem, destino);
+                var pedidoTemp = new Pedido { Origem = origem, Destino = destino };
+                var valorFrete = await _pedidoService.CalcularFreteParaPedidoAsync(pedidoTemp);
 
                 _logger.LogInformation($"Frete calculado de {origem} para {destino}: {valorFrete:C}");
 

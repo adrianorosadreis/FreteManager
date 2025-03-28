@@ -10,7 +10,7 @@ namespace FreteManager.Services
         Task AtualizarAsync(Pedido pedido);
         Task ExcluirAsync(int id);
         Task<IEnumerable<Pedido>> ListarPorClienteAsync(int clienteId);
-        Task<decimal> CalcularFreteAsync(string origem, string destino);
+        Task<decimal> CalcularFreteParaPedidoAsync(Pedido pedido);
         Task<Pedido> AtualizarStatusAsync(int id, StatusPedido novoStatus);
     }
 }

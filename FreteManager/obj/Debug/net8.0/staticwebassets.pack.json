@@ -1,10 +1,6 @@
 {
   "Files": [
     {
-      "Id": "C:\\dev\\FreteManager\\FreteManager\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\FreteManager.bundle.scp.css",
-      "PackagePath": "staticwebassets\\FreteManager.roaacr1q8l.bundle.scp.css"
-    },
-    {
       "Id": "C:\\dev\\FreteManager\\FreteManager\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
