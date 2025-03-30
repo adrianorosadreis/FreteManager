@@ -203,36 +203,10 @@ namespace FreteManager.Controllers
                 return StatusCode(500, "Erro interno do servidor");
             }
         }
-
-        // GET: api/pedidos/calcular-frete
-        [HttpGet("calcular-frete")]
-        [Authorize]
-        public async Task<ActionResult<decimal>> CalcularFrete([FromQuery] string origem, [FromQuery] string destino)
-        {
-            try
-            {
-                if (string.IsNullOrWhiteSpace(origem) || string.IsNullOrWhiteSpace(destino))
-                {
-                    return BadRequest("Origem e destino são obrigatórios");
-                }
-
-                var pedidoTemp = new Pedido { Origem = origem, Destino = destino };
-                var valorFrete = await _pedidoService.CalcularFreteParaPedidoAsync(pedidoTemp);
-
-                _logger.LogInformation($"Frete calculado de {origem} para {destino}: {valorFrete:C}");
-
-                return Ok(valorFrete);
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, $"Erro ao calcular frete de {origem} para {destino}");
-                return StatusCode(500, "Erro interno do servidor");
-            }
-        }
     }
 
-    // Modelo para atualização de status
-    public class StatusUpdateModel
+        // Modelo para atualização de status
+        public class StatusUpdateModel
     {
         public StatusPedido NovoStatus { get; set; }
     }

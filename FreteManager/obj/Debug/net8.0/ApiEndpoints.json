@@ -308,37 +308,6 @@
   },
   {
     "ContainingType": "FreteManager.Controllers.PedidosController",
-    "Method": "CalcularFrete",
-    "RelativePath": "api/Pedidos/calcular-frete",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "origem",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "destino",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Decimal",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "FreteManager.Controllers.PedidosController",
     "Method": "GetPedidosPorCliente",
     "RelativePath": "api/Pedidos/cliente/{clienteId}",
     "HttpMethod": "GET",

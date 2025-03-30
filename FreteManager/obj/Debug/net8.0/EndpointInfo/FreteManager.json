@@ -601,54 +601,6 @@
           }
         }
       }
-    },
-    "/api/Pedidos/calcular-frete": {
-      "get": {
-        "tags": [
-          "Pedidos"
-        ],
-        "parameters": [
-          {
-            "name": "origem",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "destino",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "number",
-                  "format": "double"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "number",
-                  "format": "double"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "number",
-                  "format": "double"
-                }
-              }
-            }
-          }
-        }
-      }
     }
   },
   "components": {
@@ -704,6 +656,52 @@
           "senha": {
             "minLength": 1,
             "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Pacote": {
+        "required": [
+          "pedidoId"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pedidoId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "pedido": {
+            "$ref": "#/components/schemas/Pedido"
+          },
+          "altura": {
+            "minimum": 0,1,
+            "type": "number",
+            "format": "double"
+          },
+          "largura": {
+            "minimum": 0,1,
+            "type": "number",
+            "format": "double"
+          },
+          "comprimento": {
+            "minimum": 0,1,
+            "type": "number",
+            "format": "double"
+          },
+          "peso": {
+            "minimum": 0,1,
+            "type": "number",
+            "format": "double"
+          },
+          "quantidade": {
+            "maximum": 2147483647,
+            "minimum": 1,
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false
@@ -801,6 +799,18 @@
             "minimum": 0,
             "type": "number",
             "format": "double",
+            "nullable": true
+          },
+          "valorDeclarado": {
+            "minimum": 0,
+            "type": "number",
+            "format": "double"
+          },
+          "pacotes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Pacote"
+            },
             "nullable": true
           }
         },

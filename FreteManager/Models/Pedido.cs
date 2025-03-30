@@ -48,5 +48,10 @@ namespace FreteManager.Models
         // Valor do frete (opcional)
         [Range(0, double.MaxValue, ErrorMessage = "Valor do frete deve ser positivo")]
         public decimal? ValorFrete { get; set; }
+
+        [Range(0, double.MaxValue)]
+        public decimal ValorDeclarado { get; set; } = 100.00m;
+
+        public virtual ICollection<Pacote> Pacotes { get; set; } = new List<Pacote>();
     }
 }

@@ -112,24 +112,19 @@ namespace FreteManager.Services
         /// </summary>
         public async Task<decimal> CalcularFreteParaPedidoAsync(Pedido pedido)
         {
-            // Aqui poderíamos extrair mais informações do pedido, como peso dos itens
             var parametros = new ParametrosFrete
             {
                 CepOrigem = pedido.Origem,
                 CepDestino = pedido.Destino,
-                ValorDeclarado = 100.00m, // Idealmente seria o valor total do pedido
-                Pacotes = new List<PacoteFrete>
-            {
-                new PacoteFrete
+                ValorDeclarado = pedido.ValorDeclarado,
+                Pacotes = pedido.Pacotes.Select(p => new PacoteFrete
                 {
-                    Altura = 10,
-                    Largura = 15,
-                    Comprimento = 20,
-                    Peso = 1.0m,
-                    Quantidade = 1
-                }
-                // Em um sistema real, criaríamos pacotes baseados nos itens do pedido
-            }
+                    Altura = p.Altura,
+                    Largura = p.Largura,
+                    Comprimento = p.Comprimento,
+                    Peso = p.Peso,
+                    Quantidade = p.Quantidade
+                }).ToList()
             };
 
             return await _freteService.CalcularFreteDetalhadoAsync(parametros);
