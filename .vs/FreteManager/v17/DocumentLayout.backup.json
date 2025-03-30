@@ -7,12 +7,16 @@
       "RelativeMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|solutionrelative:fretemanager\\controllers\\pedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|c:\\dev\\fretemanager\\fretemanager\\models\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|solutionrelative:fretemanager\\models\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|c:\\dev\\fretemanager\\fretemanager\\services\\pedidoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|solutionrelative:fretemanager\\services\\pedidoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|c:\\dev\\fretemanager\\fretemanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|solutionrelative:fretemanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|c:\\dev\\fretemanager\\fretemanager\\models\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|solutionrelative:fretemanager\\models\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|c:\\dev\\fretemanager\\fretemanager\\services\\ipedidoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,16 +31,12 @@
       "RelativeMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|solutionrelative:fretemanager\\repositories\\pedidorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|c:\\dev\\fretemanager\\fretemanager\\models\\pacote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|solutionrelative:fretemanager\\models\\pacote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|c:\\dev\\fretemanager\\fretemanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|solutionrelative:fretemanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|c:\\dev\\fretemanager\\fretemanager\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|solutionrelative:fretemanager\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|c:\\dev\\fretemanager\\fretemanager\\models\\pacote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|solutionrelative:fretemanager\\models\\pacote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,7 +50,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "FreteManager\\Data\\ApplicationDbContext.cs",
@@ -58,12 +58,11 @@
               "RelativeToolTip": "FreteManager\\Data\\ApplicationDbContext.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T21:25:00.555Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-28T21:25:00.555Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "PedidoRepository.cs",
               "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager\\Repositories\\PedidoRepository.cs",
               "RelativeDocumentMoniker": "FreteManager\\Repositories\\PedidoRepository.cs",
@@ -71,12 +70,11 @@
               "RelativeToolTip": "FreteManager\\Repositories\\PedidoRepository.cs",
               "ViewState": "AgIAAB8AAAAAAAAAAAAMwDMAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T21:20:20.547Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-28T21:20:20.547Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Pedido.cs",
               "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager\\Models\\Pedido.cs",
               "RelativeDocumentMoniker": "FreteManager\\Models\\Pedido.cs",
@@ -84,12 +82,11 @@
               "RelativeToolTip": "FreteManager\\Models\\Pedido.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAA4AAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T21:19:27.149Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-28T21:19:27.149Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "Pacote.cs",
               "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager\\Models\\Pacote.cs",
               "RelativeDocumentMoniker": "FreteManager\\Models\\Pacote.cs",
@@ -97,24 +94,24 @@
               "RelativeToolTip": "FreteManager\\Models\\Pacote.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T21:18:47.45Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-28T21:18:47.45Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager\\Program.cs",
               "RelativeDocumentMoniker": "FreteManager\\Program.cs",
               "ToolTip": "C:\\dev\\FreteManager\\FreteManager\\Program.cs",
               "RelativeToolTip": "FreteManager\\Program.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAACcAAAA+AAAAAAAAAA==",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAqwJcAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T19:42:53.967Z"
+              "WhenOpened": "2025-03-28T19:42:53.967Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager\\appsettings.json",
               "RelativeDocumentMoniker": "FreteManager\\appsettings.json",
@@ -132,27 +129,27 @@
               "RelativeDocumentMoniker": "FreteManager\\Controllers\\PedidosController.cs",
               "ToolTip": "C:\\dev\\FreteManager\\FreteManager\\Controllers\\PedidosController.cs",
               "RelativeToolTip": "FreteManager\\Controllers\\PedidosController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAIwFEAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-28T19:35:27.799Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "PedidoService.cs",
               "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager\\Services\\PedidoService.cs",
               "RelativeDocumentMoniker": "FreteManager\\Services\\PedidoService.cs",
               "ToolTip": "C:\\dev\\FreteManager\\FreteManager\\Services\\PedidoService.cs",
               "RelativeToolTip": "FreteManager\\Services\\PedidoService.cs",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAtwHMAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAqwJgAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-28T19:32:52.049Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "IPedidoService.cs",
               "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager\\Services\\IPedidoService.cs",
               "RelativeDocumentMoniker": "FreteManager\\Services\\IPedidoService.cs",
@@ -160,8 +157,7 @@
               "RelativeToolTip": "FreteManager\\Services\\IPedidoService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T19:24:41.325Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-28T19:24:41.325Z"
             }
           ]
         }

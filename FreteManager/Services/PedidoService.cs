@@ -45,14 +45,23 @@ namespace FreteManager.Services
                 throw new KeyNotFoundException($"Cliente com ID {pedido.ClienteId} não encontrado.");
             }
 
-            // Definir data de criação como data atual
-            pedido.DataCriacao = DateTime.Now;
+            // Definir data de criação como data atual se não foi definida
+            if (pedido.DataCriacao == default)
+            {
+                pedido.DataCriacao = DateTime.Now;
+            }
 
-            // Definir status inicial como EmProcessamento
-            pedido.Status = StatusPedido.EmProcessamento;
+            // Definir status inicial como EmProcessamento se não foi definido
+            if (pedido.Status == default)
+            {
+                pedido.Status = StatusPedido.EmProcessamento;
+            }
 
-            // Calcular o frete automaticamente
-            pedido.ValorFrete = await CalcularFreteParaPedidoAsync(pedido);
+            // Calcular o frete apenas se não tiver sido definido ou for zero/negativo
+            if (!pedido.ValorFrete.HasValue || pedido.ValorFrete <= 0)
+            {
+                pedido.ValorFrete = await CalcularFreteParaPedidoAsync(pedido);
+            }
 
             // Salvar o pedido
             return await _pedidoRepository.AdicionarAsync(pedido);
@@ -76,8 +85,15 @@ namespace FreteManager.Services
             // Manter a data de criação original
             pedido.DataCriacao = pedidoExistente.DataCriacao;
 
-            // Recalcular o frete se a origem ou destino foram alterados
-            if (pedido.Origem != pedidoExistente.Origem || pedido.Destino != pedidoExistente.Destino)
+            // Recalcular o frete em qualquer um desses casos:
+            // 1. Se a origem ou destino foram alterados E o valor do frete não foi explicitamente definido
+            // 2. Se o valor do frete foi explicitamente definido como nulo ou zero/negativo
+            bool devemosRecalcular =
+                ((pedido.Origem != pedidoExistente.Origem || pedido.Destino != pedidoExistente.Destino)
+                    && (!pedido.ValorFrete.HasValue || pedido.ValorFrete == pedidoExistente.ValorFrete))
+                || (!pedido.ValorFrete.HasValue || pedido.ValorFrete <= 0);
+
+            if (devemosRecalcular)
             {
                 pedido.ValorFrete = await CalcularFreteParaPedidoAsync(pedido);
             }
@@ -112,21 +128,42 @@ namespace FreteManager.Services
         /// </summary>
         public async Task<decimal> CalcularFreteParaPedidoAsync(Pedido pedido)
         {
-            var parametros = new ParametrosFrete
+            // Se não houver pacotes definidos, criar um pacote padrão
+            if (pedido.Pacotes == null || !pedido.Pacotes.Any())
+            {
+                _logger.LogInformation("Nenhum pacote definido para o pedido. Usando valores padrão.");
+            }
+
+            // Converter os pacotes do pedido para o formato esperado pelo serviço de frete
+            var pacotes = pedido.Pacotes?.Select(p => new FreteModels.PacoteFrete
+            {
+                Altura = p.Altura,
+                Largura = p.Largura,
+                Comprimento = p.Comprimento,
+                Peso = p.Peso,
+                Quantidade = p.Quantidade
+            }).ToList() ?? new List<FreteModels.PacoteFrete>
+            {
+                new FreteModels.PacoteFrete
+                {
+                    Altura = 10,
+                    Largura = 15,
+                    Comprimento = 20,
+                    Peso = 1.0m,
+                    Quantidade = 1
+                }
+            };
+
+            // Criar os parâmetros para o cálculo de frete
+            var parametros = new FreteModels.ParametrosFrete
             {
                 CepOrigem = pedido.Origem,
                 CepDestino = pedido.Destino,
                 ValorDeclarado = pedido.ValorDeclarado,
-                Pacotes = pedido.Pacotes.Select(p => new PacoteFrete
-                {
-                    Altura = p.Altura,
-                    Largura = p.Largura,
-                    Comprimento = p.Comprimento,
-                    Peso = p.Peso,
-                    Quantidade = p.Quantidade
-                }).ToList()
+                Pacotes = pacotes
             };
 
+            // Calcular o frete
             return await _freteService.CalcularFreteDetalhadoAsync(parametros);
         }
 
