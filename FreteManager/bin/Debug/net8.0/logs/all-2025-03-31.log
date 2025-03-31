@@ -1,0 +1,145 @@
+2025-03-31 08:59:33.8215|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Altura' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 08:59:33.8616|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Comprimento' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 08:59:33.8625|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Largura' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 08:59:33.8625|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Peso' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 08:59:33.8625|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'ValorDeclarado' on entity type 'Pedido'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 08:59:33.8625|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'ValorFrete' on entity type 'Pedido'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 08:59:34.4271|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 09:03:23.4858|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: adr@adr.com 
+2025-03-31 09:04:35.3832|0|INFO|FreteManager.Controllers.ClientesController|Cliente criado com ID 1002 
+2025-03-31 09:05:40.8062|0|INFO|FreteManager.Controllers.ClientesController|Cliente criado com ID 1003 
+2025-03-31 09:07:29.3029|0|INFO|FreteManager.Controllers.ClientesController|Cliente com ID 1003 atualizado 
+2025-03-31 09:07:44.0979|0|INFO|FreteManager.Controllers.ClientesController|Cliente com ID 5 excluído 
+2025-03-31 09:08:35.5399|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|Start processing HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 09:08:35.5399|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Sending HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 09:08:37.5441|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Received HTTP response headers after 1994.336ms - 200 
+2025-03-31 09:08:37.5502|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|End processing HTTP request after 2013.4153ms - 200 
+2025-03-31 09:08:37.5502|0|INFO|FreteManager.Services.FreteService|Frete calculado: Correios - Sedex, Valor: 18.01, Prazo: 1 dias 
+2025-03-31 09:08:37.5665|0|INFO|FreteManager.Controllers.FreteController|Frete calculado de 37701281 para 37705038: R$ 18,01 
+2025-03-31 09:10:03.2266|0|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'FreteManager.Data.ApplicationDbContext'.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Decimal()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at lambda_method222(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync() System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Decimal()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at lambda_method222(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-03-31 09:10:03.4405|0|ERROR|FreteManager.Controllers.PedidosController|Erro ao listar pedidos System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Decimal()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at lambda_method222(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at FreteManager.Repositories.PedidoRepository.ListarTodosAsync() in C:\dev\FreteManager\FreteManager\Repositories\PedidoRepository.cs:line 25
+   at FreteManager.Services.PedidoService.ListarTodosAsync() in C:\dev\FreteManager\FreteManager\Services\PedidoService.cs:line 39
+   at FreteManager.Controllers.PedidosController.GetPedidos() in C:\dev\FreteManager\FreteManager\Controllers\PedidosController.cs:line 29
+2025-03-31 09:11:06.3133|0|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'FreteManager.Data.ApplicationDbContext'.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Decimal()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at lambda_method222(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync() System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Decimal()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at lambda_method222(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-03-31 09:11:06.5064|0|ERROR|FreteManager.Controllers.PedidosController|Erro ao listar pedidos System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Decimal()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at lambda_method222(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at FreteManager.Repositories.PedidoRepository.ListarTodosAsync() in C:\dev\FreteManager\FreteManager\Repositories\PedidoRepository.cs:line 25
+   at FreteManager.Services.PedidoService.ListarTodosAsync() in C:\dev\FreteManager\FreteManager\Services\PedidoService.cs:line 39
+   at FreteManager.Controllers.PedidosController.GetPedidos() in C:\dev\FreteManager\FreteManager\Controllers\PedidosController.cs:line 29
+2025-03-31 09:11:47.6131|0|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'FreteManager.Data.ApplicationDbContext'.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Decimal()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at lambda_method222(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync() System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Decimal()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at lambda_method222(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-03-31 09:12:05.9951|0|ERROR|FreteManager.Controllers.PedidosController|Erro ao listar pedidos System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Decimal()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at lambda_method222(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at FreteManager.Repositories.PedidoRepository.ListarTodosAsync() in C:\dev\FreteManager\FreteManager\Repositories\PedidoRepository.cs:line 25
+   at FreteManager.Services.PedidoService.ListarTodosAsync() in C:\dev\FreteManager\FreteManager\Services\PedidoService.cs:line 39
+   at FreteManager.Controllers.PedidosController.GetPedidos() in C:\dev\FreteManager\FreteManager\Controllers\PedidosController.cs:line 29
+2025-03-31 09:12:12.4202|0|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'FreteManager.Data.ApplicationDbContext'.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Decimal()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at lambda_method222(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync() System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Decimal()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at lambda_method222(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-03-31 09:12:12.6039|0|ERROR|FreteManager.Controllers.PedidosController|Erro ao listar pedidos System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Decimal()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at lambda_method222(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at FreteManager.Repositories.PedidoRepository.ListarTodosAsync() in C:\dev\FreteManager\FreteManager\Repositories\PedidoRepository.cs:line 25
+   at FreteManager.Services.PedidoService.ListarTodosAsync() in C:\dev\FreteManager\FreteManager\Services\PedidoService.cs:line 39
+   at FreteManager.Controllers.PedidosController.GetPedidos() in C:\dev\FreteManager\FreteManager\Controllers\PedidosController.cs:line 29
+2025-03-31 09:13:43.4207|0|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'FreteManager.Data.ApplicationDbContext'.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Decimal()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at lambda_method222(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync() System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Decimal()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at lambda_method222(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-03-31 09:13:50.0665|0|ERROR|FreteManager.Controllers.PedidosController|Erro ao listar pedidos System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Decimal()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at lambda_method222(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.EntityFrameworkQueryableExtensions.ToListAsync[TSource](IQueryable`1 source, CancellationToken cancellationToken)
+   at FreteManager.Repositories.PedidoRepository.ListarTodosAsync() in C:\dev\FreteManager\FreteManager\Repositories\PedidoRepository.cs:line 25
+   at FreteManager.Services.PedidoService.ListarTodosAsync() in C:\dev\FreteManager\FreteManager\Services\PedidoService.cs:line 39
+   at FreteManager.Controllers.PedidosController.GetPedidos() in C:\dev\FreteManager\FreteManager\Controllers\PedidosController.cs:line 29
+2025-03-31 09:14:32.0691|0|ERROR|Microsoft.EntityFrameworkCore.Query|An exception occurred while iterating over the results of a query for context type 'FreteManager.Data.ApplicationDbContext'.
+System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Decimal()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at lambda_method222(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync() System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or property cannot be called on Null values.
+   at Microsoft.Data.SqlClient.SqlBuffer.ThrowIfNull()
+   at Microsoft.Data.SqlClient.SqlBuffer.get_Decimal()
+   at Microsoft.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
+   at lambda_method222(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()

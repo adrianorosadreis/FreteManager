@@ -322,7 +322,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Pedido"
+                    "$ref": "#/components/schemas/PedidoRespostaDTO"
                   }
                 }
               },
@@ -330,7 +330,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Pedido"
+                    "$ref": "#/components/schemas/PedidoRespostaDTO"
                   }
                 }
               },
@@ -338,7 +338,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Pedido"
+                    "$ref": "#/components/schemas/PedidoRespostaDTO"
                   }
                 }
               }
@@ -354,17 +354,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Pedido"
+                "$ref": "#/components/schemas/CriarPedidoDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Pedido"
+                "$ref": "#/components/schemas/CriarPedidoDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Pedido"
+                "$ref": "#/components/schemas/CriarPedidoDTO"
               }
             }
           }
@@ -375,17 +375,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Pedido"
+                  "$ref": "#/components/schemas/PedidoRespostaDTO"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Pedido"
+                  "$ref": "#/components/schemas/PedidoRespostaDTO"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Pedido"
+                  "$ref": "#/components/schemas/PedidoRespostaDTO"
                 }
               }
             }
@@ -415,17 +415,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Pedido"
+                  "$ref": "#/components/schemas/PedidoRespostaDTO"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Pedido"
+                  "$ref": "#/components/schemas/PedidoRespostaDTO"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Pedido"
+                  "$ref": "#/components/schemas/PedidoRespostaDTO"
                 }
               }
             }
@@ -451,17 +451,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Pedido"
+                "$ref": "#/components/schemas/AtualizarPedidoDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Pedido"
+                "$ref": "#/components/schemas/AtualizarPedidoDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Pedido"
+                "$ref": "#/components/schemas/AtualizarPedidoDTO"
               }
             }
           }
@@ -518,7 +518,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Pedido"
+                    "$ref": "#/components/schemas/PedidoRespostaDTO"
                   }
                 }
               },
@@ -526,7 +526,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Pedido"
+                    "$ref": "#/components/schemas/PedidoRespostaDTO"
                   }
                 }
               },
@@ -534,7 +534,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Pedido"
+                    "$ref": "#/components/schemas/PedidoRespostaDTO"
                   }
                 }
               }
@@ -584,17 +584,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Pedido"
+                  "$ref": "#/components/schemas/PedidoRespostaDTO"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Pedido"
+                  "$ref": "#/components/schemas/PedidoRespostaDTO"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Pedido"
+                  "$ref": "#/components/schemas/PedidoRespostaDTO"
                 }
               }
             }
@@ -605,6 +605,57 @@
   },
   "components": {
     "schemas": {
+      "AtualizarPedidoDTO": {
+        "required": [
+          "clienteId",
+          "destino",
+          "id",
+          "origem",
+          "status"
+        ],
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "clienteId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "origem": {
+            "maxLength": 200,
+            "minLength": 0,
+            "type": "string"
+          },
+          "destino": {
+            "maxLength": 200,
+            "minLength": 0,
+            "type": "string"
+          },
+          "status": {
+            "$ref": "#/components/schemas/StatusPedido"
+          },
+          "valorFrete": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "valorDeclarado": {
+            "minimum": 0,
+            "type": "number",
+            "format": "double"
+          },
+          "pacotes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PacoteDTO"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "Cliente": {
         "required": [
           "email",
@@ -641,6 +692,51 @@
         },
         "additionalProperties": false
       },
+      "CriarPedidoDTO": {
+        "required": [
+          "clienteId",
+          "destino",
+          "origem"
+        ],
+        "type": "object",
+        "properties": {
+          "clienteId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "origem": {
+            "maxLength": 200,
+            "minLength": 0,
+            "type": "string"
+          },
+          "destino": {
+            "maxLength": 200,
+            "minLength": 0,
+            "type": "string"
+          },
+          "status": {
+            "$ref": "#/components/schemas/StatusPedido"
+          },
+          "valorFrete": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "valorDeclarado": {
+            "minimum": 0,
+            "type": "number",
+            "format": "double"
+          },
+          "pacotes": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/PacoteDTO"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "LoginRequest": {
         "required": [
           "email",
@@ -660,22 +756,13 @@
         },
         "additionalProperties": false
       },
-      "Pacote": {
-        "required": [
-          "pedidoId"
-        ],
+      "PacoteDTO": {
         "type": "object",
         "properties": {
           "id": {
             "type": "integer",
-            "format": "int32"
-          },
-          "pedidoId": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "pedido": {
-            "$ref": "#/components/schemas/Pedido"
+            "format": "int32",
+            "nullable": true
           },
           "altura": {
             "minimum": 0,1,
@@ -757,14 +844,7 @@
         },
         "additionalProperties": false
       },
-      "Pedido": {
-        "required": [
-          "clienteId",
-          "dataCriacao",
-          "destino",
-          "origem",
-          "status"
-        ],
+      "PedidoRespostaDTO": {
         "type": "object",
         "properties": {
           "id": {
@@ -775,18 +855,17 @@
             "type": "integer",
             "format": "int32"
           },
-          "cliente": {
-            "$ref": "#/components/schemas/Cliente"
+          "clienteNome": {
+            "type": "string",
+            "nullable": true
           },
           "origem": {
-            "maxLength": 200,
-            "minLength": 0,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "destino": {
-            "maxLength": 200,
-            "minLength": 0,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "dataCriacao": {
             "type": "string",
@@ -795,21 +874,23 @@
           "status": {
             "$ref": "#/components/schemas/StatusPedido"
           },
+          "statusDescricao": {
+            "type": "string",
+            "nullable": true
+          },
           "valorFrete": {
-            "minimum": 0,
             "type": "number",
             "format": "double",
             "nullable": true
           },
           "valorDeclarado": {
-            "minimum": 0,
             "type": "number",
             "format": "double"
           },
           "pacotes": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/Pacote"
+              "$ref": "#/components/schemas/PacoteDTO"
             },
             "nullable": true
           }

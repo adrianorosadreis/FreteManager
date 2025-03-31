@@ -1,4 +1,6 @@
-﻿using FreteManager.Models;
+﻿using FreteManager.DTOs;
+using FreteManager.Helpers;
+using FreteManager.Models;
 using FreteManager.Repositories;
 using static FreteManager.Models.FreteModels;
 
@@ -10,7 +12,7 @@ namespace FreteManager.Services
         private readonly IClienteService _clienteService;
         private readonly IFreteService _freteService;
         private readonly ILogger<PedidoService> _logger;
-        
+
         public PedidoService(IPedidoRepository pedidoRepository,
                              IClienteService clienteService,
                              IFreteService freteService,
@@ -22,83 +24,82 @@ namespace FreteManager.Services
             _logger = logger;
         }
 
-        public async Task<Pedido> ObterPorIdAsync(int id)
+        public async Task<PedidoRespostaDTO> ObterPorIdAsync(int id)
         {
             var pedido = await _pedidoRepository.ObterPorIdAsync(id);
             if (pedido == null)
             {
                 throw new KeyNotFoundException($"Pedido com ID {id} não encontrado.");
             }
-            return pedido;
+            return PedidoMapper.ParaDTO(pedido);
         }
 
-        public async Task<IEnumerable<Pedido>> ListarTodosAsync()
+        public async Task<IEnumerable<PedidoRespostaDTO>> ListarTodosAsync()
         {
-            return await _pedidoRepository.ListarTodosAsync();
+            var pedidos = await _pedidoRepository.ListarTodosAsync();
+            return pedidos.Select(p => PedidoMapper.ParaDTO(p));
         }
 
-        public async Task<Pedido> CriarAsync(Pedido pedido)
+        public async Task<PedidoRespostaDTO> CriarAsync(CriarPedidoDTO pedidoDTO)
         {
             // Verificar se o cliente existe
-            if (!await _clienteService.ClienteExisteAsync(pedido.ClienteId))
+            if (!await _clienteService.ClienteExisteAsync(pedidoDTO.ClienteId))
             {
-                throw new KeyNotFoundException($"Cliente com ID {pedido.ClienteId} não encontrado.");
+                throw new KeyNotFoundException($"Cliente com ID {pedidoDTO.ClienteId} não encontrado.");
             }
 
-            // Definir data de criação como data atual se não foi definida
-            if (pedido.DataCriacao == default)
-            {
-                pedido.DataCriacao = DateTime.Now;
-            }
+            // Converter DTO para entidade
+            var pedido = PedidoMapper.ParaPedido(pedidoDTO);
 
-            // Definir status inicial como EmProcessamento se não foi definido
-            if (pedido.Status == default)
-            {
-                pedido.Status = StatusPedido.EmProcessamento;
-            }
-
-            // Calcular o frete apenas se não tiver sido definido ou for zero/negativo
+            // Calcular o frete se não foi informado
             if (!pedido.ValorFrete.HasValue || pedido.ValorFrete <= 0)
             {
                 pedido.ValorFrete = await CalcularFreteParaPedidoAsync(pedido);
             }
 
             // Salvar o pedido
-            return await _pedidoRepository.AdicionarAsync(pedido);
+            var pedidoCriado = await _pedidoRepository.AdicionarAsync(pedido);
+
+            // Retornar DTO de resposta
+            return PedidoMapper.ParaDTO(pedidoCriado);
         }
 
-        public async Task AtualizarAsync(Pedido pedido)
+        public async Task<PedidoRespostaDTO> AtualizarAsync(AtualizarPedidoDTO pedidoDTO)
         {
             // Verificar se o pedido existe
-            var pedidoExistente = await _pedidoRepository.ObterPorIdAsync(pedido.Id);
+            var pedidoExistente = await _pedidoRepository.ObterPorIdAsync(pedidoDTO.Id);
             if (pedidoExistente == null)
             {
-                throw new KeyNotFoundException($"Pedido com ID {pedido.Id} não encontrado.");
+                throw new KeyNotFoundException($"Pedido com ID {pedidoDTO.Id} não encontrado.");
             }
 
             // Verificar se o cliente existe
-            if (!await _clienteService.ClienteExisteAsync(pedido.ClienteId))
+            if (!await _clienteService.ClienteExisteAsync(pedidoDTO.ClienteId))
             {
-                throw new KeyNotFoundException($"Cliente com ID {pedido.ClienteId} não encontrado.");
+                throw new KeyNotFoundException($"Cliente com ID {pedidoDTO.ClienteId} não encontrado.");
             }
 
-            // Manter a data de criação original
-            pedido.DataCriacao = pedidoExistente.DataCriacao;
+            // Atualizar a entidade com os dados do DTO
+            PedidoMapper.AtualizarPedido(pedidoExistente, pedidoDTO);
 
-            // Recalcular o frete em qualquer um desses casos:
-            // 1. Se a origem ou destino foram alterados E o valor do frete não foi explicitamente definido
-            // 2. Se o valor do frete foi explicitamente definido como nulo ou zero/negativo
+            // Recalcular o frete se necessário (origem/destino alterados)
             bool devemosRecalcular =
-                ((pedido.Origem != pedidoExistente.Origem || pedido.Destino != pedidoExistente.Destino)
-                    && (!pedido.ValorFrete.HasValue || pedido.ValorFrete == pedidoExistente.ValorFrete))
-                || (!pedido.ValorFrete.HasValue || pedido.ValorFrete <= 0);
+                (pedidoDTO.Origem != pedidoExistente.Origem || pedidoDTO.Destino != pedidoExistente.Destino)
+                || (!pedidoDTO.ValorFrete.HasValue || pedidoDTO.ValorFrete <= 0);
 
             if (devemosRecalcular)
             {
-                pedido.ValorFrete = await CalcularFreteParaPedidoAsync(pedido);
+                pedidoExistente.ValorFrete = await CalcularFreteParaPedidoAsync(pedidoExistente);
             }
 
-            await _pedidoRepository.AtualizarAsync(pedido);
+            // Salvar as alterações
+            await _pedidoRepository.AtualizarAsync(pedidoExistente);
+
+            // Recarregar o pedido para garantir que temos todos os dados atualizados
+            var pedidoAtualizado = await _pedidoRepository.ObterPorIdAsync(pedidoDTO.Id);
+
+            // Retornar DTO de resposta
+            return PedidoMapper.ParaDTO(pedidoAtualizado);
         }
 
         public async Task ExcluirAsync(int id)

@@ -1,4 +1,5 @@
-﻿using FreteManager.Models;
+﻿using FreteManager.DTOs;
+using FreteManager.Models;
 using FreteManager.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -21,7 +22,7 @@ namespace FreteManager.Controllers
         // GET: api/pedidos
         [HttpGet]
         [Authorize]
-        public async Task<ActionResult<IEnumerable<Pedido>>> GetPedidos()
+        public async Task<ActionResult<IEnumerable<PedidoRespostaDTO>>> GetPedidos()
         {
             try
             {
@@ -38,7 +39,7 @@ namespace FreteManager.Controllers
         // GET: api/pedidos/5
         [HttpGet("{id}")]
         [Authorize]
-        public async Task<ActionResult<Pedido>> GetPedido(int id)
+        public async Task<ActionResult<PedidoRespostaDTO>> GetPedido(int id)
         {
             try
             {
@@ -60,7 +61,7 @@ namespace FreteManager.Controllers
         // GET: api/pedidos/cliente/5
         [HttpGet("cliente/{clienteId}")]
         [Authorize]
-        public async Task<ActionResult<IEnumerable<Pedido>>> GetPedidosPorCliente(int clienteId)
+        public async Task<ActionResult<IEnumerable<PedidoRespostaDTO>>> GetPedidosPorCliente(int clienteId)
         {
             try
             {
@@ -82,7 +83,7 @@ namespace FreteManager.Controllers
         // POST: api/pedidos
         [HttpPost]
         [Authorize]
-        public async Task<ActionResult<Pedido>> PostPedido(Pedido pedido)
+        public async Task<ActionResult<PedidoRespostaDTO>> PostPedido(CriarPedidoDTO pedidoDTO)
         {
             try
             {
@@ -91,7 +92,7 @@ namespace FreteManager.Controllers
                     return BadRequest(ModelState);
                 }
 
-                var pedidoCriado = await _pedidoService.CriarAsync(pedido);
+                var pedidoCriado = await _pedidoService.CriarAsync(pedidoDTO);
 
                 _logger.LogInformation($"Pedido criado com ID {pedidoCriado.Id}");
 
@@ -112,11 +113,11 @@ namespace FreteManager.Controllers
         // PUT: api/pedidos/5
         [HttpPut("{id}")]
         [Authorize]
-        public async Task<IActionResult> PutPedido(int id, Pedido pedido)
+        public async Task<IActionResult> PutPedido(int id, AtualizarPedidoDTO pedidoDTO)
         {
             try
             {
-                if (id != pedido.Id)
+                if (id != pedidoDTO.Id)
                 {
                     return BadRequest("ID do pedido na rota não corresponde ao ID no corpo da requisição");
                 }
@@ -126,7 +127,7 @@ namespace FreteManager.Controllers
                     return BadRequest(ModelState);
                 }
 
-                await _pedidoService.AtualizarAsync(pedido);
+                await _pedidoService.AtualizarAsync(pedidoDTO);
 
                 _logger.LogInformation($"Pedido com ID {id} atualizado");
 
@@ -172,7 +173,7 @@ namespace FreteManager.Controllers
         // PATCH: api/pedidos/5/status
         [HttpPatch("{id}/status")]
         [Authorize]
-        public async Task<ActionResult<Pedido>> AtualizarStatus(int id, [FromBody] StatusUpdateModel model)
+        public async Task<ActionResult<PedidoRespostaDTO>> AtualizarStatus(int id, [FromBody] StatusUpdateModel model)
         {
             try
             {
@@ -205,8 +206,8 @@ namespace FreteManager.Controllers
         }
     }
 
-        // Modelo para atualização de status
-        public class StatusUpdateModel
+    // Modelo para atualização de status
+    public class StatusUpdateModel
     {
         public StatusPedido NovoStatus { get; set; }
     }

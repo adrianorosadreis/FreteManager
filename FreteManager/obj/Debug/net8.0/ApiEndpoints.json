@@ -176,7 +176,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[FreteManager.Models.Pedido, FreteManager, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[FreteManager.DTOs.PedidoRespostaDTO, FreteManager, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -195,14 +195,14 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "pedido",
-        "Type": "FreteManager.Models.Pedido",
+        "Name": "pedidoDTO",
+        "Type": "FreteManager.DTOs.CriarPedidoDTO",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "FreteManager.Models.Pedido",
+        "Type": "FreteManager.DTOs.PedidoRespostaDTO",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -228,7 +228,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "FreteManager.Models.Pedido",
+        "Type": "FreteManager.DTOs.PedidoRespostaDTO",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -252,8 +252,8 @@
         "IsRequired": true
       },
       {
-        "Name": "pedido",
-        "Type": "FreteManager.Models.Pedido",
+        "Name": "pedidoDTO",
+        "Type": "FreteManager.DTOs.AtualizarPedidoDTO",
         "IsRequired": true
       }
     ],
@@ -296,7 +296,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "FreteManager.Models.Pedido",
+        "Type": "FreteManager.DTOs.PedidoRespostaDTO",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -322,7 +322,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[FreteManager.Models.Pedido, FreteManager, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[FreteManager.DTOs.PedidoRespostaDTO, FreteManager, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
