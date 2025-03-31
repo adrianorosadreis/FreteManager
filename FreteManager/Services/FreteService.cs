@@ -36,6 +36,12 @@ namespace FreteManager.Services
         /// Método principal que realiza o cálculo detalhado de frete
         public async Task<decimal> CalcularFreteDetalhadoAsync(ParametrosFrete parametros)
         {
+            // Validação de entrada: CEPs
+            ValidarCep(parametros.CepOrigem, "CEP de Origem");
+            ValidarCep(parametros.CepDestino, "CEP de Destino");
+            // Validação de pacotes
+            ValidarPacotes(parametros.Pacotes);
+
             // Verificar cache primeiro para evitar chamadas desnecessárias
             string cacheKey = GerarChaveCache(parametros);
             if (_cache.TryGetValue(cacheKey, out decimal cachedValue))
@@ -46,13 +52,6 @@ namespace FreteManager.Services
 
             try
             {
-                // Validação de entrada: CEPs
-                ValidarCep(parametros.CepOrigem, "CEP de Origem");
-                ValidarCep(parametros.CepDestino, "CEP de Destino");
-
-                // Validação de pacotes
-                ValidarPacotes(parametros.Pacotes);
-
                 // Sanitizar CEPs
                 string cepOrigem = new string(parametros.CepOrigem.Where(char.IsDigit).ToArray());
                 string cepDestino = new string(parametros.CepDestino.Where(char.IsDigit).ToArray());

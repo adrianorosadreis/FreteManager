@@ -2937,3 +2937,1025 @@
 2025-03-31 19:25:09.9880|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
 2025-03-31 19:25:09.9880|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
 2025-03-31 19:25:09.9880|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:57:10.2193|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 19:57:10.2513|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 19:57:10.3514|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 19:57:10.5868|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 19:57:10.6461|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 19:57:10.6461|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 19:57:10.6461|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 19:57:11.8641|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 19:57:11.9289|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 19:57:11.9620|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 19:57:11.9620|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 19:57:11.9620|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 19:57:11.9620|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 19:57:11.9620|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 19:57:11.9620|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 19:57:11.9620|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: naoexiste@teste.com 
+2025-03-31 19:57:11.9620|0|INFO|AuthService|Tentativa de login: naoexiste@teste.com 
+2025-03-31 19:57:11.9620|0|WARN|AuthService|Tentativa de login com email não cadastrado: naoexiste@teste.com 
+2025-03-31 19:57:11.9620|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|A entidade Usuário com ID naoexiste@teste.com não foi encontrada. FreteManager.Exceptions.EntityNotFoundException: A entidade Usuário com ID naoexiste@teste.com não foi encontrada.
+   at AuthService.LoginAsync(LoginRequest model) in C:\dev\FreteManager\FreteManager\Services\AuthService.cs:line 64
+   at FreteManager.Controllers.AuthController.Login(LoginRequest model) in C:\dev\FreteManager\FreteManager\Controllers\AuthController.cs:line 53
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 19:57:11.9834|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:57:11.9834|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:57:11.9834|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:57:11.9834|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:57:11.9834|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:57:11.9834|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:57:11.9884|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 19:57:12.0113|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:57:12.0113|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:57:12.0281|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:57:12.0281|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:57:45.2905|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 19:57:45.2905|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 19:57:45.2905|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 19:57:45.2905|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 19:57:45.6040|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 19:57:45.6040|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 19:57:45.6040|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 19:57:45.6040|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 19:57:45.7017|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 19:57:45.7017|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 19:57:45.7017|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 19:57:45.7017|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: naoexiste@teste.com 
+2025-03-31 19:57:45.7017|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 19:57:45.7017|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 19:57:45.7017|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 19:57:45.7017|0|INFO|AuthService|Tentativa de login: naoexiste@teste.com 
+2025-03-31 19:57:45.7935|0|WARN|AuthService|Tentativa de login com email não cadastrado: naoexiste@teste.com 
+2025-03-31 19:57:45.7935|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|A entidade Usuário com ID naoexiste@teste.com não foi encontrada. FreteManager.Exceptions.EntityNotFoundException: A entidade Usuário com ID naoexiste@teste.com não foi encontrada.
+   at AuthService.LoginAsync(LoginRequest model) in C:\dev\FreteManager\FreteManager\Services\AuthService.cs:line 64
+   at FreteManager.Controllers.AuthController.Login(LoginRequest model) in C:\dev\FreteManager\FreteManager\Controllers\AuthController.cs:line 53
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 19:57:45.8341|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:57:45.8341|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:57:45.8341|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:57:45.8341|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:57:45.8341|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:57:45.8341|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:57:45.8931|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 19:57:45.8934|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 19:57:45.8934|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:57:45.8934|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:57:45.9367|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para registrar usuário: usuariob4c9bd62-e261-43a9-99b0-a29ae7a0f019@teste.com 
+2025-03-31 19:57:45.9367|0|INFO|FreteManager.Controllers.ClientesController|Requisição GET para listar todos os clientes 
+2025-03-31 19:57:45.9367|0|INFO|AuthService|Iniciando registro de novo usuário: usuariob4c9bd62-e261-43a9-99b0-a29ae7a0f019@teste.com 
+2025-03-31 19:57:45.9367|0|INFO|FreteManager.Controllers.ClientesController|Requisição GET para obter cliente ID 999999 
+2025-03-31 19:57:45.9367|0|INFO|FreteManager.Services.ClienteService|Listando todos os clientes 
+2025-03-31 19:57:45.9367|0|INFO|FreteManager.Services.ClienteService|Obtendo cliente com ID 999999 
+2025-03-31 19:57:45.9484|0|INFO|FreteManager.Repositories.ClienteRepository|Recuperados 4 clientes 
+2025-03-31 19:57:45.9484|0|INFO|FreteManager.Controllers.ClientesController|Retornando 4 clientes 
+2025-03-31 19:57:45.9577|0|INFO|FreteManager.Controllers.FreteController|Requisição POST para calcular frete de 01000000 para INVALIDO 
+2025-03-31 19:57:45.9577|0|WARN|FreteManager.Controllers.FreteController|CEP de origem ou destino inválido 
+2025-03-31 19:57:45.9577|0|WARN|FreteManager.Repositories.ClienteRepository|Cliente com ID 999999 não encontrado 
+2025-03-31 19:57:45.9577|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|A entidade Cliente com ID 999999 não foi encontrada. FreteManager.Exceptions.EntityNotFoundException: A entidade Cliente com ID 999999 não foi encontrada.
+   at FreteManager.Repositories.ClienteRepository.ObterPorIdAsync(Int32 id) in C:\dev\FreteManager\FreteManager\Repositories\ClienteRepository.cs:line 28
+   at FreteManager.Services.ClienteService.ObterPorIdAsync(Int32 id) in C:\dev\FreteManager\FreteManager\Services\ClienteService.cs:line 23
+   at FreteManager.Controllers.ClientesController.GetCliente(Int32 id) in C:\dev\FreteManager\FreteManager\Controllers\ClientesController.cs:line 41
+   at lambda_method564(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 19:57:45.9577|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 19:57:45.9577|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 19:57:45.9754|0|INFO|AuthService|Usuário usuariob4c9bd62-e261-43a9-99b0-a29ae7a0f019@teste.com registrado com sucesso. ID: 9 
+2025-03-31 19:57:45.9754|0|INFO|FreteManager.Controllers.AuthController|Usuário registrado com sucesso: usuariob4c9bd62-e261-43a9-99b0-a29ae7a0f019@teste.com, ID: 9 
+2025-03-31 19:57:45.9754|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:57:45.9754|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:57:45.9754|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 19:57:45.9754|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 19:57:46.0027|0|INFO|FreteManager.Controllers.FreteController|Requisição POST para calcular frete de INVALIDO para 02000000 
+2025-03-31 19:57:46.0027|0|WARN|FreteManager.Controllers.FreteController|CEP de origem ou destino inválido 
+2025-03-31 19:57:46.0166|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:57:46.0166|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:57:46.0166|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 19:57:46.0193|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 19:57:46.0375|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:57:46.0375|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:57:46.0375|0|INFO|FreteManager.Controllers.ClientesController|Requisição POST para criar novo cliente 
+2025-03-31 19:57:46.0375|0|INFO|FreteManager.Services.ClienteService|Iniciando cadastro de novo cliente: Cliente Teste 2172c0ba-7a5b-449e-a848-399b7f4e0d66 
+2025-03-31 19:57:46.0375|0|INFO|FreteManager.Controllers.PedidosController|Requisição POST para criar novo pedido 
+2025-03-31 19:57:46.0499|0|INFO|FreteManager.Services.PedidoService|Iniciando criação de pedido para cliente ID 999999 
+2025-03-31 19:57:46.0499|0|WARN|FreteManager.Repositories.ClienteRepository|Cliente com ID 999999 não encontrado 
+2025-03-31 19:57:46.0499|0|WARN|FreteManager.Services.PedidoService|Tentativa de criar pedido para cliente inexistente ID 999999 
+2025-03-31 19:57:46.0499|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|A entidade Cliente com ID 999999 não foi encontrada. FreteManager.Exceptions.EntityNotFoundException: A entidade Cliente com ID 999999 não foi encontrada.
+   at FreteManager.Services.PedidoService.CriarAsync(CriarPedidoDTO pedidoDTO) in C:\dev\FreteManager\FreteManager\Services\PedidoService.cs:line 62
+   at FreteManager.Controllers.PedidosController.PostPedido(CriarPedidoDTO pedidoDTO) in C:\dev\FreteManager\FreteManager\Controllers\PedidosController.cs:line 75
+   at lambda_method614(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 19:57:46.0499|0|INFO|FreteManager.Controllers.FreteController|Requisição POST para calcular frete de 01000000 para 02000000 
+2025-03-31 19:57:46.0499|0|INFO|FreteManager.Repositories.ClienteRepository|Cliente Cliente Teste 2172c0ba-7a5b-449e-a848-399b7f4e0d66 adicionado com sucesso. ID gerado: 5 
+2025-03-31 19:57:46.0499|0|INFO|FreteManager.Services.ClienteService|Cliente cadastrado com sucesso. ID: 5 
+2025-03-31 19:57:46.0499|0|WARN|FreteManager.Controllers.FreteController|Nenhum pacote informado 
+2025-03-31 19:57:46.0816|0|INFO|FreteManager.Controllers.ClientesController|Cliente criado com ID 5: Cliente Teste 2172c0ba-7a5b-449e-a848-399b7f4e0d66 
+2025-03-31 19:57:46.0990|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 19:57:46.0990|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 19:57:46.1157|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 19:57:46.1157|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 19:57:46.1340|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:57:46.1340|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:57:46.1441|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:57:46.1441|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:57:46.1441|0|INFO|FreteManager.Controllers.ClientesController|Requisição PUT para atualizar cliente ID 5 
+2025-03-31 19:57:46.1441|0|INFO|FreteManager.Services.ClienteService|Iniciando atualização do cliente ID 5 
+2025-03-31 19:57:46.1441|0|INFO|FreteManager.Repositories.ClienteRepository|Cliente ID 5 atualizado com sucesso 
+2025-03-31 19:57:46.1441|0|INFO|FreteManager.Services.ClienteService|Cliente ID 5 atualizado com sucesso 
+2025-03-31 19:57:46.1441|0|INFO|FreteManager.Controllers.ClientesController|Cliente ID 5 atualizado com sucesso 
+2025-03-31 19:57:46.1713|0|INFO|FreteManager.Controllers.ClientesController|Requisição GET para obter cliente ID 5 
+2025-03-31 19:57:46.1713|0|INFO|FreteManager.Services.ClienteService|Obtendo cliente com ID 5 
+2025-03-31 19:57:46.1713|0|INFO|FreteManager.Controllers.ClientesController|Requisição GET para listar todos os clientes 
+2025-03-31 19:57:46.1713|0|INFO|FreteManager.Services.ClienteService|Listando todos os clientes 
+2025-03-31 19:57:46.1713|0|INFO|FreteManager.Controllers.ClientesController|Retornando dados do cliente ID 5: Cliente Atualizado 
+2025-03-31 19:57:46.1713|0|INFO|FreteManager.Repositories.ClienteRepository|Recuperados 5 clientes 
+2025-03-31 19:57:46.1713|0|INFO|FreteManager.Controllers.ClientesController|Retornando 5 clientes 
+2025-03-31 19:57:46.1713|0|INFO|FreteManager.Controllers.FreteController|Requisição POST para calcular frete de 01000000 para 02000000 
+2025-03-31 19:57:46.1875|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 19:57:46.1875|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 19:57:46.1875|0|INFO|FreteManager.Controllers.PedidosController|Requisição POST para criar novo pedido 
+2025-03-31 19:57:46.1875|0|INFO|FreteManager.Services.PedidoService|Iniciando criação de pedido para cliente ID 1 
+2025-03-31 19:57:46.2046|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:57:46.2046|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:57:46.2140|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|Start processing HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 19:57:46.2140|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|Start processing HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 19:57:46.2140|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Sending HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 19:57:46.2140|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Sending HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 19:57:46.2140|0|INFO|FreteManager.Controllers.ClientesController|Requisição GET para listar todos os clientes 
+2025-03-31 19:57:46.2140|0|INFO|FreteManager.Services.ClienteService|Listando todos os clientes 
+2025-03-31 19:57:46.2140|0|INFO|FreteManager.Repositories.ClienteRepository|Recuperados 5 clientes 
+2025-03-31 19:57:46.2140|0|INFO|FreteManager.Controllers.ClientesController|Retornando 5 clientes 
+2025-03-31 19:57:46.2491|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 19:57:46.2491|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 19:57:46.2634|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:57:46.2634|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:57:46.2922|0|INFO|FreteManager.Controllers.ClientesController|Requisição POST para criar novo cliente 
+2025-03-31 19:57:46.2922|0|INFO|FreteManager.Services.ClienteService|Iniciando cadastro de novo cliente: Cliente Teste 569aea10-2597-47f7-96c6-a7fc749c0f31 
+2025-03-31 19:57:46.2922|0|INFO|FreteManager.Repositories.ClienteRepository|Cliente Cliente Teste 569aea10-2597-47f7-96c6-a7fc749c0f31 adicionado com sucesso. ID gerado: 6 
+2025-03-31 19:57:46.2922|0|INFO|FreteManager.Services.ClienteService|Cliente cadastrado com sucesso. ID: 6 
+2025-03-31 19:57:46.2922|0|INFO|FreteManager.Controllers.ClientesController|Cliente criado com ID 6: Cliente Teste 569aea10-2597-47f7-96c6-a7fc749c0f31 
+2025-03-31 19:57:46.3060|0|INFO|FreteManager.Controllers.ClientesController|Requisição DELETE para excluir cliente ID 6 
+2025-03-31 19:57:46.3060|0|INFO|FreteManager.Services.ClienteService|Iniciando exclusão do cliente ID 6 
+2025-03-31 19:57:46.3252|0|INFO|FreteManager.Repositories.ClienteRepository|Cliente ID 6 excluído com sucesso 
+2025-03-31 19:57:46.3398|0|INFO|FreteManager.Services.ClienteService|Cliente ID 6 excluído com sucesso 
+2025-03-31 19:57:46.3398|0|INFO|FreteManager.Controllers.ClientesController|Cliente ID 6 excluído com sucesso 
+2025-03-31 19:57:46.3398|0|INFO|FreteManager.Controllers.ClientesController|Requisição GET para obter cliente ID 6 
+2025-03-31 19:57:46.3398|0|INFO|FreteManager.Services.ClienteService|Obtendo cliente com ID 6 
+2025-03-31 19:57:46.3398|0|WARN|FreteManager.Repositories.ClienteRepository|Cliente com ID 6 não encontrado 
+2025-03-31 19:57:46.3398|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|A entidade Cliente com ID 6 não foi encontrada. FreteManager.Exceptions.EntityNotFoundException: A entidade Cliente com ID 6 não foi encontrada.
+   at FreteManager.Repositories.ClienteRepository.ObterPorIdAsync(Int32 id) in C:\dev\FreteManager\FreteManager\Repositories\ClienteRepository.cs:line 28
+   at FreteManager.Services.ClienteService.ObterPorIdAsync(Int32 id) in C:\dev\FreteManager\FreteManager\Services\ClienteService.cs:line 23
+   at FreteManager.Controllers.ClientesController.GetCliente(Int32 id) in C:\dev\FreteManager\FreteManager\Controllers\ClientesController.cs:line 41
+   at lambda_method564(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 19:57:46.3503|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 19:57:46.3503|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 19:57:46.3650|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:57:46.3650|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:57:46.3650|0|INFO|FreteManager.Controllers.ClientesController|Requisição POST para criar novo cliente 
+2025-03-31 19:57:46.3650|0|INFO|FreteManager.Services.ClienteService|Iniciando cadastro de novo cliente: Cliente Teste 25373eca-5294-42a3-9cf7-c3abdb8d8d47 
+2025-03-31 19:57:46.3650|0|INFO|FreteManager.Repositories.ClienteRepository|Cliente Cliente Teste 25373eca-5294-42a3-9cf7-c3abdb8d8d47 adicionado com sucesso. ID gerado: 7 
+2025-03-31 19:57:46.3650|0|INFO|FreteManager.Services.ClienteService|Cliente cadastrado com sucesso. ID: 7 
+2025-03-31 19:57:46.3650|0|INFO|FreteManager.Controllers.ClientesController|Cliente criado com ID 7: Cliente Teste 25373eca-5294-42a3-9cf7-c3abdb8d8d47 
+2025-03-31 19:57:46.3650|0|INFO|FreteManager.Controllers.ClientesController|Requisição POST para criar novo cliente 
+2025-03-31 19:57:46.3650|0|INFO|FreteManager.Services.ClienteService|Iniciando cadastro de novo cliente: Cliente Teste 797061ca-174f-4cd9-99c1-e83c57a14137 
+2025-03-31 19:57:46.3798|0|WARN|FreteManager.Services.ClienteService|Tentativa de cadastro com e-mail já existente: clientefd421136-81c8-49a9-9c4e-21935ec14c6f@teste.com 
+2025-03-31 19:57:46.3798|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|Este e-mail já está cadastrado. FreteManager.Exceptions.BusinessRuleViolationException: Este e-mail já está cadastrado.
+   at FreteManager.Services.ClienteService.CadastrarAsync(Cliente cliente) in C:\dev\FreteManager\FreteManager\Services\ClienteService.cs:line 48
+   at FreteManager.Controllers.ClientesController.PostCliente(Cliente cliente) in C:\dev\FreteManager\FreteManager\Controllers\ClientesController.cs:line 60
+   at lambda_method629(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 19:57:46.3798|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 19:57:46.3798|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 19:57:46.3987|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:57:46.3987|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:57:46.4096|0|INFO|FreteManager.Controllers.ClientesController|Requisição POST para criar novo cliente 
+2025-03-31 19:57:46.4096|0|INFO|FreteManager.Services.ClienteService|Iniciando cadastro de novo cliente: Cliente Teste 8f85eef1-9e0a-4c80-878d-16ea9a013268 
+2025-03-31 19:57:46.4096|0|INFO|FreteManager.Repositories.ClienteRepository|Cliente Cliente Teste 8f85eef1-9e0a-4c80-878d-16ea9a013268 adicionado com sucesso. ID gerado: 8 
+2025-03-31 19:57:46.4096|0|INFO|FreteManager.Services.ClienteService|Cliente cadastrado com sucesso. ID: 8 
+2025-03-31 19:57:46.4096|0|INFO|FreteManager.Controllers.ClientesController|Cliente criado com ID 8: Cliente Teste 8f85eef1-9e0a-4c80-878d-16ea9a013268 
+2025-03-31 19:57:46.4096|0|INFO|FreteManager.Controllers.ClientesController|Requisição POST para criar novo cliente 
+2025-03-31 19:57:46.4096|0|INFO|FreteManager.Services.ClienteService|Iniciando cadastro de novo cliente: Cliente Teste 2f42aa3b-d30d-4c24-b0aa-48f9f5587026 
+2025-03-31 19:57:46.4096|0|INFO|FreteManager.Repositories.ClienteRepository|Cliente Cliente Teste 2f42aa3b-d30d-4c24-b0aa-48f9f5587026 adicionado com sucesso. ID gerado: 9 
+2025-03-31 19:57:46.4096|0|INFO|FreteManager.Services.ClienteService|Cliente cadastrado com sucesso. ID: 9 
+2025-03-31 19:57:46.4096|0|INFO|FreteManager.Controllers.ClientesController|Cliente criado com ID 9: Cliente Teste 2f42aa3b-d30d-4c24-b0aa-48f9f5587026 
+2025-03-31 19:57:46.4096|0|INFO|FreteManager.Controllers.ClientesController|Requisição PUT para atualizar cliente ID 9 
+2025-03-31 19:57:46.4096|0|INFO|FreteManager.Services.ClienteService|Iniciando atualização do cliente ID 9 
+2025-03-31 19:57:46.4096|0|WARN|FreteManager.Services.ClienteService|Tentativa de atualizar para e-mail já existente: clientee470f08c-affc-42e9-bfbf-b19bf7efb0ef@teste.com 
+2025-03-31 19:57:46.4096|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|Este e-mail já está sendo usado por outro cliente. FreteManager.Exceptions.BusinessRuleViolationException: Este e-mail já está sendo usado por outro cliente.
+   at FreteManager.Services.ClienteService.AtualizarAsync(Cliente cliente) in C:\dev\FreteManager\FreteManager\Services\ClienteService.cs:line 66
+   at FreteManager.Controllers.ClientesController.PutCliente(Int32 id, Cliente cliente) in C:\dev\FreteManager\FreteManager\Controllers\ClientesController.cs:line 85
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 19:57:46.4265|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 19:57:46.4265|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 19:57:46.4446|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:57:46.4446|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:57:46.4446|0|INFO|FreteManager.Controllers.ClientesController|Requisição POST para criar novo cliente 
+2025-03-31 19:57:46.4446|0|INFO|FreteManager.Services.ClienteService|Iniciando cadastro de novo cliente: Cliente Teste 53ff35a5-0331-4657-9121-11fd3e3ea8b2 
+2025-03-31 19:57:46.4446|0|INFO|FreteManager.Repositories.ClienteRepository|Cliente Cliente Teste 53ff35a5-0331-4657-9121-11fd3e3ea8b2 adicionado com sucesso. ID gerado: 10 
+2025-03-31 19:57:46.4446|0|INFO|FreteManager.Services.ClienteService|Cliente cadastrado com sucesso. ID: 10 
+2025-03-31 19:57:46.4446|0|INFO|FreteManager.Controllers.ClientesController|Cliente criado com ID 10: Cliente Teste 53ff35a5-0331-4657-9121-11fd3e3ea8b2 
+2025-03-31 19:57:46.4639|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 19:57:46.4639|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 19:57:46.4745|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:57:46.4745|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:57:46.4745|0|INFO|FreteManager.Controllers.ClientesController|Requisição POST para criar novo cliente 
+2025-03-31 19:57:46.4745|0|INFO|FreteManager.Services.ClienteService|Iniciando cadastro de novo cliente: Cliente Teste afbcc9ad-faaa-414b-8161-37d8468c02f1 
+2025-03-31 19:57:46.4745|0|INFO|FreteManager.Repositories.ClienteRepository|Cliente Cliente Teste afbcc9ad-faaa-414b-8161-37d8468c02f1 adicionado com sucesso. ID gerado: 11 
+2025-03-31 19:57:46.4745|0|INFO|FreteManager.Services.ClienteService|Cliente cadastrado com sucesso. ID: 11 
+2025-03-31 19:57:46.4745|0|INFO|FreteManager.Controllers.ClientesController|Cliente criado com ID 11: Cliente Teste afbcc9ad-faaa-414b-8161-37d8468c02f1 
+2025-03-31 19:57:46.4745|0|INFO|FreteManager.Controllers.ClientesController|Requisição GET para obter cliente ID 11 
+2025-03-31 19:57:46.4745|0|INFO|FreteManager.Services.ClienteService|Obtendo cliente com ID 11 
+2025-03-31 19:57:46.4745|0|INFO|FreteManager.Controllers.ClientesController|Retornando dados do cliente ID 11: Cliente Teste afbcc9ad-faaa-414b-8161-37d8468c02f1 
+2025-03-31 19:57:48.6835|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Received HTTP response headers after 2462.1474ms - 200 
+2025-03-31 19:57:48.6835|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|End processing HTTP request after 2480.9633ms - 200 
+2025-03-31 19:57:48.6991|0|INFO|FreteManager.Services.FreteService|Frete calculado: Correios - Sedex, Valor: 15.18, Prazo: 1 dias 
+2025-03-31 19:57:48.6991|0|INFO|FreteManager.Services.PedidoService|Frete calculado: ¤15.18 
+2025-03-31 19:57:48.6991|0|INFO|FreteManager.Services.PedidoService|Valor de frete calculado: ¤15.18 
+2025-03-31 19:57:48.8105|0|INFO|FreteManager.Repositories.PedidoRepository|Pedido adicionado com sucesso. ID gerado: 1 
+2025-03-31 19:57:48.8105|0|INFO|FreteManager.Services.PedidoService|Pedido criado com sucesso, ID 1 
+2025-03-31 19:57:48.8105|0|INFO|FreteManager.Controllers.PedidosController|Pedido criado com ID 1 
+2025-03-31 19:57:48.8552|0|INFO|FreteManager.Controllers.PedidosController|Requisição PATCH para atualizar status do pedido ID 1 para Enviado 
+2025-03-31 19:57:48.8552|0|INFO|FreteManager.Services.PedidoService|Atualizando status do pedido ID 1 para Enviado 
+2025-03-31 19:57:48.8552|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Received HTTP response headers after 2640.5226ms - 200 
+2025-03-31 19:57:48.8552|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|End processing HTTP request after 2653.8474ms - 200 
+2025-03-31 19:57:48.8552|0|WARN|FreteManager.Services.FreteService|Nenhuma opção de frete válida disponível 
+2025-03-31 19:57:48.8552|0|WARN|FreteManager.Services.FreteService|Usando cálculo de frete fallback 
+2025-03-31 19:57:48.8628|0|INFO|FreteManager.Controllers.FreteController|Frete calculado de 01000000 para 02000000: ¤27.50 
+2025-03-31 19:57:48.8907|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 19:57:48.8907|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 19:57:48.9026|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:57:48.9026|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:57:48.9026|0|INFO|FreteManager.Controllers.FreteController|Requisição POST para calcular frete de 01000000 para 02000000 
+2025-03-31 19:57:48.9026|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|Start processing HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 19:57:48.9026|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Sending HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 19:57:48.9283|0|INFO|FreteManager.Repositories.PedidoRepository|Pedido ID 1 atualizado com sucesso 
+2025-03-31 19:57:48.9283|0|INFO|FreteManager.Services.PedidoService|Status do pedido 1 atualizado de EmProcessamento para Enviado 
+2025-03-31 19:57:48.9283|0|INFO|FreteManager.Controllers.PedidosController|Status do pedido ID 1 atualizado para Enviado 
+2025-03-31 19:57:48.9283|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 19:57:48.9283|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 19:57:48.9459|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:57:48.9459|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:57:48.9459|0|INFO|FreteManager.Controllers.ClientesController|Requisição GET para listar todos os clientes 
+2025-03-31 19:57:48.9459|0|INFO|FreteManager.Services.ClienteService|Listando todos os clientes 
+2025-03-31 19:57:48.9459|0|INFO|FreteManager.Repositories.ClienteRepository|Recuperados 10 clientes 
+2025-03-31 19:57:48.9459|0|INFO|FreteManager.Controllers.ClientesController|Retornando 10 clientes 
+2025-03-31 19:57:48.9459|0|INFO|FreteManager.Controllers.PedidosController|Requisição POST para criar novo pedido 
+2025-03-31 19:57:48.9459|0|INFO|FreteManager.Services.PedidoService|Iniciando criação de pedido para cliente ID 1 
+2025-03-31 19:57:48.9459|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|Start processing HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 19:57:48.9459|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Sending HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 19:57:49.2826|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Received HTTP response headers after 375.2453ms - 200 
+2025-03-31 19:57:49.2826|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|End processing HTTP request after 375.712ms - 200 
+2025-03-31 19:57:49.2826|0|WARN|FreteManager.Services.FreteService|Nenhuma opção de frete válida disponível 
+2025-03-31 19:57:49.2826|0|WARN|FreteManager.Services.FreteService|Usando cálculo de frete fallback 
+2025-03-31 19:57:49.2826|0|INFO|FreteManager.Controllers.FreteController|Frete calculado de 01000000 para 02000000: ¤27.50 
+2025-03-31 19:57:49.2989|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 19:57:49.2989|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 19:57:49.3091|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:57:49.3091|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:57:49.3091|0|INFO|FreteManager.Controllers.FreteController|Requisição POST para calcular frete de 01000000 para 02000000 
+2025-03-31 19:57:49.3091|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|Start processing HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 19:57:49.3091|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Sending HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 19:57:49.8970|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Received HTTP response headers after 581.8068ms - 200 
+2025-03-31 19:57:49.8970|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|End processing HTTP request after 582.6141ms - 200 
+2025-03-31 19:57:49.8970|0|WARN|FreteManager.Services.FreteService|Nenhuma opção de frete válida disponível 
+2025-03-31 19:57:49.8970|0|WARN|FreteManager.Services.FreteService|Usando cálculo de frete fallback 
+2025-03-31 19:57:49.8970|0|INFO|FreteManager.Controllers.FreteController|Frete calculado de 01000000 para 02000000: ¤47.50 
+2025-03-31 19:57:50.3788|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Received HTTP response headers after 1424.5693ms - 200 
+2025-03-31 19:57:50.3788|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|End processing HTTP request after 1425.0687ms - 200 
+2025-03-31 19:57:50.3788|0|WARN|FreteManager.Services.FreteService|Nenhuma opção de frete válida disponível 
+2025-03-31 19:57:50.3788|0|WARN|FreteManager.Services.FreteService|Usando cálculo de frete fallback 
+2025-03-31 19:57:50.3788|0|INFO|FreteManager.Services.PedidoService|Frete calculado: ¤18.75 
+2025-03-31 19:57:50.3788|0|INFO|FreteManager.Services.PedidoService|Valor de frete calculado: ¤18.75 
+2025-03-31 19:57:50.3788|0|INFO|FreteManager.Repositories.PedidoRepository|Pedido adicionado com sucesso. ID gerado: 2 
+2025-03-31 19:57:50.3788|0|INFO|FreteManager.Services.PedidoService|Pedido criado com sucesso, ID 2 
+2025-03-31 19:57:50.3788|0|INFO|FreteManager.Controllers.PedidosController|Pedido criado com ID 2 
+2025-03-31 19:57:50.3788|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 19:57:50.3788|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 19:57:50.4036|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:57:50.4036|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:57:50.4036|0|INFO|FreteManager.Controllers.ClientesController|Requisição GET para listar todos os clientes 
+2025-03-31 19:57:50.4036|0|INFO|FreteManager.Services.ClienteService|Listando todos os clientes 
+2025-03-31 19:57:50.4036|0|INFO|FreteManager.Repositories.ClienteRepository|Recuperados 10 clientes 
+2025-03-31 19:57:50.4036|0|INFO|FreteManager.Controllers.ClientesController|Retornando 10 clientes 
+2025-03-31 19:57:50.4192|0|INFO|FreteManager.Controllers.PedidosController|Requisição GET para listar todos os pedidos 
+2025-03-31 19:57:50.4192|0|INFO|FreteManager.Services.PedidoService|Listando todos os pedidos 
+2025-03-31 19:57:50.4480|0|INFO|FreteManager.Repositories.PedidoRepository|Recuperados 2 pedidos do banco de dados 
+2025-03-31 19:57:50.4480|0|INFO|FreteManager.Controllers.PedidosController|Retornando 2 pedidos 
+2025-03-31 19:58:06.1367|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 19:58:06.1367|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 19:58:06.3722|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 19:58:06.3788|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 19:58:06.4784|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:58:06.4784|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:58:06.4784|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:58:06.4784|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:58:06.5907|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:06.5907|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:06.5907|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:06.5907|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:06.6823|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:58:06.6823|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:58:06.6935|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:06.6935|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:06.6935|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:58:06.6935|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:58:06.7073|0|INFO|FreteManager.Controllers.ClientesController|Requisição GET para listar todos os clientes 
+2025-03-31 19:58:06.7073|0|INFO|FreteManager.Services.ClienteService|Listando todos os clientes 
+2025-03-31 19:58:06.7261|0|INFO|FreteManager.Repositories.ClienteRepository|Recuperados 2 clientes 
+2025-03-31 19:58:06.7261|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:06.7261|0|INFO|FreteManager.Controllers.ClientesController|Retornando 2 clientes 
+2025-03-31 19:58:06.7261|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:06.7406|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:58:06.7406|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:58:06.7406|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:58:06.7406|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:58:06.7673|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:06.7673|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:06.7673|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:06.7673|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:06.7725|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:58:06.7725|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:58:06.7725|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:58:06.7725|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:58:06.7908|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:06.7908|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:06.7908|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:58:06.7908|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:58:06.8007|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:06.8007|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:06.8193|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:06.8193|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:06.8405|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:58:06.8405|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:58:06.8577|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:06.8577|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:06.9003|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:58:06.9003|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:58:06.9138|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:06.9138|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:06.9585|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:58:06.9585|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:58:06.9585|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:58:06.9585|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:58:06.9744|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:06.9744|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:06.9744|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:06.9744|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:06.9744|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:58:06.9744|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:58:06.9983|0|INFO|FreteManager.Controllers.ClientesController|Requisição POST para criar novo cliente 
+2025-03-31 19:58:06.9983|0|INFO|FreteManager.Services.ClienteService|Iniciando cadastro de novo cliente: Cliente Teste 45866b34-d05b-4685-be2b-2358b19e899f 
+2025-03-31 19:58:06.9983|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:06.9983|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:07.0180|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:58:07.0180|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:58:07.0336|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:07.0339|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:07.0339|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:58:07.0339|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:58:07.0598|0|INFO|FreteManager.Repositories.ClienteRepository|Cliente Cliente Teste 45866b34-d05b-4685-be2b-2358b19e899f adicionado com sucesso. ID gerado: 3 
+2025-03-31 19:58:07.0598|0|INFO|FreteManager.Services.ClienteService|Cliente cadastrado com sucesso. ID: 3 
+2025-03-31 19:58:07.0598|0|INFO|FreteManager.Controllers.ClientesController|Cliente criado com ID 3: Cliente Teste 45866b34-d05b-4685-be2b-2358b19e899f 
+2025-03-31 19:58:07.0598|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:07.0598|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:07.0739|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:58:07.0739|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:58:07.0896|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:07.0896|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:07.1236|0|INFO|FreteManager.Controllers.ClientesController|Requisição GET para obter cliente ID 3 
+2025-03-31 19:58:07.1236|0|INFO|FreteManager.Services.ClienteService|Obtendo cliente com ID 3 
+2025-03-31 19:58:07.1428|0|INFO|FreteManager.Controllers.ClientesController|Retornando dados do cliente ID 3: Cliente Teste 45866b34-d05b-4685-be2b-2358b19e899f 
+2025-03-31 19:58:07.1558|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:58:07.1558|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:58:07.1596|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:58:07.1596|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:58:07.1596|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:07.1596|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:07.1828|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:07.1828|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:07.1828|0|INFO|FreteManager.Controllers.ClientesController|Requisição POST para criar novo cliente 
+2025-03-31 19:58:07.1828|0|INFO|FreteManager.Services.ClienteService|Iniciando cadastro de novo cliente: Cliente Pedido da789d59-3113-4d45-b6d2-069dd3068339 
+2025-03-31 19:58:07.1828|0|INFO|FreteManager.Repositories.ClienteRepository|Cliente Cliente Pedido da789d59-3113-4d45-b6d2-069dd3068339 adicionado com sucesso. ID gerado: 4 
+2025-03-31 19:58:07.1828|0|INFO|FreteManager.Services.ClienteService|Cliente cadastrado com sucesso. ID: 4 
+2025-03-31 19:58:07.1828|0|INFO|FreteManager.Controllers.ClientesController|Cliente criado com ID 4: Cliente Pedido da789d59-3113-4d45-b6d2-069dd3068339 
+2025-03-31 19:58:07.2011|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:58:07.2011|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:58:07.2129|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:07.2129|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:07.2129|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:58:07.2129|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:58:07.2369|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:07.2369|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:07.2369|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:58:07.2369|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:58:07.2534|0|INFO|FreteManager.Controllers.PedidosController|Requisição POST para criar novo pedido 
+2025-03-31 19:58:07.2534|0|INFO|FreteManager.Services.PedidoService|Iniciando criação de pedido para cliente ID 4 
+2025-03-31 19:58:07.2534|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:07.2534|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:07.2534|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:58:07.2534|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:58:07.2722|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:07.2722|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:58:07.3035|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|Start processing HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 19:58:07.3035|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Sending HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 19:58:08.6536|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Received HTTP response headers after 1340.1945ms - 200 
+2025-03-31 19:58:08.6536|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|End processing HTTP request after 1362.1858ms - 200 
+2025-03-31 19:58:08.6684|0|WARN|FreteManager.Services.FreteService|Nenhuma opção de frete válida disponível 
+2025-03-31 19:58:08.6684|0|WARN|FreteManager.Services.FreteService|Usando cálculo de frete fallback 
+2025-03-31 19:58:08.6684|0|INFO|FreteManager.Services.PedidoService|Frete calculado: ¤27.50 
+2025-03-31 19:58:08.6748|0|INFO|FreteManager.Services.PedidoService|Valor de frete calculado: ¤27.50 
+2025-03-31 19:58:08.7714|0|INFO|FreteManager.Repositories.PedidoRepository|Pedido adicionado com sucesso. ID gerado: 1 
+2025-03-31 19:58:08.7714|0|INFO|FreteManager.Services.PedidoService|Pedido criado com sucesso, ID 1 
+2025-03-31 19:58:08.7714|0|INFO|FreteManager.Controllers.PedidosController|Pedido criado com ID 1 
+2025-03-31 19:58:08.8077|0|INFO|FreteManager.Controllers.PedidosController|Requisição GET para obter pedido ID 1 
+2025-03-31 19:58:08.8077|0|INFO|FreteManager.Services.PedidoService|Obtendo detalhes do pedido ID 1 
+2025-03-31 19:58:08.8667|0|INFO|FreteManager.Controllers.PedidosController|Retornando dados do pedido ID 1 
+2025-03-31 20:00:10.5120|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 20:00:10.5120|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 20:00:10.7738|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 20:00:10.7738|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 20:00:10.9282|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 20:00:10.9282|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 20:00:10.9282|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 20:00:11.6797|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 20:00:11.7558|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 20:00:11.7558|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 20:00:11.7558|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 20:00:11.7558|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 20:00:11.7558|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 20:00:11.7558|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 20:00:11.7558|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 20:00:11.7807|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 20:00:11.7807|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 20:00:11.7807|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:11.7807|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:11.7807|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 20:00:11.7807|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 20:00:11.7892|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: naoexiste@teste.com 
+2025-03-31 20:00:11.7892|0|INFO|AuthService|Tentativa de login: naoexiste@teste.com 
+2025-03-31 20:00:11.8059|0|WARN|AuthService|Tentativa de login com email não cadastrado: naoexiste@teste.com 
+2025-03-31 20:00:11.8059|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|A entidade Usuário com ID naoexiste@teste.com não foi encontrada. FreteManager.Exceptions.EntityNotFoundException: A entidade Usuário com ID naoexiste@teste.com não foi encontrada.
+   at AuthService.LoginAsync(LoginRequest model) in C:\dev\FreteManager\FreteManager\Services\AuthService.cs:line 64
+   at FreteManager.Controllers.AuthController.Login(LoginRequest model) in C:\dev\FreteManager\FreteManager\Controllers\AuthController.cs:line 53
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 20:00:11.8385|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 20:00:11.8526|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 20:00:11.8526|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 20:00:11.8686|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 20:00:11.8686|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 20:00:30.3267|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 20:00:30.3267|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 20:00:30.3267|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 20:00:30.3267|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 20:00:30.6318|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 20:00:30.6318|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 20:00:30.6318|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 20:00:30.6318|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 20:00:30.7322|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 20:00:30.7322|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: naoexiste@teste.com 
+2025-03-31 20:00:30.7322|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 20:00:30.7322|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 20:00:30.7322|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 20:00:30.7322|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 20:00:30.7322|0|INFO|AuthService|Tentativa de login: naoexiste@teste.com 
+2025-03-31 20:00:30.7322|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 20:00:30.8219|0|WARN|AuthService|Tentativa de login com email não cadastrado: naoexiste@teste.com 
+2025-03-31 20:00:30.8219|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|A entidade Usuário com ID naoexiste@teste.com não foi encontrada. FreteManager.Exceptions.EntityNotFoundException: A entidade Usuário com ID naoexiste@teste.com não foi encontrada.
+   at AuthService.LoginAsync(LoginRequest model) in C:\dev\FreteManager\FreteManager\Services\AuthService.cs:line 64
+   at FreteManager.Controllers.AuthController.Login(LoginRequest model) in C:\dev\FreteManager\FreteManager\Controllers\AuthController.cs:line 53
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 20:00:30.8663|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 20:00:30.8663|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 20:00:30.8663|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 20:00:30.8663|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 20:00:30.8663|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 20:00:30.8663|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 20:00:30.9342|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 20:00:30.9342|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 20:00:30.9725|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 20:00:30.9725|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 20:00:30.9882|0|INFO|FreteManager.Controllers.ClientesController|Requisição GET para listar todos os clientes 
+2025-03-31 20:00:30.9882|0|INFO|FreteManager.Controllers.ClientesController|Requisição GET para obter cliente ID 999999 
+2025-03-31 20:00:30.9882|0|INFO|FreteManager.Services.ClienteService|Obtendo cliente com ID 999999 
+2025-03-31 20:00:31.0091|0|INFO|FreteManager.Services.ClienteService|Listando todos os clientes 
+2025-03-31 20:00:31.0213|0|INFO|FreteManager.Controllers.FreteController|Requisição POST para calcular frete de 01000000 para INVALIDO 
+2025-03-31 20:00:31.0213|0|WARN|FreteManager.Controllers.FreteController|CEP de origem ou destino inválido 
+2025-03-31 20:00:31.0213|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para registrar usuário: usuario888bd336-0f85-4e0b-a230-6e6947131936@teste.com 
+2025-03-31 20:00:31.0341|0|INFO|AuthService|Iniciando registro de novo usuário: usuario888bd336-0f85-4e0b-a230-6e6947131936@teste.com 
+2025-03-31 20:00:31.0690|0|WARN|FreteManager.Repositories.ClienteRepository|Cliente com ID 999999 não encontrado 
+2025-03-31 20:00:31.0690|0|INFO|FreteManager.Repositories.ClienteRepository|Recuperados 4 clientes 
+2025-03-31 20:00:31.0690|0|INFO|FreteManager.Controllers.ClientesController|Retornando 4 clientes 
+2025-03-31 20:00:31.0690|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|A entidade Cliente com ID 999999 não foi encontrada. FreteManager.Exceptions.EntityNotFoundException: A entidade Cliente com ID 999999 não foi encontrada.
+   at FreteManager.Repositories.ClienteRepository.ObterPorIdAsync(Int32 id) in C:\dev\FreteManager\FreteManager\Repositories\ClienteRepository.cs:line 28
+   at FreteManager.Services.ClienteService.ObterPorIdAsync(Int32 id) in C:\dev\FreteManager\FreteManager\Services\ClienteService.cs:line 23
+   at FreteManager.Controllers.ClientesController.GetCliente(Int32 id) in C:\dev\FreteManager\FreteManager\Controllers\ClientesController.cs:line 41
+   at lambda_method549(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 20:00:31.0690|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 20:00:31.0690|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 20:00:31.0884|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 20:00:31.0884|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 20:00:31.0884|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 20:00:31.0884|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 20:00:31.0966|0|INFO|AuthService|Usuário usuario888bd336-0f85-4e0b-a230-6e6947131936@teste.com registrado com sucesso. ID: 9 
+2025-03-31 20:00:31.0966|0|INFO|FreteManager.Controllers.AuthController|Usuário registrado com sucesso: usuario888bd336-0f85-4e0b-a230-6e6947131936@teste.com, ID: 9 
+2025-03-31 20:00:31.0966|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 20:00:31.0966|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 20:00:31.1329|0|INFO|FreteManager.Controllers.FreteController|Requisição POST para calcular frete de INVALIDO para 02000000 
+2025-03-31 20:00:31.1329|0|WARN|FreteManager.Controllers.FreteController|CEP de origem ou destino inválido 
+2025-03-31 20:00:31.1486|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 20:00:31.1486|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 20:00:31.1486|0|INFO|FreteManager.Controllers.ClientesController|Requisição POST para criar novo cliente 
+2025-03-31 20:00:31.1486|0|INFO|FreteManager.Services.ClienteService|Iniciando cadastro de novo cliente: Cliente Teste 4a990392-4dd0-4e97-a0be-5b9ab58f0163 
+2025-03-31 20:00:31.1612|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 20:00:31.1612|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 20:00:31.1612|0|INFO|FreteManager.Repositories.ClienteRepository|Cliente Cliente Teste 4a990392-4dd0-4e97-a0be-5b9ab58f0163 adicionado com sucesso. ID gerado: 5 
+2025-03-31 20:00:31.1612|0|INFO|FreteManager.Services.ClienteService|Cliente cadastrado com sucesso. ID: 5 
+2025-03-31 20:00:31.1612|0|INFO|FreteManager.Controllers.ClientesController|Cliente criado com ID 5: Cliente Teste 4a990392-4dd0-4e97-a0be-5b9ab58f0163 
+2025-03-31 20:00:31.2036|0|INFO|FreteManager.Controllers.PedidosController|Requisição POST para criar novo pedido 
+2025-03-31 20:00:31.2036|0|INFO|FreteManager.Services.PedidoService|Iniciando criação de pedido para cliente ID 999999 
+2025-03-31 20:00:31.2316|0|WARN|FreteManager.Repositories.ClienteRepository|Cliente com ID 999999 não encontrado 
+2025-03-31 20:00:31.2316|0|WARN|FreteManager.Services.PedidoService|Tentativa de criar pedido para cliente inexistente ID 999999 
+2025-03-31 20:00:31.2316|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|A entidade Cliente com ID 999999 não foi encontrada. FreteManager.Exceptions.EntityNotFoundException: A entidade Cliente com ID 999999 não foi encontrada.
+   at FreteManager.Services.PedidoService.CriarAsync(CriarPedidoDTO pedidoDTO) in C:\dev\FreteManager\FreteManager\Services\PedidoService.cs:line 62
+   at FreteManager.Controllers.PedidosController.PostPedido(CriarPedidoDTO pedidoDTO) in C:\dev\FreteManager\FreteManager\Controllers\PedidosController.cs:line 75
+   at lambda_method613(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 20:00:31.2503|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 20:00:31.2503|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 20:00:31.2636|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 20:00:31.2636|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 20:00:31.2636|0|INFO|FreteManager.Controllers.FreteController|Requisição POST para calcular frete de 01000000 para 02000000 
+2025-03-31 20:00:31.2636|0|WARN|FreteManager.Controllers.FreteController|Nenhum pacote informado 
+2025-03-31 20:00:31.2792|0|INFO|FreteManager.Controllers.ClientesController|Requisição PUT para atualizar cliente ID 5 
+2025-03-31 20:00:31.2792|0|INFO|FreteManager.Services.ClienteService|Iniciando atualização do cliente ID 5 
+2025-03-31 20:00:31.2873|0|INFO|FreteManager.Repositories.ClienteRepository|Cliente ID 5 atualizado com sucesso 
+2025-03-31 20:00:31.2873|0|INFO|FreteManager.Services.ClienteService|Cliente ID 5 atualizado com sucesso 
+2025-03-31 20:00:31.2873|0|INFO|FreteManager.Controllers.ClientesController|Cliente ID 5 atualizado com sucesso 
+2025-03-31 20:00:31.2873|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 20:00:31.2873|0|INFO|FreteManager.Controllers.ClientesController|Requisição GET para listar todos os clientes 
+2025-03-31 20:00:31.2873|0|INFO|FreteManager.Services.ClienteService|Listando todos os clientes 
+2025-03-31 20:00:31.2873|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 20:00:31.2873|0|INFO|FreteManager.Repositories.ClienteRepository|Recuperados 5 clientes 
+2025-03-31 20:00:31.2873|0|INFO|FreteManager.Controllers.ClientesController|Retornando 5 clientes 
+2025-03-31 20:00:31.2873|0|INFO|FreteManager.Controllers.ClientesController|Requisição GET para obter cliente ID 5 
+2025-03-31 20:00:31.2873|0|INFO|FreteManager.Services.ClienteService|Obtendo cliente com ID 5 
+2025-03-31 20:00:31.2873|0|INFO|FreteManager.Controllers.ClientesController|Retornando dados do cliente ID 5: Cliente Atualizado 
+2025-03-31 20:00:31.2873|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 20:00:31.2873|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 20:00:31.3076|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 20:00:31.3076|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 20:00:31.3076|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 20:00:31.3076|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 20:00:31.3076|0|INFO|FreteManager.Controllers.PedidosController|Requisição POST para criar novo pedido 
+2025-03-31 20:00:31.3076|0|INFO|FreteManager.Services.PedidoService|Iniciando criação de pedido para cliente ID 3 
+2025-03-31 20:00:31.3233|0|INFO|FreteManager.Controllers.FreteController|Requisição POST para calcular frete de 01000000 para 02000000 
+2025-03-31 20:00:31.3233|0|INFO|FreteManager.Controllers.ClientesController|Requisição GET para listar todos os clientes 
+2025-03-31 20:00:31.3312|0|INFO|FreteManager.Services.ClienteService|Listando todos os clientes 
+2025-03-31 20:00:31.3312|0|INFO|FreteManager.Repositories.ClienteRepository|Recuperados 5 clientes 
+2025-03-31 20:00:31.3312|0|INFO|FreteManager.Controllers.ClientesController|Retornando 5 clientes 
+2025-03-31 20:00:31.3312|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 20:00:31.3312|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 20:00:31.3476|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|Start processing HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 20:00:31.3476|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|Start processing HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 20:00:31.3476|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Sending HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 20:00:31.3476|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Sending HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 20:00:31.3476|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 20:00:31.3476|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 20:00:31.3476|0|INFO|FreteManager.Controllers.ClientesController|Requisição POST para criar novo cliente 
+2025-03-31 20:00:31.3476|0|INFO|FreteManager.Services.ClienteService|Iniciando cadastro de novo cliente: Cliente Teste 6c7302c5-335e-4763-93fa-4717f2659736 
+2025-03-31 20:00:31.3476|0|INFO|FreteManager.Repositories.ClienteRepository|Cliente Cliente Teste 6c7302c5-335e-4763-93fa-4717f2659736 adicionado com sucesso. ID gerado: 6 
+2025-03-31 20:00:31.3476|0|INFO|FreteManager.Services.ClienteService|Cliente cadastrado com sucesso. ID: 6 
+2025-03-31 20:00:31.3476|0|INFO|FreteManager.Controllers.ClientesController|Cliente criado com ID 6: Cliente Teste 6c7302c5-335e-4763-93fa-4717f2659736 
+2025-03-31 20:00:31.3748|0|INFO|FreteManager.Controllers.ClientesController|Requisição DELETE para excluir cliente ID 6 
+2025-03-31 20:00:31.3748|0|INFO|FreteManager.Services.ClienteService|Iniciando exclusão do cliente ID 6 
+2025-03-31 20:00:31.3882|0|INFO|FreteManager.Repositories.ClienteRepository|Cliente ID 6 excluído com sucesso 
+2025-03-31 20:00:31.3882|0|INFO|FreteManager.Services.ClienteService|Cliente ID 6 excluído com sucesso 
+2025-03-31 20:00:31.3882|0|INFO|FreteManager.Controllers.ClientesController|Cliente ID 6 excluído com sucesso 
+2025-03-31 20:00:31.3947|0|INFO|FreteManager.Controllers.ClientesController|Requisição GET para obter cliente ID 6 
+2025-03-31 20:00:31.3947|0|INFO|FreteManager.Services.ClienteService|Obtendo cliente com ID 6 
+2025-03-31 20:00:31.3947|0|WARN|FreteManager.Repositories.ClienteRepository|Cliente com ID 6 não encontrado 
+2025-03-31 20:00:31.3947|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|A entidade Cliente com ID 6 não foi encontrada. FreteManager.Exceptions.EntityNotFoundException: A entidade Cliente com ID 6 não foi encontrada.
+   at FreteManager.Repositories.ClienteRepository.ObterPorIdAsync(Int32 id) in C:\dev\FreteManager\FreteManager\Repositories\ClienteRepository.cs:line 28
+   at FreteManager.Services.ClienteService.ObterPorIdAsync(Int32 id) in C:\dev\FreteManager\FreteManager\Services\ClienteService.cs:line 23
+   at FreteManager.Controllers.ClientesController.GetCliente(Int32 id) in C:\dev\FreteManager\FreteManager\Controllers\ClientesController.cs:line 41
+   at lambda_method549(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 20:00:31.3947|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 20:00:31.3947|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 20:00:31.4123|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 20:00:31.4123|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 20:00:31.4123|0|INFO|FreteManager.Controllers.ClientesController|Requisição POST para criar novo cliente 
+2025-03-31 20:00:31.4123|0|INFO|FreteManager.Services.ClienteService|Iniciando cadastro de novo cliente: Cliente Teste b1a96b0e-c670-4875-9ec2-c3719ad2eb1a 
+2025-03-31 20:00:31.4123|0|INFO|FreteManager.Repositories.ClienteRepository|Cliente Cliente Teste b1a96b0e-c670-4875-9ec2-c3719ad2eb1a adicionado com sucesso. ID gerado: 7 
+2025-03-31 20:00:31.4123|0|INFO|FreteManager.Services.ClienteService|Cliente cadastrado com sucesso. ID: 7 
+2025-03-31 20:00:31.4123|0|INFO|FreteManager.Controllers.ClientesController|Cliente criado com ID 7: Cliente Teste b1a96b0e-c670-4875-9ec2-c3719ad2eb1a 
+2025-03-31 20:00:31.4123|0|INFO|FreteManager.Controllers.ClientesController|Requisição POST para criar novo cliente 
+2025-03-31 20:00:31.4123|0|INFO|FreteManager.Services.ClienteService|Iniciando cadastro de novo cliente: Cliente Teste 4d9abaff-1d87-4f55-8ea7-03b88bf69e02 
+2025-03-31 20:00:31.4123|0|WARN|FreteManager.Services.ClienteService|Tentativa de cadastro com e-mail já existente: cliente7439a940-a42f-4994-9770-6a06a9241449@teste.com 
+2025-03-31 20:00:31.4123|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|Este e-mail já está cadastrado. FreteManager.Exceptions.BusinessRuleViolationException: Este e-mail já está cadastrado.
+   at FreteManager.Services.ClienteService.CadastrarAsync(Cliente cliente) in C:\dev\FreteManager\FreteManager\Services\ClienteService.cs:line 48
+   at FreteManager.Controllers.ClientesController.PostCliente(Cliente cliente) in C:\dev\FreteManager\FreteManager\Controllers\ClientesController.cs:line 60
+   at lambda_method628(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 20:00:31.4274|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 20:00:31.4274|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 20:00:31.4274|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 20:00:31.4274|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 20:00:31.4444|0|INFO|FreteManager.Controllers.ClientesController|Requisição POST para criar novo cliente 
+2025-03-31 20:00:31.4444|0|INFO|FreteManager.Services.ClienteService|Iniciando cadastro de novo cliente: Cliente Teste 87602982-d0d9-4513-a24e-a45c93115f6f 
+2025-03-31 20:00:31.4444|0|INFO|FreteManager.Repositories.ClienteRepository|Cliente Cliente Teste 87602982-d0d9-4513-a24e-a45c93115f6f adicionado com sucesso. ID gerado: 8 
+2025-03-31 20:00:31.4444|0|INFO|FreteManager.Services.ClienteService|Cliente cadastrado com sucesso. ID: 8 
+2025-03-31 20:00:31.4444|0|INFO|FreteManager.Controllers.ClientesController|Cliente criado com ID 8: Cliente Teste 87602982-d0d9-4513-a24e-a45c93115f6f 
+2025-03-31 20:00:31.4444|0|INFO|FreteManager.Controllers.ClientesController|Requisição POST para criar novo cliente 
+2025-03-31 20:00:31.4444|0|INFO|FreteManager.Services.ClienteService|Iniciando cadastro de novo cliente: Cliente Teste bc44ed4e-e231-4a20-af71-0b0ac064acba 
+2025-03-31 20:00:31.4444|0|INFO|FreteManager.Repositories.ClienteRepository|Cliente Cliente Teste bc44ed4e-e231-4a20-af71-0b0ac064acba adicionado com sucesso. ID gerado: 9 
+2025-03-31 20:00:31.4444|0|INFO|FreteManager.Services.ClienteService|Cliente cadastrado com sucesso. ID: 9 
+2025-03-31 20:00:31.4444|0|INFO|FreteManager.Controllers.ClientesController|Cliente criado com ID 9: Cliente Teste bc44ed4e-e231-4a20-af71-0b0ac064acba 
+2025-03-31 20:00:31.4444|0|INFO|FreteManager.Controllers.ClientesController|Requisição PUT para atualizar cliente ID 9 
+2025-03-31 20:00:31.4444|0|INFO|FreteManager.Services.ClienteService|Iniciando atualização do cliente ID 9 
+2025-03-31 20:00:31.4444|0|WARN|FreteManager.Services.ClienteService|Tentativa de atualizar para e-mail já existente: cliente57c90c06-ef2b-48a1-95b8-4d6e0084151e@teste.com 
+2025-03-31 20:00:31.4561|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|Este e-mail já está sendo usado por outro cliente. FreteManager.Exceptions.BusinessRuleViolationException: Este e-mail já está sendo usado por outro cliente.
+   at FreteManager.Services.ClienteService.AtualizarAsync(Cliente cliente) in C:\dev\FreteManager\FreteManager\Services\ClienteService.cs:line 66
+   at FreteManager.Controllers.ClientesController.PutCliente(Int32 id, Cliente cliente) in C:\dev\FreteManager\FreteManager\Controllers\ClientesController.cs:line 85
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 20:00:31.4561|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 20:00:31.4561|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 20:00:31.4737|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 20:00:31.4737|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 20:00:31.4737|0|INFO|FreteManager.Controllers.ClientesController|Requisição POST para criar novo cliente 
+2025-03-31 20:00:31.4737|0|INFO|FreteManager.Services.ClienteService|Iniciando cadastro de novo cliente: Cliente Teste 62c4cef3-106b-41df-bb18-2b8135112b7d 
+2025-03-31 20:00:31.4737|0|INFO|FreteManager.Repositories.ClienteRepository|Cliente Cliente Teste 62c4cef3-106b-41df-bb18-2b8135112b7d adicionado com sucesso. ID gerado: 10 
+2025-03-31 20:00:31.4737|0|INFO|FreteManager.Services.ClienteService|Cliente cadastrado com sucesso. ID: 10 
+2025-03-31 20:00:31.4737|0|INFO|FreteManager.Controllers.ClientesController|Cliente criado com ID 10: Cliente Teste 62c4cef3-106b-41df-bb18-2b8135112b7d 
+2025-03-31 20:00:31.4737|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 20:00:31.4737|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 20:00:31.4986|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 20:00:31.4986|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 20:00:31.5050|0|INFO|FreteManager.Controllers.ClientesController|Requisição POST para criar novo cliente 
+2025-03-31 20:00:31.5050|0|INFO|FreteManager.Services.ClienteService|Iniciando cadastro de novo cliente: Cliente Teste c331a5d0-27b8-4e88-9550-643c05565bd6 
+2025-03-31 20:00:31.5050|0|INFO|FreteManager.Repositories.ClienteRepository|Cliente Cliente Teste c331a5d0-27b8-4e88-9550-643c05565bd6 adicionado com sucesso. ID gerado: 11 
+2025-03-31 20:00:31.5050|0|INFO|FreteManager.Services.ClienteService|Cliente cadastrado com sucesso. ID: 11 
+2025-03-31 20:00:31.5050|0|INFO|FreteManager.Controllers.ClientesController|Cliente criado com ID 11: Cliente Teste c331a5d0-27b8-4e88-9550-643c05565bd6 
+2025-03-31 20:00:31.5050|0|INFO|FreteManager.Controllers.ClientesController|Requisição GET para obter cliente ID 11 
+2025-03-31 20:00:31.5050|0|INFO|FreteManager.Services.ClienteService|Obtendo cliente com ID 11 
+2025-03-31 20:00:31.5050|0|INFO|FreteManager.Controllers.ClientesController|Retornando dados do cliente ID 11: Cliente Teste c331a5d0-27b8-4e88-9550-643c05565bd6 
+2025-03-31 20:00:32.4808|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Received HTTP response headers after 1123.4325ms - 200 
+2025-03-31 20:00:32.4808|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|End processing HTTP request after 1144.329ms - 200 
+2025-03-31 20:00:32.4961|0|INFO|FreteManager.Services.FreteService|Frete calculado: Correios - Sedex, Valor: 15.18, Prazo: 1 dias 
+2025-03-31 20:00:32.4961|0|INFO|FreteManager.Services.PedidoService|Frete calculado: ¤15.18 
+2025-03-31 20:00:32.4961|0|INFO|FreteManager.Services.PedidoService|Valor de frete calculado: ¤15.18 
+2025-03-31 20:00:32.5630|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Received HTTP response headers after 1209.9113ms - 200 
+2025-03-31 20:00:32.5630|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|End processing HTTP request after 1225.7034ms - 200 
+2025-03-31 20:00:32.5630|0|WARN|FreteManager.Services.FreteService|Nenhuma opção de frete válida disponível 
+2025-03-31 20:00:32.5630|0|WARN|FreteManager.Services.FreteService|Usando cálculo de frete fallback 
+2025-03-31 20:00:32.5680|0|INFO|FreteManager.Controllers.FreteController|Frete calculado de 01000000 para 02000000: ¤27.50 
+2025-03-31 20:00:32.5836|0|INFO|FreteManager.Repositories.PedidoRepository|Pedido adicionado com sucesso. ID gerado: 1 
+2025-03-31 20:00:32.5836|0|INFO|FreteManager.Services.PedidoService|Pedido criado com sucesso, ID 1 
+2025-03-31 20:00:32.5836|0|INFO|FreteManager.Controllers.PedidosController|Pedido criado com ID 1 
+2025-03-31 20:00:32.6037|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 20:00:32.6037|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 20:00:32.6149|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 20:00:32.6149|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 20:00:32.6149|0|INFO|FreteManager.Controllers.FreteController|Requisição POST para calcular frete de 01000000 para 02000000 
+2025-03-31 20:00:32.6149|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|Start processing HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 20:00:32.6149|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Sending HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 20:00:32.6288|0|INFO|FreteManager.Controllers.PedidosController|Requisição PATCH para atualizar status do pedido ID 1 para Enviado 
+2025-03-31 20:00:32.6288|0|INFO|FreteManager.Services.PedidoService|Atualizando status do pedido ID 1 para Enviado 
+2025-03-31 20:00:32.6819|0|INFO|FreteManager.Repositories.PedidoRepository|Pedido ID 1 atualizado com sucesso 
+2025-03-31 20:00:32.6819|0|INFO|FreteManager.Services.PedidoService|Status do pedido 1 atualizado de EmProcessamento para Enviado 
+2025-03-31 20:00:32.6819|0|INFO|FreteManager.Controllers.PedidosController|Status do pedido ID 1 atualizado para Enviado 
+2025-03-31 20:00:32.6906|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 20:00:32.6906|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 20:00:32.6906|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 20:00:32.6906|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 20:00:32.6906|0|INFO|FreteManager.Controllers.ClientesController|Requisição GET para listar todos os clientes 
+2025-03-31 20:00:32.6906|0|INFO|FreteManager.Services.ClienteService|Listando todos os clientes 
+2025-03-31 20:00:32.6906|0|INFO|FreteManager.Repositories.ClienteRepository|Recuperados 10 clientes 
+2025-03-31 20:00:32.6906|0|INFO|FreteManager.Controllers.ClientesController|Retornando 10 clientes 
+2025-03-31 20:00:32.7085|0|INFO|FreteManager.Controllers.PedidosController|Requisição POST para criar novo pedido 
+2025-03-31 20:00:32.7085|0|INFO|FreteManager.Services.PedidoService|Iniciando criação de pedido para cliente ID 3 
+2025-03-31 20:00:32.7085|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|Start processing HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 20:00:32.7085|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Sending HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 20:00:32.9971|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Received HTTP response headers after 375.4751ms - 200 
+2025-03-31 20:00:32.9971|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|End processing HTTP request after 376.618ms - 200 
+2025-03-31 20:00:32.9971|0|WARN|FreteManager.Services.FreteService|Nenhuma opção de frete válida disponível 
+2025-03-31 20:00:32.9971|0|WARN|FreteManager.Services.FreteService|Usando cálculo de frete fallback 
+2025-03-31 20:00:32.9971|0|INFO|FreteManager.Controllers.FreteController|Frete calculado de 01000000 para 02000000: ¤27.50 
+2025-03-31 20:00:33.0112|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 20:00:33.0112|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 20:00:33.0212|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 20:00:33.0212|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 20:00:33.0212|0|INFO|FreteManager.Controllers.FreteController|Requisição POST para calcular frete de 01000000 para 02000000 
+2025-03-31 20:00:33.0212|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|Start processing HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 20:00:33.0212|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Sending HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 20:00:33.0734|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Received HTTP response headers after 363.3829ms - 200 
+2025-03-31 20:00:33.0734|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|End processing HTTP request after 363.7545ms - 200 
+2025-03-31 20:00:33.0734|0|WARN|FreteManager.Services.FreteService|Nenhuma opção de frete válida disponível 
+2025-03-31 20:00:33.0734|0|WARN|FreteManager.Services.FreteService|Usando cálculo de frete fallback 
+2025-03-31 20:00:33.0734|0|INFO|FreteManager.Services.PedidoService|Frete calculado: ¤18.75 
+2025-03-31 20:00:33.0734|0|INFO|FreteManager.Services.PedidoService|Valor de frete calculado: ¤18.75 
+2025-03-31 20:00:33.0734|0|INFO|FreteManager.Repositories.PedidoRepository|Pedido adicionado com sucesso. ID gerado: 2 
+2025-03-31 20:00:33.0734|0|INFO|FreteManager.Services.PedidoService|Pedido criado com sucesso, ID 2 
+2025-03-31 20:00:33.0734|0|INFO|FreteManager.Controllers.PedidosController|Pedido criado com ID 2 
+2025-03-31 20:00:33.0734|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 20:00:33.0734|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 20:00:33.0910|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 20:00:33.0910|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 20:00:33.0910|0|INFO|FreteManager.Controllers.ClientesController|Requisição GET para listar todos os clientes 
+2025-03-31 20:00:33.0910|0|INFO|FreteManager.Services.ClienteService|Listando todos os clientes 
+2025-03-31 20:00:33.0910|0|INFO|FreteManager.Repositories.ClienteRepository|Recuperados 10 clientes 
+2025-03-31 20:00:33.0910|0|INFO|FreteManager.Controllers.ClientesController|Retornando 10 clientes 
+2025-03-31 20:00:33.1032|0|INFO|FreteManager.Controllers.PedidosController|Requisição GET para listar todos os pedidos 
+2025-03-31 20:00:33.1032|0|INFO|FreteManager.Services.PedidoService|Listando todos os pedidos 
+2025-03-31 20:00:33.1318|0|INFO|FreteManager.Repositories.PedidoRepository|Recuperados 2 pedidos do banco de dados 
+2025-03-31 20:00:33.1318|0|INFO|FreteManager.Controllers.PedidosController|Retornando 2 pedidos 
+2025-03-31 20:00:33.4083|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Received HTTP response headers after 381.0522ms - 200 
+2025-03-31 20:00:33.4083|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|End processing HTTP request after 381.4768ms - 200 
+2025-03-31 20:00:33.4083|0|WARN|FreteManager.Services.FreteService|Nenhuma opção de frete válida disponível 
+2025-03-31 20:00:33.4083|0|WARN|FreteManager.Services.FreteService|Usando cálculo de frete fallback 
+2025-03-31 20:00:33.4083|0|INFO|FreteManager.Controllers.FreteController|Frete calculado de 01000000 para 02000000: ¤47.50 
+2025-03-31 20:00:44.0859|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 20:00:44.0859|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 20:00:44.2901|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 20:00:44.2901|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 20:00:44.3652|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 20:00:44.3652|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 20:00:44.3652|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 20:00:44.3652|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 20:00:44.4803|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:44.4803|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:44.4803|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:44.4803|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:44.5817|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 20:00:44.5817|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 20:00:44.5967|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:44.5967|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:44.5967|0|INFO|FreteManager.Controllers.ClientesController|Requisição GET para listar todos os clientes 
+2025-03-31 20:00:44.5967|0|INFO|FreteManager.Services.ClienteService|Listando todos os clientes 
+2025-03-31 20:00:44.5967|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 20:00:44.5967|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 20:00:44.5967|0|INFO|FreteManager.Repositories.ClienteRepository|Recuperados 2 clientes 
+2025-03-31 20:00:44.6118|0|INFO|FreteManager.Controllers.ClientesController|Retornando 2 clientes 
+2025-03-31 20:00:44.6118|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:44.6118|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:44.6325|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 20:00:44.6325|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 20:00:44.6325|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 20:00:44.6325|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 20:00:44.6522|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:44.6522|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:44.6522|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:44.6522|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:44.6522|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 20:00:44.6522|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 20:00:44.6639|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 20:00:44.6639|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 20:00:44.6639|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:44.6639|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:44.6767|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 20:00:44.6767|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 20:00:44.6767|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:44.6767|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:44.6926|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:44.6926|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:44.6926|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 20:00:44.6926|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 20:00:44.7171|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:44.7171|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:44.7652|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 20:00:44.7652|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 20:00:44.8002|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:44.8002|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:44.8614|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 20:00:44.8614|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 20:00:44.8746|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:44.8746|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:44.8746|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 20:00:44.8746|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 20:00:44.8928|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:44.8928|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:44.8972|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 20:00:44.8972|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 20:00:44.9455|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:44.9455|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:44.9455|0|INFO|FreteManager.Controllers.ClientesController|Requisição POST para criar novo cliente 
+2025-03-31 20:00:44.9455|0|INFO|FreteManager.Services.ClienteService|Iniciando cadastro de novo cliente: Cliente Teste 0d1c5b1c-f56e-44a1-9658-9aaf10f4fc30 
+2025-03-31 20:00:45.0107|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 20:00:45.0107|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 20:00:45.0591|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:45.0591|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:45.0591|0|INFO|FreteManager.Repositories.ClienteRepository|Cliente Cliente Teste 0d1c5b1c-f56e-44a1-9658-9aaf10f4fc30 adicionado com sucesso. ID gerado: 3 
+2025-03-31 20:00:45.0591|0|INFO|FreteManager.Services.ClienteService|Cliente cadastrado com sucesso. ID: 3 
+2025-03-31 20:00:45.0591|0|INFO|FreteManager.Controllers.ClientesController|Cliente criado com ID 3: Cliente Teste 0d1c5b1c-f56e-44a1-9658-9aaf10f4fc30 
+2025-03-31 20:00:45.0591|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 20:00:45.0591|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 20:00:45.0936|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:45.0986|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:45.1508|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 20:00:45.1508|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 20:00:45.1645|0|INFO|FreteManager.Controllers.ClientesController|Requisição GET para obter cliente ID 3 
+2025-03-31 20:00:45.1645|0|INFO|FreteManager.Services.ClienteService|Obtendo cliente com ID 3 
+2025-03-31 20:00:45.2391|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:45.2391|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:45.2391|0|INFO|FreteManager.Controllers.ClientesController|Retornando dados do cliente ID 3: Cliente Teste 0d1c5b1c-f56e-44a1-9658-9aaf10f4fc30 
+2025-03-31 20:00:45.2391|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 20:00:45.2391|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 20:00:45.2669|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:45.2669|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:45.2790|0|INFO|FreteManager.Controllers.ClientesController|Requisição POST para criar novo cliente 
+2025-03-31 20:00:45.2790|0|INFO|FreteManager.Services.ClienteService|Iniciando cadastro de novo cliente: Cliente Pedido 303d92d1-efb8-4a01-b1b1-976633304e1a 
+2025-03-31 20:00:45.2790|0|INFO|FreteManager.Repositories.ClienteRepository|Cliente Cliente Pedido 303d92d1-efb8-4a01-b1b1-976633304e1a adicionado com sucesso. ID gerado: 4 
+2025-03-31 20:00:45.2790|0|INFO|FreteManager.Services.ClienteService|Cliente cadastrado com sucesso. ID: 4 
+2025-03-31 20:00:45.2790|0|INFO|FreteManager.Controllers.ClientesController|Cliente criado com ID 4: Cliente Pedido 303d92d1-efb8-4a01-b1b1-976633304e1a 
+2025-03-31 20:00:45.2790|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 20:00:45.2790|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 20:00:45.2978|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:45.2978|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:45.3107|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 20:00:45.3107|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 20:00:45.3296|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:45.3296|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:45.3466|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 20:00:45.3467|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 20:00:45.3467|0|INFO|FreteManager.Controllers.PedidosController|Requisição POST para criar novo pedido 
+2025-03-31 20:00:45.3467|0|INFO|FreteManager.Services.PedidoService|Iniciando criação de pedido para cliente ID 4 
+2025-03-31 20:00:45.3467|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:45.3467|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:45.3893|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 20:00:45.3893|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 20:00:45.4011|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:45.4011|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:45.4154|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 20:00:45.4154|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 20:00:45.4356|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:45.4356|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 20:00:45.4154|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|Start processing HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 20:00:45.4446|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Sending HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 20:00:46.5859|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Received HTTP response headers after 1135.8457ms - 200 
+2025-03-31 20:00:46.5859|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|End processing HTTP request after 1184.1082ms - 200 
+2025-03-31 20:00:46.5992|0|WARN|FreteManager.Services.FreteService|Nenhuma opção de frete válida disponível 
+2025-03-31 20:00:46.5992|0|WARN|FreteManager.Services.FreteService|Usando cálculo de frete fallback 
+2025-03-31 20:00:46.5992|0|INFO|FreteManager.Services.PedidoService|Frete calculado: ¤27.50 
+2025-03-31 20:00:46.5992|0|INFO|FreteManager.Services.PedidoService|Valor de frete calculado: ¤27.50 
+2025-03-31 20:00:46.7398|0|INFO|FreteManager.Repositories.PedidoRepository|Pedido adicionado com sucesso. ID gerado: 1 
+2025-03-31 20:00:46.7398|0|INFO|FreteManager.Services.PedidoService|Pedido criado com sucesso, ID 1 
+2025-03-31 20:00:46.7398|0|INFO|FreteManager.Controllers.PedidosController|Pedido criado com ID 1 
+2025-03-31 20:00:46.7699|0|INFO|FreteManager.Controllers.PedidosController|Requisição GET para obter pedido ID 1 
+2025-03-31 20:00:46.7699|0|INFO|FreteManager.Services.PedidoService|Obtendo detalhes do pedido ID 1 
+2025-03-31 20:00:46.8302|0|INFO|FreteManager.Controllers.PedidosController|Retornando dados do pedido ID 1 

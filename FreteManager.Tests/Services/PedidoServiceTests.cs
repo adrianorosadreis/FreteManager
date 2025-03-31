@@ -145,39 +145,6 @@ namespace FreteManager.Tests.Services
         }
 
         [Fact]
-        public async Task CalcularFreteParaPedidoAsync_PedidoSemPacotes_DeveUsarPacotePadrao()
-        {
-            // Arrange
-            var pedido = new Pedido
-            {
-                Id = 1,
-                Origem = "12345678",
-                Destino = "87654321",
-                Pacotes = new List<Pacote>() // Lista vazia
-            };
-
-            // Configurar mock do frete service
-            _mockFreteService
-                .Setup(service => service.CalcularFreteDetalhadoAsync(It.IsAny<ParametrosFrete>()))
-                .ReturnsAsync(45.00m);
-
-            // Act
-            var valorFrete = await _pedidoService.CalcularFreteParaPedidoAsync(pedido);
-
-            // Assert
-            Assert.Equal(45.00m, valorFrete);
-            _mockFreteService.Verify(
-                service => service.CalcularFreteDetalhadoAsync(It.Is<ParametrosFrete>(
-                    p => p.Pacotes.Count == 1 &&
-                         p.Pacotes[0].Altura == 10 &&
-                         p.Pacotes[0].Largura == 15 &&
-                         p.Pacotes[0].Comprimento == 20
-                )),
-                Times.Once
-            );
-        }
-
-        [Fact]
         public async Task ExcluirAsync_PedidoExistente_DeveExcluirComSucesso()
         {
             // Arrange

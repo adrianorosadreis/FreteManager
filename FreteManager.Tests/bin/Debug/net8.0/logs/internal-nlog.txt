@@ -2113,3 +2113,411 @@
 2025-03-31 19:25:08.5992 Info Configuration initialized.
 2025-03-31 19:25:08.7900 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
 2025-03-31 19:25:09.4144 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:09.5131 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 19:57:09.5131 Info Loading NLog config from XML file: C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:09.5131 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 19:57:09.5131 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 19:57:09.5195 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 19:57:09.5195 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 19:57:09.5195 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 19:57:09.5195 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-31 19:57:09.5370 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:09.5370 Info Configuration initialized.
+2025-03-31 19:57:09.5370 Info Closing old configuration.
+2025-03-31 19:57:09.5614 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:09.5614 Info Configuration initialized.
+2025-03-31 19:57:09.6929 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:09.6929 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:10.1591 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:10.1989 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:10.3060 Info Loading NLog config from XML file: C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:10.3060 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 19:57:10.3060 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 19:57:10.3060 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 19:57:10.3060 Info Closing old configuration.
+2025-03-31 19:57:10.3183 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:10.3183 Info Configuration initialized.
+2025-03-31 19:57:10.3338 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:10.3514 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:10.5502 Info Loading NLog config from XML file: C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:10.5502 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 19:57:10.5502 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 19:57:10.5502 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 19:57:10.5502 Info Closing old configuration.
+2025-03-31 19:57:10.5502 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:10.5502 Info Configuration initialized.
+2025-03-31 19:57:10.5679 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:10.5868 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:10.6416 Info Loading NLog config from XML file: C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:10.6461 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 19:57:10.6461 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 19:57:10.6461 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 19:57:10.6461 Info Closing old configuration.
+2025-03-31 19:57:11.8641 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:11.8641 Info Configuration initialized.
+2025-03-31 19:57:11.9066 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:11.9204 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:44.1011 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 19:57:44.1011 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 19:57:44.1011 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 19:57:44.1011 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 19:57:44.1011 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 19:57:44.1011 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 19:57:44.1011 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 19:57:44.1011 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 19:57:44.1011 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 19:57:44.1011 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 19:57:44.1011 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 19:57:44.1011 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 19:57:44.1011 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 19:57:44.1011 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 19:57:44.1011 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 19:57:44.1011 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 19:57:44.1011 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 19:57:44.1011 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 19:57:44.1129 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 19:57:44.1129 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 19:57:44.1129 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 19:57:44.1011 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 19:57:44.1129 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 19:57:44.1129 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 19:57:44.1129 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 19:57:44.1129 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 19:57:44.1129 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 19:57:44.1129 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 19:57:44.1129 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 19:57:44.1129 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 19:57:44.1129 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 19:57:44.1129 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 19:57:44.1129 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 19:57:44.1129 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 19:57:44.1129 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 19:57:44.1129 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 19:57:44.1129 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 19:57:44.1129 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 19:57:44.1129 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 19:57:44.1129 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 19:57:44.1129 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 19:57:44.1129 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 19:57:44.1129 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 19:57:44.1129 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 19:57:44.1129 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 19:57:44.1129 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 19:57:44.1284 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-31 19:57:44.1284 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-31 19:57:44.1284 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 19:57:44.1284 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-31 19:57:44.1284 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-31 19:57:44.1284 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 19:57:44.1284 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:44.1284 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:44.1284 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:44.1437 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:44.1595 Info Configuration initialized.
+2025-03-31 19:57:44.1595 Info Configuration initialized.
+2025-03-31 19:57:44.1595 Info Configuration initialized.
+2025-03-31 19:57:44.1595 Info Configuration initialized.
+2025-03-31 19:57:44.1595 Info Closing old configuration.
+2025-03-31 19:57:44.1595 Info Closing old configuration.
+2025-03-31 19:57:44.1595 Info Closing old configuration.
+2025-03-31 19:57:44.1595 Info Closing old configuration.
+2025-03-31 19:57:44.1742 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:44.1742 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:44.1742 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:44.1742 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:44.1742 Info Configuration initialized.
+2025-03-31 19:57:44.1742 Info Configuration initialized.
+2025-03-31 19:57:44.1742 Info Configuration initialized.
+2025-03-31 19:57:44.1742 Info Configuration initialized.
+2025-03-31 19:57:44.1742 Info Closing old configuration.
+2025-03-31 19:57:44.1742 Info Closing old configuration.
+2025-03-31 19:57:44.1742 Info Closing old configuration.
+2025-03-31 19:57:44.1742 Info Closing old configuration.
+2025-03-31 19:57:44.1742 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:44.1742 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:44.1742 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:44.1742 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:44.1742 Info Configuration initialized.
+2025-03-31 19:57:44.1742 Info Configuration initialized.
+2025-03-31 19:57:44.1742 Info Configuration initialized.
+2025-03-31 19:57:44.1742 Info Configuration initialized.
+2025-03-31 19:57:44.1742 Info Closing old configuration.
+2025-03-31 19:57:44.1742 Info Closing old configuration.
+2025-03-31 19:57:44.1742 Info Closing old configuration.
+2025-03-31 19:57:44.1742 Info Closing old configuration.
+2025-03-31 19:57:44.1742 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:44.1742 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:44.1742 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:44.1742 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:44.1910 Info Configuration initialized.
+2025-03-31 19:57:44.1910 Info Configuration initialized.
+2025-03-31 19:57:44.1910 Info Configuration initialized.
+2025-03-31 19:57:44.1910 Info Configuration initialized.
+2025-03-31 19:57:44.4246 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:44.4246 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:44.4246 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:44.4246 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:44.4246 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:44.4246 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:44.4246 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:44.4246 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:44.4246 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:44.4246 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:44.4246 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:44.4246 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:44.4246 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:44.4246 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:44.4246 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:44.4246 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:45.2221 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:45.2221 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:45.2221 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:45.2221 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:45.2221 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:45.2221 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:45.2221 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:45.2221 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:45.2221 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:45.2221 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:45.2221 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:45.2221 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:45.2221 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:45.2221 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:45.2221 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:57:45.2221 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:58:05.0305 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 19:58:05.0305 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 19:58:05.0305 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 19:58:05.0305 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 19:58:05.0339 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 19:58:05.0339 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 19:58:05.0339 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 19:58:05.0339 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 19:58:05.0339 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 19:58:05.0339 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 19:58:05.0339 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 19:58:05.0339 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 19:58:05.0339 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-31 19:58:05.0339 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-31 19:58:05.0569 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:58:05.0569 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:58:05.0715 Info Configuration initialized.
+2025-03-31 19:58:05.0715 Info Configuration initialized.
+2025-03-31 19:58:05.0715 Info Closing old configuration.
+2025-03-31 19:58:05.0715 Info Closing old configuration.
+2025-03-31 19:58:05.0826 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:58:05.0826 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:58:05.0826 Info Configuration initialized.
+2025-03-31 19:58:05.0826 Info Configuration initialized.
+2025-03-31 19:58:05.2918 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:58:05.2918 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:58:05.2918 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:58:05.2918 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:58:06.0820 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:58:06.0820 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:58:06.0820 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 19:58:06.0820 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:09.7996 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 20:00:09.8040 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 20:00:09.8040 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 20:00:09.8040 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-31 20:00:09.8253 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:09.8436 Info Configuration initialized.
+2025-03-31 20:00:09.8906 Info Loading NLog config from XML file: C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:09.8957 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 20:00:09.8957 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 20:00:09.9090 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 20:00:09.9090 Info Closing old configuration.
+2025-03-31 20:00:09.9090 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:09.9090 Info Configuration initialized.
+2025-03-31 20:00:09.9955 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:09.9955 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:10.4441 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:10.4708 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:10.5884 Info Loading NLog config from XML file: C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:10.5884 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 20:00:10.5884 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 20:00:10.6235 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 20:00:10.6401 Info Closing old configuration.
+2025-03-31 20:00:10.6524 Info Loading NLog config from XML file: C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:10.6652 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 20:00:10.6652 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 20:00:10.6652 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:10.6774 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 20:00:10.6914 Info Configuration initialized.
+2025-03-31 20:00:10.6914 Info Closing old configuration.
+2025-03-31 20:00:10.7059 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:10.7059 Info Configuration initialized.
+2025-03-31 20:00:10.7059 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:10.7059 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:10.7630 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:10.7630 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:10.8818 Info Loading NLog config from XML file: C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:10.8818 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 20:00:10.8818 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 20:00:10.8818 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 20:00:10.8818 Info Closing old configuration.
+2025-03-31 20:00:11.6797 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:11.6797 Info Configuration initialized.
+2025-03-31 20:00:11.7247 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:11.7558 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:29.1770 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 20:00:29.1770 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 20:00:29.1770 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 20:00:29.1770 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 20:00:29.1770 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 20:00:29.1770 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 20:00:29.1770 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 20:00:29.1770 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 20:00:29.1770 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 20:00:29.1770 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 20:00:29.1770 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 20:00:29.1770 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 20:00:29.1770 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 20:00:29.1770 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 20:00:29.1770 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 20:00:29.1770 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 20:00:29.1903 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 20:00:29.1770 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 20:00:29.1903 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 20:00:29.1770 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 20:00:29.1903 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 20:00:29.1903 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 20:00:29.1903 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 20:00:29.1903 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 20:00:29.1903 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 20:00:29.1903 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 20:00:29.1903 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 20:00:29.1903 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 20:00:29.1903 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 20:00:29.1903 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 20:00:29.1903 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 20:00:29.1903 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 20:00:29.1903 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 20:00:29.1903 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 20:00:29.1903 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 20:00:29.1903 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 20:00:29.1903 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 20:00:29.1903 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 20:00:29.1903 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 20:00:29.1903 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 20:00:29.2061 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 20:00:29.2061 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 20:00:29.2061 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-31 20:00:29.2061 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 20:00:29.2061 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 20:00:29.2061 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 20:00:29.2061 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 20:00:29.2061 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 20:00:29.2061 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 20:00:29.2061 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-31 20:00:29.2061 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-31 20:00:29.2061 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-31 20:00:29.2256 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:29.2256 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:29.2256 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:29.2256 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:29.2439 Info Configuration initialized.
+2025-03-31 20:00:29.2439 Info Configuration initialized.
+2025-03-31 20:00:29.2439 Info Configuration initialized.
+2025-03-31 20:00:29.2439 Info Configuration initialized.
+2025-03-31 20:00:29.2439 Info Closing old configuration.
+2025-03-31 20:00:29.2439 Info Closing old configuration.
+2025-03-31 20:00:29.2439 Info Closing old configuration.
+2025-03-31 20:00:29.2439 Info Closing old configuration.
+2025-03-31 20:00:29.2597 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:29.2597 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:29.2597 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:29.2597 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:29.2597 Info Configuration initialized.
+2025-03-31 20:00:29.2597 Info Configuration initialized.
+2025-03-31 20:00:29.2597 Info Configuration initialized.
+2025-03-31 20:00:29.2597 Info Configuration initialized.
+2025-03-31 20:00:29.2597 Info Closing old configuration.
+2025-03-31 20:00:29.2597 Info Closing old configuration.
+2025-03-31 20:00:29.2597 Info Closing old configuration.
+2025-03-31 20:00:29.2597 Info Closing old configuration.
+2025-03-31 20:00:29.2597 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:29.2597 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:29.2597 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:29.2597 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:29.2597 Info Configuration initialized.
+2025-03-31 20:00:29.2597 Info Configuration initialized.
+2025-03-31 20:00:29.2597 Info Configuration initialized.
+2025-03-31 20:00:29.2597 Info Configuration initialized.
+2025-03-31 20:00:29.2597 Info Closing old configuration.
+2025-03-31 20:00:29.2597 Info Closing old configuration.
+2025-03-31 20:00:29.2597 Info Closing old configuration.
+2025-03-31 20:00:29.2682 Info Closing old configuration.
+2025-03-31 20:00:29.2682 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:29.2682 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:29.2682 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:29.2682 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:29.2682 Info Configuration initialized.
+2025-03-31 20:00:29.2682 Info Configuration initialized.
+2025-03-31 20:00:29.2682 Info Configuration initialized.
+2025-03-31 20:00:29.2682 Info Configuration initialized.
+2025-03-31 20:00:29.5046 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:29.5046 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:29.5046 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:29.5046 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:29.5046 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:29.5046 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:29.5046 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:29.5046 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:29.5046 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:29.5046 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:29.5046 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:29.5046 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:29.5046 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:29.5046 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:29.5046 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:29.5046 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:30.2583 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:30.2583 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:30.2583 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:30.2583 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:30.2583 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:30.2583 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:30.2583 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:30.2583 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:30.2583 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:30.2583 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:30.2583 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:30.2583 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:30.2583 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:30.2583 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:30.2583 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:30.2583 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:43.0587 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 20:00:43.0587 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 20:00:43.0587 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 20:00:43.0587 Info Registered target NLog.Targets.FileTarget(Name=error-file)
+2025-03-31 20:00:43.0587 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 20:00:43.0587 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 20:00:43.0587 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 20:00:43.0587 Info Registered target NLog.Targets.FileTarget(Name=all-file)
+2025-03-31 20:00:43.0587 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 20:00:43.0659 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 20:00:43.0659 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 20:00:43.0659 Info Registered target NLog.Targets.ConsoleTarget(Name=console)
+2025-03-31 20:00:43.0659 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-31 20:00:43.0659 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.4.0.3182. Product version: 5.4.0+4d45d445601312040107cbe2ac00e56c4bf4a60b. GlobalAssemblyCache: False
+2025-03-31 20:00:43.0821 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:43.0821 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:43.0821 Info Configuration initialized.
+2025-03-31 20:00:43.0821 Info Configuration initialized.
+2025-03-31 20:00:43.0973 Info Closing old configuration.
+2025-03-31 20:00:43.0973 Info Closing old configuration.
+2025-03-31 20:00:43.0973 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:43.0973 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:43.0973 Info Configuration initialized.
+2025-03-31 20:00:43.0973 Info Configuration initialized.
+2025-03-31 20:00:43.3071 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:43.3071 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:43.3071 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:43.3071 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:44.0244 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:44.0361 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:44.0361 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
+2025-03-31 20:00:44.0361 Info Validating config: TargetNames=error-file, all-file, console, ConfigItems=60, FilePath=C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\nlog.config
