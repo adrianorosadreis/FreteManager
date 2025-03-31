@@ -2754,3 +2754,186 @@
 2025-03-31 19:17:38.5308|0|INFO|FreteManager.Controllers.PedidosController|Requisição GET para obter pedido ID 1 
 2025-03-31 19:17:38.5308|0|INFO|FreteManager.Services.PedidoService|Obtendo detalhes do pedido ID 1 
 2025-03-31 19:17:38.6020|0|INFO|FreteManager.Controllers.PedidosController|Retornando dados do pedido ID 1 
+2025-03-31 19:22:39.3917|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 19:22:39.3917|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 19:22:39.3917|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 19:22:39.6870|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 19:22:39.6908|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 19:22:39.6908|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 19:22:39.7293|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 19:22:39.7993|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 19:22:39.8175|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:22:39.8175|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 19:22:39.8175|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:22:39.8175|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 19:22:39.8175|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 19:22:39.8175|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 19:22:39.8175|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:22:39.8175|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:22:39.8175|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:22:39.8175|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:22:39.8175|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:22:39.8175|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:22:39.8175|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: naoexiste@teste.com 
+2025-03-31 19:22:39.8175|0|INFO|AuthService|Tentativa de login: naoexiste@teste.com 
+2025-03-31 19:22:39.8175|0|WARN|AuthService|Tentativa de login com email não cadastrado: naoexiste@teste.com 
+2025-03-31 19:22:39.8175|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|A entidade Usuário com ID naoexiste@teste.com não foi encontrada. FreteManager.Exceptions.EntityNotFoundException: A entidade Usuário com ID naoexiste@teste.com não foi encontrada.
+   at AuthService.LoginAsync(LoginRequest model) in C:\dev\FreteManager\FreteManager\Services\AuthService.cs:line 64
+   at FreteManager.Controllers.AuthController.Login(LoginRequest model) in C:\dev\FreteManager\FreteManager\Controllers\AuthController.cs:line 53
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 19:22:39.9568|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 19:22:39.9929|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 19:22:39.9929|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 19:22:39.9929|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 19:22:40.0037|0|INFO|AuthService|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:22:40.0037|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: teste@integracao.com 
+2025-03-31 19:24:51.9319|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 19:24:52.1293|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 19:24:52.2300|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:24:52.2300|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:24:52.3175|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:24:52.3175|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:24:52.3945|0|INFO|FreteManager.Controllers.ClientesController|Requisição GET para listar todos os clientes 
+2025-03-31 19:24:52.3945|0|INFO|FreteManager.Services.ClienteService|Listando todos os clientes 
+2025-03-31 19:24:52.3945|0|INFO|FreteManager.Repositories.ClienteRepository|Recuperados 1 clientes 
+2025-03-31 19:24:52.3945|0|INFO|FreteManager.Controllers.ClientesController|Retornando 1 clientes 
+2025-03-31 19:24:52.4228|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:24:52.4228|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:24:52.4287|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:24:52.4287|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:24:52.4287|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:24:52.4287|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:24:52.4287|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:24:52.4287|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:24:52.4972|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:24:52.4972|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:24:52.4972|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:24:52.4972|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:24:52.5230|0|INFO|FreteManager.Controllers.ClientesController|Requisição POST para criar novo cliente 
+2025-03-31 19:24:52.5230|0|INFO|FreteManager.Services.ClienteService|Iniciando cadastro de novo cliente: Cliente Teste 3be46a78-7792-477a-bed0-c6e29087cb0a 
+2025-03-31 19:24:52.5526|0|INFO|FreteManager.Repositories.ClienteRepository|Cliente Cliente Teste 3be46a78-7792-477a-bed0-c6e29087cb0a adicionado com sucesso. ID gerado: 2 
+2025-03-31 19:24:52.5526|0|INFO|FreteManager.Services.ClienteService|Cliente cadastrado com sucesso. ID: 2 
+2025-03-31 19:24:52.5526|0|INFO|FreteManager.Controllers.ClientesController|Cliente criado com ID 2: Cliente Teste 3be46a78-7792-477a-bed0-c6e29087cb0a 
+2025-03-31 19:24:52.5819|0|INFO|FreteManager.Controllers.ClientesController|Requisição GET para obter cliente ID 2 
+2025-03-31 19:24:52.5819|0|INFO|FreteManager.Services.ClienteService|Obtendo cliente com ID 2 
+2025-03-31 19:24:52.5998|0|INFO|FreteManager.Controllers.ClientesController|Retornando dados do cliente ID 2: Cliente Teste 3be46a78-7792-477a-bed0-c6e29087cb0a 
+2025-03-31 19:24:52.5998|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:24:52.5998|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:24:52.5998|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:24:52.5998|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:24:52.5998|0|INFO|FreteManager.Controllers.ClientesController|Requisição POST para criar novo cliente 
+2025-03-31 19:24:52.5998|0|INFO|FreteManager.Services.ClienteService|Iniciando cadastro de novo cliente: Cliente Pedido 0150f3d7-6e26-43df-89e4-8425f935c2e7 
+2025-03-31 19:24:52.5998|0|INFO|FreteManager.Repositories.ClienteRepository|Cliente Cliente Pedido 0150f3d7-6e26-43df-89e4-8425f935c2e7 adicionado com sucesso. ID gerado: 3 
+2025-03-31 19:24:52.6124|0|INFO|FreteManager.Services.ClienteService|Cliente cadastrado com sucesso. ID: 3 
+2025-03-31 19:24:52.6124|0|INFO|FreteManager.Controllers.ClientesController|Cliente criado com ID 3: Cliente Pedido 0150f3d7-6e26-43df-89e4-8425f935c2e7 
+2025-03-31 19:24:52.6899|0|INFO|FreteManager.Controllers.PedidosController|Requisição POST para criar novo pedido 
+2025-03-31 19:24:52.6936|0|INFO|FreteManager.Services.PedidoService|Iniciando criação de pedido para cliente ID 3 
+2025-03-31 19:24:52.7462|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|Start processing HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 19:24:52.7462|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Sending HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 19:24:54.5254|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Received HTTP response headers after 1769.9372ms - 200 
+2025-03-31 19:24:54.5254|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|End processing HTTP request after 1787.2799ms - 200 
+2025-03-31 19:24:54.5375|0|WARN|FreteManager.Services.FreteService|Nenhuma opção de frete válida disponível 
+2025-03-31 19:24:54.5375|0|WARN|FreteManager.Services.FreteService|Usando cálculo de frete fallback 
+2025-03-31 19:24:54.5375|0|INFO|FreteManager.Services.PedidoService|Frete calculado: ¤27.50 
+2025-03-31 19:24:54.5375|0|INFO|FreteManager.Services.PedidoService|Valor de frete calculado: ¤27.50 
+2025-03-31 19:24:54.6392|0|INFO|FreteManager.Repositories.PedidoRepository|Pedido adicionado com sucesso. ID gerado: 1 
+2025-03-31 19:24:54.6392|0|INFO|FreteManager.Services.PedidoService|Pedido criado com sucesso, ID 1 
+2025-03-31 19:24:54.6392|0|INFO|FreteManager.Controllers.PedidosController|Pedido criado com ID 1 
+2025-03-31 19:24:54.6795|0|INFO|FreteManager.Controllers.PedidosController|Requisição GET para obter pedido ID 1 
+2025-03-31 19:24:54.6795|0|INFO|FreteManager.Services.PedidoService|Obtendo detalhes do pedido ID 1 
+2025-03-31 19:24:54.7328|0|INFO|FreteManager.Controllers.PedidosController|Retornando dados do pedido ID 1 
+2025-03-31 19:25:02.1320|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 19:25:02.4082|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 19:25:02.5215|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:25:02.5215|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:25:02.6026|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:25:02.6026|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:25:09.4403|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 19:25:09.6136|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 19:25:09.7143|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:25:09.7143|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:25:09.8219|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:25:09.8219|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:25:09.8811|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:25:09.8811|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:25:09.8811|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:25:09.8811|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:25:09.8962|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:25:09.8962|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:25:09.8962|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:25:09.8962|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:25:09.8962|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:25:09.8962|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:25:09.8962|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:25:09.8962|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:25:09.8962|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:25:09.8962|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:25:09.8962|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:25:09.8962|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:25:09.8962|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:25:09.8962|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:25:09.9093|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:25:09.9093|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:25:09.9093|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:25:09.9093|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:25:09.9093|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:25:09.9093|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:25:09.9093|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:25:09.9093|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:25:09.9093|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:25:09.9093|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:25:09.9093|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:25:09.9093|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:25:09.9093|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:25:09.9093|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:25:09.9270|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:25:09.9270|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:25:09.9270|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:25:09.9270|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:25:09.9270|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:25:09.9270|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:25:09.9270|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:25:09.9270|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:25:09.9270|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:25:09.9270|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:25:09.9270|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:25:09.9270|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:25:09.9429|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:25:09.9429|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:25:09.9429|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:25:09.9429|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:25:09.9680|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:25:09.9680|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:25:09.9680|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:25:09.9680|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:25:09.9724|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:25:09.9724|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:25:09.9724|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:25:09.9724|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:25:09.9724|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:25:09.9724|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:25:09.9724|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:25:09.9724|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:25:09.9724|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:25:09.9724|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:25:09.9724|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:25:09.9724|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:25:09.9724|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:25:09.9724|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:25:09.9724|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:25:09.9724|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:25:09.9880|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 19:25:09.9880|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 19:25:09.9880|0|INFO|AuthService|Login bem-sucedido: admin@fretemanager.com 
+2025-03-31 19:25:09.9880|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: admin@fretemanager.com 

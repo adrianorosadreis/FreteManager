@@ -185,6 +185,10 @@ namespace FreteManager.Tests.Services
             // Assert
             Assert.NotEqual(senha, hash1);
             Assert.NotEqual(hash1, hash2); // Garantir que não seja um hash estático
+
+            // Verificar que os hashes são válidos e diferentes
+            Assert.True(_authService.VerificarSenha(hash1, senha));
+            Assert.True(_authService.VerificarSenha(hash2, senha));
         }
 
         [Fact]

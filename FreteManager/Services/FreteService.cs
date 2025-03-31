@@ -46,14 +46,16 @@ namespace FreteManager.Services
 
             try
             {
-                //// Sanitizar e validar os CEPs
+                // Validação de entrada: CEPs
+                ValidarCep(parametros.CepOrigem, "CEP de Origem");
+                ValidarCep(parametros.CepDestino, "CEP de Destino");
+
+                // Validação de pacotes
+                ValidarPacotes(parametros.Pacotes);
+
+                // Sanitizar CEPs
                 string cepOrigem = new string(parametros.CepOrigem.Where(char.IsDigit).ToArray());
                 string cepDestino = new string(parametros.CepDestino.Where(char.IsDigit).ToArray());
-
-                //if (cepOrigem.Length != 8 || cepDestino.Length != 8)
-                //{
-                //    throw new ArgumentException("CEPs de origem e destino devem ter 8 dígitos");
-                //}
 
                 // Preparar o payload da requisição conforme documentação da Frenet
                 var shippingItems = parametros.Pacotes.Select(p => new
@@ -172,6 +174,64 @@ namespace FreteManager.Services
 
             // Combinamos com os outros parâmetros para criar uma chave única
             return $"frete_{parametros.CepOrigem}_{parametros.CepDestino}_{parametros.ValorDeclarado}_{pacotesHash}";
+        }
+
+        // Método de validação de CEP
+        private void ValidarCep(string cep, string nomeCep)
+        {
+            if (string.IsNullOrWhiteSpace(cep))
+            {
+                throw new ArgumentException($"{nomeCep} não pode ser nulo ou vazio.");
+            }
+
+            // Remover caracteres não numéricos
+            string cepLimpo = new string(cep.Where(char.IsDigit).ToArray());
+
+            // Verificações de validação
+            if (cepLimpo.Length != 8)
+            {
+                throw new ArgumentException($"{nomeCep} deve conter exatamente 8 dígitos.");
+            }
+
+            // Verificação de padrão de CEP brasileiro
+            if (!System.Text.RegularExpressions.Regex.IsMatch(cepLimpo, @"^[0-9]{8}$"))
+            {
+                throw new ArgumentException($"{nomeCep} inválido.");
+            }
+
+            // Verificações adicionais de faixa de CEP (opcional, mas pode adicionar mais robustez)
+            int primeiroDigito = int.Parse(cepLimpo.Substring(0, 1));
+            if (primeiroDigito < 0 || primeiroDigito > 9)
+            {
+                throw new ArgumentException($"{nomeCep} não está em um formato válido.");
+            }
+        }
+
+        // Método de validação de pacotes
+        private void ValidarPacotes(List<PacoteFrete> pacotes)
+        {
+            if (pacotes == null || !pacotes.Any())
+            {
+                throw new ArgumentException("É necessário informar pelo menos um pacote.");
+            }
+
+            foreach (var pacote in pacotes)
+            {
+                if (pacote.Altura <= 0 || pacote.Largura <= 0 || pacote.Comprimento <= 0)
+                {
+                    throw new ArgumentException("Dimensões do pacote devem ser positivas.");
+                }
+
+                if (pacote.Peso <= 0)
+                {
+                    throw new ArgumentException("Peso do pacote deve ser positivo.");
+                }
+
+                if (pacote.Quantidade <= 0)
+                {
+                    throw new ArgumentException("Quantidade de pacotes deve ser maior que zero.");
+                }
+            }
         }
     }
 

@@ -136,29 +136,50 @@ namespace FreteManager.Tests.Services
         [Fact]
         public async Task CalcularFreteDetalhadoAsync_CepInvalido_DeveLancarExcecao()
         {
-            // Arrange: Preparar parâmetros com CEP inválido
-            var parametros = new ParametrosFrete
+            // Arrange: Preparar parâmetros com CEPs inválidos
+            var parametrosCepInvalido = new List<(string Origem, string Destino)>
             {
-                CepOrigem = "123", // CEP inválido
-                CepDestino = "456", // CEP inválido
-                ValorDeclarado = 1000.00m,
-                Pacotes = new List<PacoteFrete>
-                {
-                    new PacoteFrete
-                    {
-                        Altura = 20,
-                        Largura = 30,
-                        Comprimento = 40,
-                        Peso = 5.0m,
-                        Quantidade = 1
-                    }
-                }
+                // CEP muito curto
+                ("1234", "5678"),
+        
+                // CEP muito longo
+                ("123456789", "987654321"),
+        
+                // CEP com caracteres não numéricos
+                ("12345-ABC", "98765-XYZ"),
+        
+                // CEP vazio
+                ("", ""),
+        
+                // CEP nulo
+                (null, null)
             };
 
-            // Act & Assert: Verificar se lança exceção para CEP inválido
-            await Assert.ThrowsAsync<ArgumentException>(
-                () => _freteService.CalcularFreteDetalhadoAsync(parametros)
-            );
+            // Act & Assert
+            foreach (var parametro in parametrosCepInvalido)
+            {
+                var parametrosFrete = new ParametrosFrete
+                {
+                    CepOrigem = parametro.Origem,
+                    CepDestino = parametro.Destino,
+                    ValorDeclarado = 1000.00m,
+                    Pacotes = new List<PacoteFrete>
+            {
+                new PacoteFrete
+                {
+                    Altura = 20,
+                    Largura = 30,
+                    Comprimento = 40,
+                    Peso = 5.0m,
+                    Quantidade = 1
+                }
+            }
+                };
+
+                await Assert.ThrowsAsync<ArgumentException>(
+                    () => _freteService.CalcularFreteDetalhadoAsync(parametrosFrete)
+                );
+            }
         }
 
         [Fact]

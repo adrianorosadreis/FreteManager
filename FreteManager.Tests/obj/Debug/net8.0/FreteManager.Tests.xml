@@ -156,11 +156,6 @@
             Verifica se a resposta de login não expõe informações sensíveis
             </summary>
         </member>
-        <member name="M:FreteManager.Tests.Security.SensitiveDataExposureTests.ErrosDeAplicacao_NaoDevemRevelarDetalhesInternos">
-            <summary>
-            Verifica se erros de sistema não revelam detalhes internos
-            </summary>
-        </member>
         <member name="T:FreteManager.Tests.Security.SqlInjectionTests">
             <summary>
             Testes de integração para verificar vulnerabilidades de Injeção de SQL

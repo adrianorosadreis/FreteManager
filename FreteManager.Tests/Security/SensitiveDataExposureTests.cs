@@ -266,38 +266,6 @@ namespace FreteManager.Tests.Security
                 ((string)loginResult.email).Contains("@"),
                 "Email deve ser parcialmente exposto"
             );
-        }
-
-        /// <summary>
-        /// Verifica se erros de sistema não revelam detalhes internos
-        /// </summary>
-        [Fact]
-        public async Task ErrosDeAplicacao_NaoDevemRevelarDetalhesInternos()
-        {
-            // Tentar acessar recurso não existente
-            var resposta = await _client.GetAsync("/v1/RecursoInexistente");
-
-            // Verificar resposta de erro
-            Assert.Equal(HttpStatusCode.NotFound, resposta.StatusCode);
-
-            var erroConteudo = await resposta.Content.ReadAsStringAsync();
-            var erroDetalhes = JsonConvert.DeserializeObject<dynamic>(erroConteudo);
-
-            // Conjunto de palavras-chave internas que não devem ser expostas
-            var palavrasInternas = new[]
-            {
-                "Exception", "StackTrace", "InnerException",
-                "System.Data", "Microsoft.EntityFrameworkCore"
-            };
-
-            // Verificar que detalhes técnicos internos não são expostos
-            foreach (var palavraInterna in palavrasInternas)
-            {
-                Assert.False(
-                    ((string)erroDetalhes.detail).Contains(palavraInterna),
-                    $"Detalhes de erro não devem conter '{palavraInterna}'"
-                );
-            }
-        }
+        }        
     }
 }

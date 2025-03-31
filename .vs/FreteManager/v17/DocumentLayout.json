@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "C:\\dev\\FreteManager\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|c:\\dev\\fretemanager\\fretemanager\\services\\freteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|solutionrelative:fretemanager\\services\\freteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}|FreteManager.Tests\\FreteManager.Tests.csproj|c:\\dev\\fretemanager\\fretemanager.tests\\services\\freteservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}|FreteManager.Tests\\FreteManager.Tests.csproj|solutionrelative:fretemanager.tests\\services\\freteservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|c:\\dev\\fretemanager\\fretemanager\\controllers\\fretecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|solutionrelative:fretemanager\\controllers\\fretecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}|FreteManager.Tests\\FreteManager.Tests.csproj|c:\\dev\\fretemanager\\fretemanager.tests\\services\\authservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}|FreteManager.Tests\\FreteManager.Tests.csproj|solutionrelative:fretemanager.tests\\services\\authservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|c:\\dev\\fretemanager\\fretemanager\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|solutionrelative:fretemanager\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}|FreteManager.Tests\\FreteManager.Tests.csproj|c:\\dev\\fretemanager\\fretemanager.tests\\security\\sqlinjectiontests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}|FreteManager.Tests\\FreteManager.Tests.csproj|solutionrelative:fretemanager.tests\\security\\sqlinjectiontests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}|FreteManager.Tests\\FreteManager.Tests.csproj|c:\\dev\\fretemanager\\fretemanager.tests\\security\\sensitivedataexposuretests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}|FreteManager.Tests\\FreteManager.Tests.csproj|solutionrelative:fretemanager.tests\\security\\sensitivedataexposuretests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -18,24 +42,102 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FreteServiceTests.cs",
+              "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager.Tests\\Services\\FreteServiceTests.cs",
+              "RelativeDocumentMoniker": "FreteManager.Tests\\Services\\FreteServiceTests.cs",
+              "ToolTip": "C:\\dev\\FreteManager\\FreteManager.Tests\\Services\\FreteServiceTests.cs",
+              "RelativeToolTip": "FreteManager.Tests\\Services\\FreteServiceTests.cs",
+              "ViewState": "AgIAAIUAAAAAAAAAAAAiwIcAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T22:40:17.619Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "FreteService.cs",
+              "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager\\Services\\FreteService.cs",
+              "RelativeDocumentMoniker": "FreteManager\\Services\\FreteService.cs",
+              "ToolTip": "C:\\dev\\FreteManager\\FreteManager\\Services\\FreteService.cs",
+              "RelativeToolTip": "FreteManager\\Services\\FreteService.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAUwDMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T22:36:48.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FreteController.cs",
+              "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager\\Controllers\\FreteController.cs",
+              "RelativeDocumentMoniker": "FreteManager\\Controllers\\FreteController.cs",
+              "ToolTip": "C:\\dev\\FreteManager\\FreteManager\\Controllers\\FreteController.cs",
+              "RelativeToolTip": "FreteManager\\Controllers\\FreteController.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAASwD8AAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T22:36:44.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthServiceTests.cs",
+              "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager.Tests\\Services\\AuthServiceTests.cs",
+              "RelativeDocumentMoniker": "FreteManager.Tests\\Services\\AuthServiceTests.cs",
+              "ToolTip": "C:\\dev\\FreteManager\\FreteManager.Tests\\Services\\AuthServiceTests.cs",
+              "RelativeToolTip": "FreteManager.Tests\\Services\\AuthServiceTests.cs",
+              "ViewState": "AgIAAKYAAAAAAAAAAAAAwLMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T22:35:23.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager\\Services\\AuthService.cs",
+              "RelativeDocumentMoniker": "FreteManager\\Services\\AuthService.cs",
+              "ToolTip": "C:\\dev\\FreteManager\\FreteManager\\Services\\AuthService.cs",
+              "RelativeToolTip": "FreteManager\\Services\\AuthService.cs",
+              "ViewState": "AgIAAIoAAAAAAAAAAAAAAKAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T22:34:14.681Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SqlInjectionTests.cs",
+              "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager.Tests\\Security\\SqlInjectionTests.cs",
+              "RelativeDocumentMoniker": "FreteManager.Tests\\Security\\SqlInjectionTests.cs",
+              "ToolTip": "C:\\dev\\FreteManager\\FreteManager.Tests\\Security\\SqlInjectionTests.cs",
+              "RelativeToolTip": "FreteManager.Tests\\Security\\SqlInjectionTests.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAiwI8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T22:25:47.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "SensitiveDataExposureTests.cs",
               "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager.Tests\\Security\\SensitiveDataExposureTests.cs",
               "RelativeDocumentMoniker": "FreteManager.Tests\\Security\\SensitiveDataExposureTests.cs",
               "ToolTip": "C:\\dev\\FreteManager\\FreteManager.Tests\\Security\\SensitiveDataExposureTests.cs",
               "RelativeToolTip": "FreteManager.Tests\\Security\\SensitiveDataExposureTests.cs",
-              "ViewState": "AgIAAAABAAAAAAAAAAAAwAsBAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAABAAAAAAAAAAAAwAwBAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T22:12:27.26Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "CustomWebApplicationFactory.cs",
               "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager.Tests\\Integration\\CustomWebApplicationFactory.cs",
               "RelativeDocumentMoniker": "FreteManager.Tests\\Integration\\CustomWebApplicationFactory.cs",
@@ -43,8 +145,7 @@
               "RelativeToolTip": "FreteManager.Tests\\Integration\\CustomWebApplicationFactory.cs",
               "ViewState": "AgIAAE0AAAAAAAAAAAAYwGQAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T22:10:09.566Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T22:10:09.566Z"
             }
           ]
         }

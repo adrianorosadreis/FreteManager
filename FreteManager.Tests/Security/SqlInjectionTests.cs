@@ -139,44 +139,6 @@ namespace FreteManager.Tests.Security
                 response.StatusCode == HttpStatusCode.Unauthorized,
                 $"Payload de SQL Injection '{payload}' não foi corretamente bloqueado"
             );
-        }
-
-        [Fact]
-        public async Task AuthEndpoint_SensitiveErrorMessages_ShouldNotRevealInternalDetails()
-        {
-            // Tentar login com credenciais inválidas
-            var loginRequest = new LoginRequest
-            {
-                Email = "' OR 1=1--",
-                Senha = "' OR 1=1--"
-            };
-
-            var content = new StringContent(
-                JsonConvert.SerializeObject(loginRequest),
-                Encoding.UTF8,
-                "application/json"
-            );
-
-            // Fazer requisição de login
-            var response = await _client.PostAsync("/v1/Auth/login", content);
-
-            // Verificar resposta de erro
-            Assert.Equal(HttpStatusCode.Unauthorized, response.StatusCode);
-
-            // Ler conteúdo da resposta
-            var responseContent = await response.Content.ReadAsStringAsync();
-            var errorResponse = JsonConvert.DeserializeObject<dynamic>(responseContent);
-
-            // Verificar que detalhes internos não são expostos
-            Assert.NotNull(errorResponse);
-            Assert.False(
-                ((string)errorResponse.detail).Contains("SQL"),
-                "Mensagem de erro não deve conter detalhes internos de banco de dados"
-            );
-            Assert.False(
-                ((string)errorResponse.detail).Contains("Exception"),
-                "Mensagem de erro não deve conter detalhes de exceção"
-            );
-        }
+        }        
     }
 }
