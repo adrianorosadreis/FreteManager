@@ -9,6 +9,12 @@
     <IsTestProject>true</IsTestProject>
 	<PreserveCompilationContext>true</PreserveCompilationContext>
 	<GenerateRuntimeConfigDevFileFlag>true</GenerateRuntimeConfigDevFileFlag>
+	<GenerateDocumentationFile>true</GenerateDocumentationFile>	  
+	<UseAppHost>true</UseAppHost>
+	<PublishWithAspNetCoreHostingModel>true</PublishWithAspNetCoreHostingModel>
+	<WebProjectTestHostFramework>net8.0</WebProjectTestHostFramework>
+	<UserSecretsId>dotnet-FreteManager.Tests-guid</UserSecretsId>
+	<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
   </PropertyGroup>
 
   <ItemGroup>
@@ -23,6 +29,10 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FreteManager\FreteManager.csproj" />
+	<WebApplicationTestHost Include="FreteManager.Tests\TestProgram.cs" />
+	<Content Update="xunit.runner.json">
+	  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	</Content>
   </ItemGroup>
 	
   <ItemGroup>

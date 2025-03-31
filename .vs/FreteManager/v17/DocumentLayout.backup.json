@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "C:\\dev\\FreteManager\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|c:\\dev\\fretemanager\\fretemanager\\fretemanager.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|solutionrelative:fretemanager\\fretemanager.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}|FreteManager.Tests\\FreteManager.Tests.csproj|c:\\dev\\fretemanager\\fretemanager.tests\\fretemanager.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}|FreteManager.Tests\\FreteManager.Tests.csproj|solutionrelative:fretemanager.tests\\fretemanager.tests.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|c:\\dev\\fretemanager\\fretemanager\\fretemanager.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|solutionrelative:fretemanager\\fretemanager.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}|FreteManager.Tests\\FreteManager.Tests.csproj|c:\\dev\\fretemanager\\fretemanager.tests\\xunit.runner.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}|FreteManager.Tests\\FreteManager.Tests.csproj|solutionrelative:fretemanager.tests\\xunit.runner.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}|FreteManager.Tests\\FreteManager.Tests.csproj|c:\\dev\\fretemanager\\fretemanager.tests\\testsupport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}|FreteManager.Tests\\FreteManager.Tests.csproj|solutionrelative:fretemanager.tests\\testsupport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}|FreteManager.Tests\\FreteManager.Tests.csproj|c:\\dev\\fretemanager\\fretemanager.tests\\testprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}|FreteManager.Tests\\FreteManager.Tests.csproj|solutionrelative:fretemanager.tests\\testprogram.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|c:\\dev\\fretemanager\\fretemanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|solutionrelative:fretemanager\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}|FreteManager.Tests\\FreteManager.Tests.csproj|c:\\dev\\fretemanager\\fretemanager.tests\\security\\sensitivedataexposuretests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,37 +38,89 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "xunit.runner.json",
+              "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager.Tests\\xunit.runner.json",
+              "RelativeDocumentMoniker": "FreteManager.Tests\\xunit.runner.json",
+              "ToolTip": "C:\\dev\\FreteManager\\FreteManager.Tests\\xunit.runner.json",
+              "RelativeToolTip": "FreteManager.Tests\\xunit.runner.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-31T19:48:25.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TestSupport.cs",
+              "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager.Tests\\TestSupport.cs",
+              "RelativeDocumentMoniker": "FreteManager.Tests\\TestSupport.cs",
+              "ToolTip": "C:\\dev\\FreteManager\\FreteManager.Tests\\TestSupport.cs",
+              "RelativeToolTip": "FreteManager.Tests\\TestSupport.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T19:34:27.976Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TestProgram.cs",
+              "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager.Tests\\TestProgram.cs",
+              "RelativeDocumentMoniker": "FreteManager.Tests\\TestProgram.cs",
+              "ToolTip": "C:\\dev\\FreteManager\\FreteManager.Tests\\TestProgram.cs",
+              "RelativeToolTip": "FreteManager.Tests\\TestProgram.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T19:25:13.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager\\Program.cs",
+              "RelativeDocumentMoniker": "FreteManager\\Program.cs",
+              "ToolTip": "C:\\dev\\FreteManager\\FreteManager\\Program.cs",
+              "RelativeToolTip": "FreteManager\\Program.cs",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAQwJ8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T19:10:34.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "FreteManager",
+              "Title": "FreteManager.Tests",
+              "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager.Tests\\FreteManager.Tests.csproj",
+              "RelativeDocumentMoniker": "FreteManager.Tests\\FreteManager.Tests.csproj",
+              "ToolTip": "C:\\dev\\FreteManager\\FreteManager.Tests\\FreteManager.Tests.csproj",
+              "RelativeToolTip": "FreteManager.Tests\\FreteManager.Tests.csproj",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACEAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-31T19:06:02.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FreteManager.csproj",
               "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager\\FreteManager.csproj",
               "RelativeDocumentMoniker": "FreteManager\\FreteManager.csproj",
               "ToolTip": "C:\\dev\\FreteManager\\FreteManager\\FreteManager.csproj",
               "RelativeToolTip": "FreteManager\\FreteManager.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAOAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2025-03-31T18:58:22.131Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FreteManager.Tests.csproj",
-              "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager.Tests\\FreteManager.Tests.csproj",
-              "RelativeDocumentMoniker": "FreteManager.Tests\\FreteManager.Tests.csproj",
-              "ToolTip": "C:\\dev\\FreteManager\\FreteManager.Tests\\FreteManager.Tests.csproj",
-              "RelativeToolTip": "FreteManager.Tests\\FreteManager.Tests.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-03-31T18:54:36.482Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "SensitiveDataExposureTests.cs",
               "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager.Tests\\Security\\SensitiveDataExposureTests.cs",
               "RelativeDocumentMoniker": "FreteManager.Tests\\Security\\SensitiveDataExposureTests.cs",

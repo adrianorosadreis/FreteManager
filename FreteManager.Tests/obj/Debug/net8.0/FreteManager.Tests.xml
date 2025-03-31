@@ -1,0 +1,213 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FreteManager.Tests</name>
+    </assembly>
+    <members>
+        <member name="T:FreteManager.Tests.Integration.AuthControllerIntegrationTests">
+            <summary>
+            Testes de integração para AuthController
+            </summary>
+        </member>
+        <member name="T:FreteManager.Tests.Integration.AuthenticationHelper">
+            <summary>
+            Classe auxiliar para autenticação em testes de integração
+            </summary>
+        </member>
+        <member name="M:FreteManager.Tests.Integration.AuthenticationHelper.ObterTokenAutenticacao(System.Net.Http.HttpClient,System.String,System.String)">
+            <summary>
+            Obtém um token de autenticação para testes
+            </summary>
+            <param name="client">Cliente HTTP para realizar a requisição</param>
+            <param name="email">Email para login</param>
+            <param name="senha">Senha para login</param>
+            <returns>Token de autenticação</returns>
+        </member>
+        <member name="M:FreteManager.Tests.Integration.AuthenticationHelper.AdicionarTokenAutenticacao(System.Net.Http.HttpClient,System.String)">
+            <summary>
+            Adiciona o token de autenticação ao cabeçalho do cliente HTTP
+            </summary>
+        </member>
+        <member name="T:FreteManager.Tests.Integration.AuthenticationIntegrationTests">
+            <summary>
+            Testes de integração para autenticação e autorização
+            Verifica o comportamento do sistema de segurança em diferentes cenários
+            </summary>
+        </member>
+        <member name="P:FreteManager.Tests.Integration.AuthenticationIntegrationTests.InvalidCredentials">
+            <summary>
+            Conjunto de credenciais inválidas para teste
+            </summary>
+        </member>
+        <member name="T:FreteManager.Tests.Integration.AuthenticationIntegrationTests.UserRoleTestCase">
+            <summary>
+            Classe para representar diferentes perfis de teste
+            </summary>
+        </member>
+        <member name="P:FreteManager.Tests.Integration.AuthenticationIntegrationTests.UserRoleTestCases">
+            <summary>
+            Casos de teste para diferentes perfis de usuário
+            </summary>
+        </member>
+        <member name="T:FreteManager.Tests.Integration.ClientesControllerIntegrationTests">
+            <summary>
+            Testes de integração para ClientesController
+            Verifica o comportamento completo dos endpoints de gerenciamento de clientes
+            </summary>
+        </member>
+        <member name="M:FreteManager.Tests.Integration.ClientesControllerIntegrationTests.CriarClienteUnico">
+            <summary>
+            Método para criar um cliente de teste com dados únicos
+            </summary>
+        </member>
+        <member name="T:FreteManager.Tests.Integration.CustomWebApplicationFactory">
+            <summary>
+            Fábrica customizada para testes de integração
+            Permite configurar o ambiente de teste de forma isolada
+            </summary>
+        </member>
+        <member name="M:FreteManager.Tests.Integration.CustomWebApplicationFactory.ConfigureWebHost(Microsoft.AspNetCore.Hosting.IWebHostBuilder)">
+            <summary>
+            Configurações personalizadas para o ambiente de teste
+            </summary>
+        </member>
+        <member name="M:FreteManager.Tests.Integration.CustomWebApplicationFactory.PopularDadosDeTeste(FreteManager.Data.ApplicationDbContext)">
+            <summary>
+            Método para popular o banco de dados com dados de teste
+            </summary>
+        </member>
+        <member name="T:FreteManager.Tests.Integration.FreteControllerIntegrationTests">
+            <summary>
+            Testes de integração para FreteController
+            Verifica o comportamento completo do endpoint de cálculo de frete
+            </summary>
+        </member>
+        <member name="M:FreteManager.Tests.Integration.FreteControllerIntegrationTests.CriarParametrosFreteValidos">
+            <summary>
+            Método para criar parâmetros de frete padrão para testes
+            </summary>
+        </member>
+        <member name="T:FreteManager.Tests.Integration.PedidosControllerIntegrationTests">
+            <summary>
+            Testes de integração para PedidosController
+            </summary>
+        </member>
+        <member name="T:FreteManager.Tests.Repositories.PedidoRepositoryTests">
+            <summary>
+            Testes de repositório para operações de Pedido
+            Utiliza InMemory Database para isolar testes de banco de dados
+            </summary>
+        </member>
+        <member name="M:FreteManager.Tests.Repositories.PedidoRepositoryTests.#ctor">
+            <summary>
+            Configuração inicial para cada teste
+            Cria um banco de dados em memória único para cada execução de teste
+            </summary>
+        </member>
+        <member name="M:FreteManager.Tests.Repositories.PedidoRepositoryTests.SeedData">
+            <summary>
+            Método para popular dados iniciais no banco de dados de teste
+            </summary>
+        </member>
+        <member name="M:FreteManager.Tests.Repositories.PedidoRepositoryTests.Dispose">
+            <summary>
+            Método para limpeza de recursos após os testes
+            </summary>
+        </member>
+        <member name="T:FreteManager.Tests.Repositories.UsuarioRepositoryTests">
+            <summary>
+            Testes unitários para o repositório de Usuários
+            Utiliza InMemory Database para isolar testes de banco de dados
+            </summary>
+        </member>
+        <member name="M:FreteManager.Tests.Repositories.UsuarioRepositoryTests.#ctor">
+            <summary>
+            Configuração inicial para cada teste
+            Cria um banco de dados em memória único para cada execução de teste
+            </summary>
+        </member>
+        <member name="M:FreteManager.Tests.Repositories.UsuarioRepositoryTests.Dispose">
+            <summary>
+            Método para limpeza de recursos após os testes
+            </summary>
+        </member>
+        <member name="T:FreteManager.Tests.Security.SensitiveDataExposureTests">
+            <summary>
+            Testes de integração para verificar exposição de dados sensíveis
+            Garante que informações confidenciais não sejam inadvertidamente expostas
+            </summary>
+        </member>
+        <member name="M:FreteManager.Tests.Security.SensitiveDataExposureTests.ObterTokenAdmin">
+            <summary>
+            Método auxiliar para obter token de autenticação de admin
+            </summary>
+        </member>
+        <member name="M:FreteManager.Tests.Security.SensitiveDataExposureTests.VerificarCliente_NaoDeveExporSenhasOuDadosSensiveis">
+            <summary>
+            Verifica se dados de cliente não expõem informações sensíveis
+            </summary>
+        </member>
+        <member name="M:FreteManager.Tests.Security.SensitiveDataExposureTests.VerificarListaClientes_NaoDeveExporDadosSensiveis">
+            <summary>
+            Verifica se a lista de clientes não expõe informações sensíveis
+            </summary>
+        </member>
+        <member name="M:FreteManager.Tests.Security.SensitiveDataExposureTests.VerificarPedido_NaoDeveExporDadosSensiveis">
+            <summary>
+            Verifica se detalhes de pedido não expõem informações sensíveis
+            </summary>
+        </member>
+        <member name="M:FreteManager.Tests.Security.SensitiveDataExposureTests.LoginResponse_NaoDeveExporSenhaOuTokenCompleto">
+            <summary>
+            Verifica se a resposta de login não expõe informações sensíveis
+            </summary>
+        </member>
+        <member name="M:FreteManager.Tests.Security.SensitiveDataExposureTests.ErrosDeAplicacao_NaoDevemRevelarDetalhesInternos">
+            <summary>
+            Verifica se erros de sistema não revelam detalhes internos
+            </summary>
+        </member>
+        <member name="T:FreteManager.Tests.Security.SqlInjectionTests">
+            <summary>
+            Testes de integração para verificar vulnerabilidades de Injeção de SQL
+            </summary>
+        </member>
+        <member name="P:FreteManager.Tests.Security.SqlInjectionTests.SqlInjectionPayloads">
+            <summary>
+            Conjunto de payloads de injeção de SQL para teste
+            </summary>
+        </member>
+        <member name="T:FreteManager.Tests.Services.AuthServiceTests">
+            <summary>
+            Testes unitários para o serviço de autenticação
+            </summary>
+        </member>
+        <member name="T:FreteManager.Tests.Services.ClienteServiceTests">
+            <summary>
+            Testes unitários para o serviço de clientes
+            </summary>
+        </member>
+        <member name="T:FreteManager.Tests.Services.FreteServiceTests">
+            <summary>
+            Testes unitários para o serviço de cálculo de frete
+            </summary>
+        </member>
+        <member name="T:FreteManager.Tests.Services.PedidoServiceTests">
+            <summary>
+            Testes unitários para o serviço de pedidos
+            </summary>
+        </member>
+        <member name="T:FreteManager.Tests.TestProgram">
+            <summary>
+            Classe de marcação para testes de integração
+            Não define método Main para evitar conflito de pontos de entrada
+            </summary>
+        </member>
+        <member name="T:FreteManager.Tests.TestSupport">
+            <summary>
+            Classe de suporte para testes de integração
+            Ajuda na descoberta de configurações sem criar ponto de entrada
+            </summary>
+        </member>
+    </members>
+</doc>

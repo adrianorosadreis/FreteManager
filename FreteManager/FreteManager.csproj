@@ -6,6 +6,10 @@
     <ImplicitUsings>enable</ImplicitUsings>
 	<GenerateDocumentationFile>true</GenerateDocumentationFile>
 	<NoWarn>$(NoWarn);1591</NoWarn>
+	<PreserveCompilationContext>true</PreserveCompilationContext>
+	<GenerateRuntimeConfigDevFileFlag>true</GenerateRuntimeConfigDevFileFlag>
+	<PublishWithAspNetCoreHostingModel>true</PublishWithAspNetCoreHostingModel>
+  
   </PropertyGroup>
 
   <ItemGroup>

@@ -13,10 +13,12 @@ C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\MvcTestingAppManifest.js
 C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
 C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\xunit.runner.reporters.netcoreapp10.dll
 C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\xunit.runner.utility.netcoreapp10.dll
+C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\FreteManager.Tests.exe
 C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\FreteManager.Tests.deps.json
 C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\FreteManager.Tests.runtimeconfig.json
 C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\FreteManager.Tests.dll
 C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\FreteManager.Tests.pdb
+C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\FreteManager.Tests.xml
 C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\refs\Microsoft.AspNetCore.Antiforgery.dll
 C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\refs\Microsoft.AspNetCore.Authentication.Abstractions.dll
 C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\refs\Microsoft.AspNetCore.Authentication.BearerToken.dll
@@ -480,6 +482,7 @@ C:\dev\FreteManager\FreteManager.Tests\obj\Debug\net8.0\FreteManager.Tests.sourc
 C:\dev\FreteManager\FreteManager.Tests\obj\Debug\net8.0\FreteMan.9ED67D96.Up2Date
 C:\dev\FreteManager\FreteManager.Tests\obj\Debug\net8.0\FreteManager.Tests.dll
 C:\dev\FreteManager\FreteManager.Tests\obj\Debug\net8.0\refint\FreteManager.Tests.dll
+C:\dev\FreteManager\FreteManager.Tests\obj\Debug\net8.0\FreteManager.Tests.xml
 C:\dev\FreteManager\FreteManager.Tests\obj\Debug\net8.0\FreteManager.Tests.pdb
 C:\dev\FreteManager\FreteManager.Tests\obj\Debug\net8.0\FreteManager.Tests.genruntimeconfig.cache
 C:\dev\FreteManager\FreteManager.Tests\obj\Debug\net8.0\ref\FreteManager.Tests.dll

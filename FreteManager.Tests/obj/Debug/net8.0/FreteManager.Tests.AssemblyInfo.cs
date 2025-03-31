@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("dotnet-FreteManager.Tests-guid")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("FreteManager.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2fded5aa6355b01289f340ca300fa4dbdd128295")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+baa2df88638a75a29d6c13c79c92df5199de976c")]
 [assembly: System.Reflection.AssemblyProductAttribute("FreteManager.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FreteManager.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
