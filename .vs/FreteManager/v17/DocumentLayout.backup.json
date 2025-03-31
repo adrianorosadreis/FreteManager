@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "C:\\dev\\FreteManager\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}|FreteManager.Tests\\FreteManager.Tests.csproj|c:\\dev\\fretemanager\\fretemanager.tests\\repositories\\pedidorepositorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}|FreteManager.Tests\\FreteManager.Tests.csproj|solutionrelative:fretemanager.tests\\repositories\\pedidorepositorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}|FreteManager.Tests\\FreteManager.Tests.csproj|c:\\dev\\fretemanager\\fretemanager.tests\\repositories\\clienterepositorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}|FreteManager.Tests\\FreteManager.Tests.csproj|solutionrelative:fretemanager.tests\\repositories\\clienterepositorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}|FreteManager.Tests\\FreteManager.Tests.csproj|c:\\dev\\fretemanager\\fretemanager.tests\\repositories\\pedidorepositorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}|FreteManager.Tests\\FreteManager.Tests.csproj|solutionrelative:fretemanager.tests\\repositories\\pedidorepositorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}|FreteManager.Tests\\FreteManager.Tests.csproj|c:\\dev\\fretemanager\\fretemanager.tests\\services\\authservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}|FreteManager.Tests\\FreteManager.Tests.csproj|solutionrelative:fretemanager.tests\\services\\authservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}|FreteManager.Tests\\FreteManager.Tests.csproj|c:\\dev\\fretemanager\\fretemanager.tests\\services\\clienteservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}|FreteManager.Tests\\FreteManager.Tests.csproj|solutionrelative:fretemanager.tests\\services\\clienteservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}|FreteManager.Tests\\FreteManager.Tests.csproj|c:\\dev\\fretemanager\\fretemanager.tests\\services\\freteservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}|FreteManager.Tests\\FreteManager.Tests.csproj|solutionrelative:fretemanager.tests\\services\\freteservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}|FreteManager.Tests\\FreteManager.Tests.csproj|c:\\dev\\fretemanager\\fretemanager.tests\\services\\pedidoservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}|FreteManager.Tests\\FreteManager.Tests.csproj|solutionrelative:fretemanager.tests\\services\\pedidoservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}|FreteManager.Tests\\FreteManager.Tests.csproj|c:\\dev\\fretemanager\\fretemanager.tests\\repositories\\usuariorepositorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}|FreteManager.Tests\\FreteManager.Tests.csproj|solutionrelative:fretemanager.tests\\repositories\\usuariorepositorytests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}|FreteManager.Tests\\FreteManager.Tests.csproj|c:\\dev\\fretemanager\\fretemanager.tests\\integration\\pedidoscontrollerintegrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -41,18 +57,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|c:\\dev\\fretemanager\\fretemanager\\controllers\\fretecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|solutionrelative:fretemanager\\controllers\\fretecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}|FreteManager.Tests\\FreteManager.Tests.csproj|c:\\dev\\fretemanager\\fretemanager.tests\\services\\pedidoservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}|FreteManager.Tests\\FreteManager.Tests.csproj|solutionrelative:fretemanager.tests\\services\\pedidoservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}|FreteManager.Tests\\FreteManager.Tests.csproj|c:\\dev\\fretemanager\\fretemanager.tests\\services\\freteservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}|FreteManager.Tests\\FreteManager.Tests.csproj|solutionrelative:fretemanager.tests\\services\\freteservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}|FreteManager.Tests\\FreteManager.Tests.csproj|c:\\dev\\fretemanager\\fretemanager.tests\\services\\clienteservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}|FreteManager.Tests\\FreteManager.Tests.csproj|solutionrelative:fretemanager.tests\\services\\clienteservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,11 +66,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
+              "Title": "UsuarioRepositoryTests.cs",
+              "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager.Tests\\Repositories\\UsuarioRepositoryTests.cs",
+              "RelativeDocumentMoniker": "FreteManager.Tests\\Repositories\\UsuarioRepositoryTests.cs",
+              "ToolTip": "C:\\dev\\FreteManager\\FreteManager.Tests\\Repositories\\UsuarioRepositoryTests.cs",
+              "RelativeToolTip": "FreteManager.Tests\\Repositories\\UsuarioRepositoryTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T18:32:50.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "AuthenticationHelper.cs",
               "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager.Tests\\Integration\\AuthenticationHelper.cs",
               "RelativeDocumentMoniker": "FreteManager.Tests\\Integration\\AuthenticationHelper.cs",
@@ -74,12 +91,11 @@
               "RelativeToolTip": "FreteManager.Tests\\Integration\\AuthenticationHelper.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T17:50:05.121Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T17:50:05.121Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "CustomWebApplicationFactory.cs",
               "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager.Tests\\Integration\\CustomWebApplicationFactory.cs",
               "RelativeDocumentMoniker": "FreteManager.Tests\\Integration\\CustomWebApplicationFactory.cs",
@@ -87,12 +103,11 @@
               "RelativeToolTip": "FreteManager.Tests\\Integration\\CustomWebApplicationFactory.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T17:49:13.051Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T17:49:13.051Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "FreteControllerIntegrationTests.cs",
               "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager.Tests\\Integration\\FreteControllerIntegrationTests.cs",
               "RelativeDocumentMoniker": "FreteManager.Tests\\Integration\\FreteControllerIntegrationTests.cs",
@@ -100,12 +115,11 @@
               "RelativeToolTip": "FreteManager.Tests\\Integration\\FreteControllerIntegrationTests.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAMAAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T17:48:29.064Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T17:48:29.064Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "PedidosControllerIntegrationTests.cs",
               "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager.Tests\\Integration\\PedidosControllerIntegrationTests.cs",
               "RelativeDocumentMoniker": "FreteManager.Tests\\Integration\\PedidosControllerIntegrationTests.cs",
@@ -113,12 +127,11 @@
               "RelativeToolTip": "FreteManager.Tests\\Integration\\PedidosControllerIntegrationTests.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T17:48:18.888Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T17:48:18.888Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "ClientesControllerIntegrationTests.cs",
               "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager.Tests\\Integration\\ClientesControllerIntegrationTests.cs",
               "RelativeDocumentMoniker": "FreteManager.Tests\\Integration\\ClientesControllerIntegrationTests.cs",
@@ -126,25 +139,23 @@
               "RelativeToolTip": "FreteManager.Tests\\Integration\\ClientesControllerIntegrationTests.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T17:48:10.308Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T17:48:10.308Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "AuthControllerIntegrationTests.cs",
               "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager.Tests\\Integration\\AuthControllerIntegrationTests.cs",
               "RelativeDocumentMoniker": "FreteManager.Tests\\Integration\\AuthControllerIntegrationTests.cs",
               "ToolTip": "C:\\dev\\FreteManager\\FreteManager.Tests\\Integration\\AuthControllerIntegrationTests.cs",
               "RelativeToolTip": "FreteManager.Tests\\Integration\\AuthControllerIntegrationTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwAAAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T17:47:59.024Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T17:47:59.024Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "FreteController.cs",
               "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager\\Controllers\\FreteController.cs",
               "RelativeDocumentMoniker": "FreteManager\\Controllers\\FreteController.cs",
@@ -156,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "PedidoRepositoryTests.cs",
               "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager.Tests\\Repositories\\PedidoRepositoryTests.cs",
               "RelativeDocumentMoniker": "FreteManager.Tests\\Repositories\\PedidoRepositoryTests.cs",
@@ -169,28 +180,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "ClienteRepositoryTests.cs",
               "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager.Tests\\Repositories\\ClienteRepositoryTests.cs",
               "RelativeDocumentMoniker": "FreteManager.Tests\\Repositories\\ClienteRepositoryTests.cs",
               "ToolTip": "C:\\dev\\FreteManager\\FreteManager.Tests\\Repositories\\ClienteRepositoryTests.cs",
               "RelativeToolTip": "FreteManager.Tests\\Repositories\\ClienteRepositoryTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T17:04:38.264Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 4,
               "Title": "FreteServiceTests.cs",
               "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager.Tests\\Services\\FreteServiceTests.cs",
               "RelativeDocumentMoniker": "FreteManager.Tests\\Services\\FreteServiceTests.cs",
               "ToolTip": "C:\\dev\\FreteManager\\FreteManager.Tests\\Services\\FreteServiceTests.cs",
               "RelativeToolTip": "FreteManager.Tests\\Services\\FreteServiceTests.cs",
-              "ViewState": "AgIAAPcAAAAAAAAAAAAuwPIAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T16:52:27.844Z"
+              "WhenOpened": "2025-03-31T16:52:27.844Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -207,27 +219,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 5,
               "Title": "PedidoServiceTests.cs",
               "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager.Tests\\Services\\PedidoServiceTests.cs",
               "RelativeDocumentMoniker": "FreteManager.Tests\\Services\\PedidoServiceTests.cs",
               "ToolTip": "C:\\dev\\FreteManager\\FreteManager.Tests\\Services\\PedidoServiceTests.cs",
               "RelativeToolTip": "FreteManager.Tests\\Services\\PedidoServiceTests.cs",
-              "ViewState": "AgIAAJgAAAAAAAAAAAAmwMkAAAA7AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T16:50:18.359Z"
+              "WhenOpened": "2025-03-31T16:50:18.359Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 3,
               "Title": "ClienteServiceTests.cs",
               "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager.Tests\\Services\\ClienteServiceTests.cs",
               "RelativeDocumentMoniker": "FreteManager.Tests\\Services\\ClienteServiceTests.cs",
               "ToolTip": "C:\\dev\\FreteManager\\FreteManager.Tests\\Services\\ClienteServiceTests.cs",
               "RelativeToolTip": "FreteManager.Tests\\Services\\ClienteServiceTests.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAwwAwAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T15:50:19.367Z"
+              "WhenOpened": "2025-03-31T15:50:19.367Z",
+              "EditorCaption": ""
             }
           ]
         }
