@@ -11,9 +11,6 @@ namespace FreteManager.Models
         [Required]
         public int PedidoId { get; set; }
 
-        [ForeignKey("PedidoId")]
-        public Pedido Pedido { get; set; }
-
         [Range(0.1, double.MaxValue)]
         public decimal Altura { get; set; }
 

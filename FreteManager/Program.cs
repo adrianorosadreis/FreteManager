@@ -1,5 +1,6 @@
 using FreteManager.Data;
 using FreteManager.Extensions;
+using FreteManager.Middleware;
 using FreteManager.Repositories;
 using FreteManager.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -146,7 +147,7 @@ if (app.Environment.IsDevelopment())
 app.InitializeDatabase();
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-
+app.UseMiddleware<ErrorHandlingMiddleware>();
 app.UseRouting();
 
 app.UseAuthorization();
