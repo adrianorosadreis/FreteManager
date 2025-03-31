@@ -1,4 +1,11 @@
 C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\CoverletSourceRootsMapping_FreteManager.Tests
+C:\dev\FreteManager\FreteManager.Tests\obj\Debug\net8.0\FreteManager.Tests.csproj.AssemblyReference.cache
+C:\dev\FreteManager\FreteManager.Tests\obj\Debug\net8.0\MvcTestingAppManifest.json
+C:\dev\FreteManager\FreteManager.Tests\obj\Debug\net8.0\FreteManager.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\FreteManager\FreteManager.Tests\obj\Debug\net8.0\FreteManager.Tests.AssemblyInfoInputs.cache
+C:\dev\FreteManager\FreteManager.Tests\obj\Debug\net8.0\FreteManager.Tests.AssemblyInfo.cs
+C:\dev\FreteManager\FreteManager.Tests\obj\Debug\net8.0\FreteManager.Tests.csproj.CoreCompileInputs.cache
+C:\dev\FreteManager\FreteManager.Tests\obj\Debug\net8.0\FreteManager.Tests.sourcelink.json
 C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\testhost.dll
 C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\FreteManager.deps.json
 C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\FreteManager.runtimeconfig.json
@@ -472,13 +479,6 @@ C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\runtimes\win\lib\net6.0\
 C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\FreteManager.dll
 C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\FreteManager.pdb
 C:\dev\FreteManager\FreteManager.Tests\bin\Debug\net8.0\FreteManager.xml
-C:\dev\FreteManager\FreteManager.Tests\obj\Debug\net8.0\FreteManager.Tests.csproj.AssemblyReference.cache
-C:\dev\FreteManager\FreteManager.Tests\obj\Debug\net8.0\MvcTestingAppManifest.json
-C:\dev\FreteManager\FreteManager.Tests\obj\Debug\net8.0\FreteManager.Tests.GeneratedMSBuildEditorConfig.editorconfig
-C:\dev\FreteManager\FreteManager.Tests\obj\Debug\net8.0\FreteManager.Tests.AssemblyInfoInputs.cache
-C:\dev\FreteManager\FreteManager.Tests\obj\Debug\net8.0\FreteManager.Tests.AssemblyInfo.cs
-C:\dev\FreteManager\FreteManager.Tests\obj\Debug\net8.0\FreteManager.Tests.csproj.CoreCompileInputs.cache
-C:\dev\FreteManager\FreteManager.Tests\obj\Debug\net8.0\FreteManager.Tests.sourcelink.json
 C:\dev\FreteManager\FreteManager.Tests\obj\Debug\net8.0\FreteMan.9ED67D96.Up2Date
 C:\dev\FreteManager\FreteManager.Tests\obj\Debug\net8.0\FreteManager.Tests.dll
 C:\dev\FreteManager\FreteManager.Tests\obj\Debug\net8.0\refint\FreteManager.Tests.dll

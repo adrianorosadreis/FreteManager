@@ -15,6 +15,8 @@
 	<WebProjectTestHostFramework>net8.0</WebProjectTestHostFramework>
 	<UserSecretsId>dotnet-FreteManager.Tests-guid</UserSecretsId>
 	<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+	  <ShadowCopyAssets>false</ShadowCopyAssets>
+	  <InvariantGlobalization>true</InvariantGlobalization>
   </PropertyGroup>
 
   <ItemGroup>
@@ -28,8 +30,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FreteManager\FreteManager.csproj" />
-	<WebApplicationTestHost Include="FreteManager.Tests\TestProgram.cs" />
+	  <ProjectReference Include="..\FreteManager\FreteManager.csproj">
+		  <Private>true</Private>
+		  <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+	  </ProjectReference>
+	<WebApplicationTestHost Include="..\FreteManager\Program.cs" />
 	<Content Update="xunit.runner.json">
 	  <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
 	</Content>

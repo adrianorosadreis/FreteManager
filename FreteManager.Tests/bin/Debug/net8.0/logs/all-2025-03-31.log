@@ -1,0 +1,626 @@
+2025-03-31 17:51:01.7941|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 17:51:01.7941|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 17:51:01.7941|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 17:51:01.7941|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 17:51:02.7107|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 17:51:02.7357|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 17:51:02.7357|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 17:51:02.7393|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 17:51:02.7393|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 17:51:02.8606|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 17:51:02.8810|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 17:51:02.8810|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 17:51:02.8977|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: naoexiste@teste.com 
+2025-03-31 17:51:02.8977|0|INFO|AuthService|Tentativa de login: naoexiste@teste.com 
+2025-03-31 17:51:02.9095|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 17:51:02.9095|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 17:51:02.9095|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 17:51:02.9095|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 17:51:03.0375|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 17:51:03.0724|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 17:51:03.0724|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 17:51:03.0724|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 17:51:03.0724|0|WARN|AuthService|Tentativa de login com email não cadastrado: admin@fretemanager.com 
+2025-03-31 17:51:03.0724|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|A entidade Usuário com ID admin@fretemanager.com não foi encontrada. FreteManager.Exceptions.EntityNotFoundException: A entidade Usuário com ID admin@fretemanager.com não foi encontrada.
+   at AuthService.LoginAsync(LoginRequest model) in C:\dev\FreteManager\FreteManager\Services\AuthService.cs:line 64
+   at FreteManager.Controllers.AuthController.Login(LoginRequest model) in C:\dev\FreteManager\FreteManager\Controllers\AuthController.cs:line 53
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 17:53:02.6925|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 17:53:02.6925|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 17:53:02.6925|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 17:53:02.6925|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 17:53:02.9675|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 17:53:02.9675|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 17:53:02.9675|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 17:53:02.9675|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 17:53:03.0648|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: naoexiste@teste.com 
+2025-03-31 17:53:03.0648|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 17:53:03.0648|0|INFO|AuthService|Tentativa de login: naoexiste@teste.com 
+2025-03-31 17:53:03.0648|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 17:53:03.0648|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 17:53:03.0648|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 17:53:03.0696|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 17:53:03.0696|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 17:53:03.1355|0|WARN|AuthService|Tentativa de login com email não cadastrado: naoexiste@teste.com 
+2025-03-31 17:53:03.1355|0|WARN|AuthService|Tentativa de login com senha incorreta: teste@integracao.com 
+2025-03-31 17:53:03.1355|0|WARN|AuthService|Tentativa de login com senha incorreta: teste@integracao.com 
+2025-03-31 17:53:03.1355|0|WARN|AuthService|Tentativa de login com senha incorreta: teste@integracao.com 
+2025-03-31 17:53:03.1355|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|Credenciais inválidas. FreteManager.Exceptions.UnauthorizedOperationException: Credenciais inválidas.
+   at AuthService.LoginAsync(LoginRequest model) in C:\dev\FreteManager\FreteManager\Services\AuthService.cs:line 72
+   at FreteManager.Controllers.AuthController.Login(LoginRequest model) in C:\dev\FreteManager\FreteManager\Controllers\AuthController.cs:line 53
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 17:53:03.1355|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|A entidade Usuário com ID naoexiste@teste.com não foi encontrada. FreteManager.Exceptions.EntityNotFoundException: A entidade Usuário com ID naoexiste@teste.com não foi encontrada.
+   at AuthService.LoginAsync(LoginRequest model) in C:\dev\FreteManager\FreteManager\Services\AuthService.cs:line 64
+   at FreteManager.Controllers.AuthController.Login(LoginRequest model) in C:\dev\FreteManager\FreteManager\Controllers\AuthController.cs:line 53
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 17:53:03.1355|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|Credenciais inválidas. FreteManager.Exceptions.UnauthorizedOperationException: Credenciais inválidas.
+   at AuthService.LoginAsync(LoginRequest model) in C:\dev\FreteManager\FreteManager\Services\AuthService.cs:line 72
+   at FreteManager.Controllers.AuthController.Login(LoginRequest model) in C:\dev\FreteManager\FreteManager\Controllers\AuthController.cs:line 53
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 17:53:03.1355|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|Credenciais inválidas. FreteManager.Exceptions.UnauthorizedOperationException: Credenciais inválidas.
+   at AuthService.LoginAsync(LoginRequest model) in C:\dev\FreteManager\FreteManager\Services\AuthService.cs:line 72
+   at FreteManager.Controllers.AuthController.Login(LoginRequest model) in C:\dev\FreteManager\FreteManager\Controllers\AuthController.cs:line 53
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 17:53:03.2152|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 17:53:03.2706|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 17:53:03.6027|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 17:53:03.6272|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 17:53:03.6354|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 17:53:03.6354|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 17:53:03.6354|0|WARN|AuthService|Tentativa de login com email não cadastrado: admin@fretemanager.com 
+2025-03-31 17:53:03.6354|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|A entidade Usuário com ID admin@fretemanager.com não foi encontrada. FreteManager.Exceptions.EntityNotFoundException: A entidade Usuário com ID admin@fretemanager.com não foi encontrada.
+   at AuthService.LoginAsync(LoginRequest model) in C:\dev\FreteManager\FreteManager\Services\AuthService.cs:line 64
+   at FreteManager.Controllers.AuthController.Login(LoginRequest model) in C:\dev\FreteManager\FreteManager\Controllers\AuthController.cs:line 53
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 18:10:40.8155|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 18:10:40.8155|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 18:10:40.8155|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 18:10:40.8155|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 18:10:41.1654|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 18:10:41.1654|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 18:10:41.1654|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 18:10:41.1654|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 18:10:41.9158|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 18:10:41.9298|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 18:10:41.9298|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 18:10:41.9298|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 18:10:41.9298|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 18:10:41.9404|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 18:10:41.9404|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 18:10:41.9727|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 18:10:41.9727|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: naoexiste@teste.com 
+2025-03-31 18:10:41.9727|0|INFO|AuthService|Tentativa de login: naoexiste@teste.com 
+2025-03-31 18:10:42.0198|0|WARN|AuthService|Tentativa de login com email não cadastrado: naoexiste@teste.com 
+2025-03-31 18:10:42.0198|0|WARN|AuthService|Tentativa de login com email não cadastrado: admin@fretemanager.com 
+2025-03-31 18:10:42.0911|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 18:10:42.1220|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 18:10:42.1287|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 18:10:42.1287|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 18:10:42.1287|0|WARN|AuthService|Tentativa de login com email não cadastrado: admin@fretemanager.com 
+2025-03-31 18:10:42.1287|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|A entidade Usuário com ID admin@fretemanager.com não foi encontrada. FreteManager.Exceptions.EntityNotFoundException: A entidade Usuário com ID admin@fretemanager.com não foi encontrada.
+   at AuthService.LoginAsync(LoginRequest model) in C:\dev\FreteManager\FreteManager\Services\AuthService.cs:line 64
+   at FreteManager.Controllers.AuthController.Login(LoginRequest model) in C:\dev\FreteManager\FreteManager\Controllers\AuthController.cs:line 53
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 18:13:35.1695|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 18:13:35.3806|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 18:13:35.5117|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: naoexiste@teste.com 
+2025-03-31 18:13:35.5117|0|INFO|AuthService|Tentativa de login: naoexiste@teste.com 
+2025-03-31 18:13:35.6080|0|WARN|AuthService|Tentativa de login com email não cadastrado: naoexiste@teste.com 
+2025-03-31 18:13:35.6132|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|A entidade Usuário com ID naoexiste@teste.com não foi encontrada. FreteManager.Exceptions.EntityNotFoundException: A entidade Usuário com ID naoexiste@teste.com não foi encontrada.
+   at AuthService.LoginAsync(LoginRequest model) in C:\dev\FreteManager\FreteManager\Services\AuthService.cs:line 64
+   at FreteManager.Controllers.AuthController.Login(LoginRequest model) in C:\dev\FreteManager\FreteManager\Controllers\AuthController.cs:line 53
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 18:13:35.6700|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 18:13:35.6700|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 18:13:35.6838|0|WARN|AuthService|Tentativa de login com senha incorreta: teste@integracao.com 
+2025-03-31 18:13:35.6838|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|Credenciais inválidas. FreteManager.Exceptions.UnauthorizedOperationException: Credenciais inválidas.
+   at AuthService.LoginAsync(LoginRequest model) in C:\dev\FreteManager\FreteManager\Services\AuthService.cs:line 72
+   at FreteManager.Controllers.AuthController.Login(LoginRequest model) in C:\dev\FreteManager\FreteManager\Controllers\AuthController.cs:line 53
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 18:13:35.7270|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para registrar usuário: usuario6079b860-7763-449d-910f-2df48e9affff@teste.com 
+2025-03-31 18:13:35.7270|0|INFO|AuthService|Iniciando registro de novo usuário: usuario6079b860-7763-449d-910f-2df48e9affff@teste.com 
+2025-03-31 18:13:35.7431|0|INFO|AuthService|Usuário usuario6079b860-7763-449d-910f-2df48e9affff@teste.com registrado com sucesso. ID: 2 
+2025-03-31 18:13:35.7431|0|INFO|FreteManager.Controllers.AuthController|Usuário registrado com sucesso: usuario6079b860-7763-449d-910f-2df48e9affff@teste.com, ID: 2 
+2025-03-31 18:13:54.3026|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 18:13:54.5404|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 18:13:54.8006|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: naoexiste@teste.com 
+2025-03-31 18:13:54.8006|0|INFO|AuthService|Tentativa de login: naoexiste@teste.com 
+2025-03-31 18:13:54.8902|0|WARN|AuthService|Tentativa de login com email não cadastrado: naoexiste@teste.com 
+2025-03-31 18:13:54.8961|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|A entidade Usuário com ID naoexiste@teste.com não foi encontrada. FreteManager.Exceptions.EntityNotFoundException: A entidade Usuário com ID naoexiste@teste.com não foi encontrada.
+   at AuthService.LoginAsync(LoginRequest model) in C:\dev\FreteManager\FreteManager\Services\AuthService.cs:line 64
+   at FreteManager.Controllers.AuthController.Login(LoginRequest model) in C:\dev\FreteManager\FreteManager\Controllers\AuthController.cs:line 53
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 18:13:54.9781|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 18:13:54.9781|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 18:13:54.9873|0|WARN|AuthService|Tentativa de login com email não cadastrado: admin@fretemanager.com 
+2025-03-31 18:13:54.9873|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|A entidade Usuário com ID admin@fretemanager.com não foi encontrada. FreteManager.Exceptions.EntityNotFoundException: A entidade Usuário com ID admin@fretemanager.com não foi encontrada.
+   at AuthService.LoginAsync(LoginRequest model) in C:\dev\FreteManager\FreteManager\Services\AuthService.cs:line 64
+   at FreteManager.Controllers.AuthController.Login(LoginRequest model) in C:\dev\FreteManager\FreteManager\Controllers\AuthController.cs:line 53
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 18:13:55.0200|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: admin@fretemanager.com 
+2025-03-31 18:13:55.0200|0|INFO|AuthService|Tentativa de login: admin@fretemanager.com 
+2025-03-31 18:13:55.0200|0|WARN|AuthService|Tentativa de login com email não cadastrado: admin@fretemanager.com 
+2025-03-31 18:13:55.0200|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|A entidade Usuário com ID admin@fretemanager.com não foi encontrada. FreteManager.Exceptions.EntityNotFoundException: A entidade Usuário com ID admin@fretemanager.com não foi encontrada.
+   at AuthService.LoginAsync(LoginRequest model) in C:\dev\FreteManager\FreteManager\Services\AuthService.cs:line 64
+   at FreteManager.Controllers.AuthController.Login(LoginRequest model) in C:\dev\FreteManager\FreteManager\Controllers\AuthController.cs:line 53
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 18:13:55.0200|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: operador@fretemanager.com 
+2025-03-31 18:13:55.0200|0|INFO|AuthService|Tentativa de login: operador@fretemanager.com 
+2025-03-31 18:13:55.0200|0|WARN|AuthService|Tentativa de login com email não cadastrado: operador@fretemanager.com 
+2025-03-31 18:13:55.0200|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|A entidade Usuário com ID operador@fretemanager.com não foi encontrada. FreteManager.Exceptions.EntityNotFoundException: A entidade Usuário com ID operador@fretemanager.com não foi encontrada.
+   at AuthService.LoginAsync(LoginRequest model) in C:\dev\FreteManager\FreteManager\Services\AuthService.cs:line 64
+   at FreteManager.Controllers.AuthController.Login(LoginRequest model) in C:\dev\FreteManager\FreteManager\Controllers\AuthController.cs:line 53
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 18:14:16.9441|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 18:14:17.1402|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 18:14:17.2382|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 18:14:17.2382|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 18:14:17.3013|0|WARN|AuthService|Tentativa de login com senha incorreta: teste@integracao.com 
+2025-03-31 18:14:17.3013|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|Credenciais inválidas. FreteManager.Exceptions.UnauthorizedOperationException: Credenciais inválidas.
+   at AuthService.LoginAsync(LoginRequest model) in C:\dev\FreteManager\FreteManager\Services\AuthService.cs:line 72
+   at FreteManager.Controllers.AuthController.Login(LoginRequest model) in C:\dev\FreteManager\FreteManager\Controllers\AuthController.cs:line 53
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 18:14:17.3566|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 18:14:17.3566|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 18:14:17.3637|0|WARN|AuthService|Tentativa de login com senha incorreta: teste@integracao.com 
+2025-03-31 18:14:17.3637|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|Credenciais inválidas. FreteManager.Exceptions.UnauthorizedOperationException: Credenciais inválidas.
+   at AuthService.LoginAsync(LoginRequest model) in C:\dev\FreteManager\FreteManager\Services\AuthService.cs:line 72
+   at FreteManager.Controllers.AuthController.Login(LoginRequest model) in C:\dev\FreteManager\FreteManager\Controllers\AuthController.cs:line 53
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 18:14:17.3637|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 18:14:17.3637|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 18:14:17.3637|0|WARN|AuthService|Tentativa de login com senha incorreta: teste@integracao.com 
+2025-03-31 18:14:17.3786|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|Credenciais inválidas. FreteManager.Exceptions.UnauthorizedOperationException: Credenciais inválidas.
+   at AuthService.LoginAsync(LoginRequest model) in C:\dev\FreteManager\FreteManager\Services\AuthService.cs:line 72
+   at FreteManager.Controllers.AuthController.Login(LoginRequest model) in C:\dev\FreteManager\FreteManager\Controllers\AuthController.cs:line 53
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 18:14:17.3786|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 18:14:17.3786|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 18:14:17.3786|0|WARN|AuthService|Tentativa de login com senha incorreta: teste@integracao.com 
+2025-03-31 18:14:17.3786|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|Credenciais inválidas. FreteManager.Exceptions.UnauthorizedOperationException: Credenciais inválidas.
+   at AuthService.LoginAsync(LoginRequest model) in C:\dev\FreteManager\FreteManager\Services\AuthService.cs:line 72
+   at FreteManager.Controllers.AuthController.Login(LoginRequest model) in C:\dev\FreteManager\FreteManager\Controllers\AuthController.cs:line 53
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 18:14:17.3786|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 18:14:17.3786|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 18:14:17.3786|0|WARN|AuthService|Tentativa de login com senha incorreta: teste@integracao.com 
+2025-03-31 18:14:17.3786|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|Credenciais inválidas. FreteManager.Exceptions.UnauthorizedOperationException: Credenciais inválidas.
+   at AuthService.LoginAsync(LoginRequest model) in C:\dev\FreteManager\FreteManager\Services\AuthService.cs:line 72
+   at FreteManager.Controllers.AuthController.Login(LoginRequest model) in C:\dev\FreteManager\FreteManager\Controllers\AuthController.cs:line 53
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 18:14:17.3990|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 18:14:17.3990|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 18:14:17.3990|0|WARN|AuthService|Tentativa de login com senha incorreta: teste@integracao.com 
+2025-03-31 18:14:17.3990|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|Credenciais inválidas. FreteManager.Exceptions.UnauthorizedOperationException: Credenciais inválidas.
+   at AuthService.LoginAsync(LoginRequest model) in C:\dev\FreteManager\FreteManager\Services\AuthService.cs:line 72
+   at FreteManager.Controllers.AuthController.Login(LoginRequest model) in C:\dev\FreteManager\FreteManager\Controllers\AuthController.cs:line 53
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 18:14:17.3990|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 18:14:17.3990|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 18:14:17.3990|0|WARN|AuthService|Tentativa de login com senha incorreta: teste@integracao.com 
+2025-03-31 18:14:17.3990|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|Credenciais inválidas. FreteManager.Exceptions.UnauthorizedOperationException: Credenciais inválidas.
+   at AuthService.LoginAsync(LoginRequest model) in C:\dev\FreteManager\FreteManager\Services\AuthService.cs:line 72
+   at FreteManager.Controllers.AuthController.Login(LoginRequest model) in C:\dev\FreteManager\FreteManager\Controllers\AuthController.cs:line 53
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 18:14:17.4114|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 18:14:17.4114|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 18:14:17.4114|0|WARN|AuthService|Tentativa de login com senha incorreta: teste@integracao.com 
+2025-03-31 18:14:17.4114|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|Credenciais inválidas. FreteManager.Exceptions.UnauthorizedOperationException: Credenciais inválidas.
+   at AuthService.LoginAsync(LoginRequest model) in C:\dev\FreteManager\FreteManager\Services\AuthService.cs:line 72
+   at FreteManager.Controllers.AuthController.Login(LoginRequest model) in C:\dev\FreteManager\FreteManager\Controllers\AuthController.cs:line 53
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 18:14:24.1542|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 18:14:24.3499|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 18:14:24.4378|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 18:14:24.4378|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 18:14:24.5013|0|WARN|AuthService|Tentativa de login com senha incorreta: teste@integracao.com 
+2025-03-31 18:14:24.5050|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|Credenciais inválidas. FreteManager.Exceptions.UnauthorizedOperationException: Credenciais inválidas.
+   at AuthService.LoginAsync(LoginRequest model) in C:\dev\FreteManager\FreteManager\Services\AuthService.cs:line 72
+   at FreteManager.Controllers.AuthController.Login(LoginRequest model) in C:\dev\FreteManager\FreteManager\Controllers\AuthController.cs:line 53
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 18:14:24.5654|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 18:14:24.5654|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 18:14:24.5654|0|WARN|AuthService|Tentativa de login com senha incorreta: teste@integracao.com 
+2025-03-31 18:14:24.5654|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|Credenciais inválidas. FreteManager.Exceptions.UnauthorizedOperationException: Credenciais inválidas.
+   at AuthService.LoginAsync(LoginRequest model) in C:\dev\FreteManager\FreteManager\Services\AuthService.cs:line 72
+   at FreteManager.Controllers.AuthController.Login(LoginRequest model) in C:\dev\FreteManager\FreteManager\Controllers\AuthController.cs:line 53
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 18:14:24.5915|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 18:14:24.5915|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 18:14:24.5915|0|WARN|AuthService|Tentativa de login com senha incorreta: teste@integracao.com 
+2025-03-31 18:14:24.5915|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|Credenciais inválidas. FreteManager.Exceptions.UnauthorizedOperationException: Credenciais inválidas.
+   at AuthService.LoginAsync(LoginRequest model) in C:\dev\FreteManager\FreteManager\Services\AuthService.cs:line 72
+   at FreteManager.Controllers.AuthController.Login(LoginRequest model) in C:\dev\FreteManager\FreteManager\Controllers\AuthController.cs:line 53
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 18:14:24.5980|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 18:14:24.5980|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 18:14:24.5980|0|WARN|AuthService|Tentativa de login com senha incorreta: teste@integracao.com 
+2025-03-31 18:14:24.5980|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|Credenciais inválidas. FreteManager.Exceptions.UnauthorizedOperationException: Credenciais inválidas.
+   at AuthService.LoginAsync(LoginRequest model) in C:\dev\FreteManager\FreteManager\Services\AuthService.cs:line 72
+   at FreteManager.Controllers.AuthController.Login(LoginRequest model) in C:\dev\FreteManager\FreteManager\Controllers\AuthController.cs:line 53
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 18:14:24.5980|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 18:14:24.5980|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 18:14:24.5980|0|WARN|AuthService|Tentativa de login com senha incorreta: teste@integracao.com 
+2025-03-31 18:14:24.5980|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|Credenciais inválidas. FreteManager.Exceptions.UnauthorizedOperationException: Credenciais inválidas.
+   at AuthService.LoginAsync(LoginRequest model) in C:\dev\FreteManager\FreteManager\Services\AuthService.cs:line 72
+   at FreteManager.Controllers.AuthController.Login(LoginRequest model) in C:\dev\FreteManager\FreteManager\Controllers\AuthController.cs:line 53
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 18:14:24.6140|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 18:14:24.6140|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 18:14:24.6140|0|WARN|AuthService|Tentativa de login com senha incorreta: teste@integracao.com 
+2025-03-31 18:14:24.6140|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|Credenciais inválidas. FreteManager.Exceptions.UnauthorizedOperationException: Credenciais inválidas.
+   at AuthService.LoginAsync(LoginRequest model) in C:\dev\FreteManager\FreteManager\Services\AuthService.cs:line 72
+   at FreteManager.Controllers.AuthController.Login(LoginRequest model) in C:\dev\FreteManager\FreteManager\Controllers\AuthController.cs:line 53
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 18:14:31.1831|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 18:14:31.3870|0|WARN|Microsoft.AspNetCore.HttpsPolicy.HttpsRedirectionMiddleware|Failed to determine the https port for redirect. 
+2025-03-31 18:14:31.4858|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 18:14:31.4872|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 18:14:31.5494|0|WARN|AuthService|Tentativa de login com senha incorreta: teste@integracao.com 
+2025-03-31 18:14:31.5532|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|Credenciais inválidas. FreteManager.Exceptions.UnauthorizedOperationException: Credenciais inválidas.
+   at AuthService.LoginAsync(LoginRequest model) in C:\dev\FreteManager\FreteManager\Services\AuthService.cs:line 72
+   at FreteManager.Controllers.AuthController.Login(LoginRequest model) in C:\dev\FreteManager\FreteManager\Controllers\AuthController.cs:line 53
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 18:14:31.6056|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 18:14:31.6056|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 18:14:31.6236|0|WARN|AuthService|Tentativa de login com senha incorreta: teste@integracao.com 
+2025-03-31 18:14:31.6236|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|Credenciais inválidas. FreteManager.Exceptions.UnauthorizedOperationException: Credenciais inválidas.
+   at AuthService.LoginAsync(LoginRequest model) in C:\dev\FreteManager\FreteManager\Services\AuthService.cs:line 72
+   at FreteManager.Controllers.AuthController.Login(LoginRequest model) in C:\dev\FreteManager\FreteManager\Controllers\AuthController.cs:line 53
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 18:14:31.6431|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 18:14:31.6431|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 18:14:31.6431|0|WARN|AuthService|Tentativa de login com senha incorreta: teste@integracao.com 
+2025-03-31 18:14:31.6431|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|Credenciais inválidas. FreteManager.Exceptions.UnauthorizedOperationException: Credenciais inválidas.
+   at AuthService.LoginAsync(LoginRequest model) in C:\dev\FreteManager\FreteManager\Services\AuthService.cs:line 72
+   at FreteManager.Controllers.AuthController.Login(LoginRequest model) in C:\dev\FreteManager\FreteManager\Controllers\AuthController.cs:line 53
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 18:14:31.6431|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: teste@integracao.com 
+2025-03-31 18:14:31.6431|0|INFO|AuthService|Tentativa de login: teste@integracao.com 
+2025-03-31 18:14:31.6431|0|WARN|AuthService|Tentativa de login com senha incorreta: teste@integracao.com 
+2025-03-31 18:14:31.6431|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|Credenciais inválidas. FreteManager.Exceptions.UnauthorizedOperationException: Credenciais inválidas.
+   at AuthService.LoginAsync(LoginRequest model) in C:\dev\FreteManager\FreteManager\Services\AuthService.cs:line 72
+   at FreteManager.Controllers.AuthController.Login(LoginRequest model) in C:\dev\FreteManager\FreteManager\Controllers\AuthController.cs:line 53
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27

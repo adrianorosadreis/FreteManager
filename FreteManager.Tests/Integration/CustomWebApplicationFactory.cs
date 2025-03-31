@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.VisualStudio.TestPlatform.TestHost;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 
 namespace FreteManager.Tests.Integration
 {
@@ -21,16 +21,18 @@ namespace FreteManager.Tests.Integration
         {
             builder.ConfigureServices(services =>
             {
-                // Remover o DbContext original
-                var descriptor = services.SingleOrDefault(
-                    d => d.ServiceType == typeof(DbContextOptions<ApplicationDbContext>));
-
-                if (descriptor != null)
+                // Remover o DbContext original e suas opções
+                services.RemoveAll(typeof(ApplicationDbContext)); 
+                var dbContextOptionsDescriptors = services
+                    .Where(d => d.ServiceType.Name.Contains("DbContextOptions"))
+                    .ToList();
+                
+                foreach (var descriptor in dbContextOptionsDescriptors)
                 {
                     services.Remove(descriptor);
                 }
 
-                // Adicionar banco de dados em memória para testes
+                // Adicionar o banco de dados em memória com o tipo específico de DbContextOptions<ApplicationDbContext>
                 services.AddDbContext<ApplicationDbContext>(options =>
                 {
                     options.UseInMemoryDatabase("InMemoryTestDatabase");
@@ -39,16 +41,17 @@ namespace FreteManager.Tests.Integration
                 // Construir o provedor de serviços
                 var serviceProvider = services.BuildServiceProvider();
 
-                // Criar escopo para inicialização do banco
+                // Inicializar o banco de dados
                 using (var scope = serviceProvider.CreateScope())
                 {
                     var scopedServices = scope.ServiceProvider;
                     var db = scopedServices.GetRequiredService<ApplicationDbContext>();
 
-                    // Garantir que o banco de dados seja criado
+                    // A chamada para EnsureCreated() já é feita no construtor,
+                    // mas não custa nada garantir
                     db.Database.EnsureCreated();
 
-                    // Método opcional para popular dados de teste
+                    // Popular dados de teste
                     PopularDadosDeTeste(db);
                 }
             });

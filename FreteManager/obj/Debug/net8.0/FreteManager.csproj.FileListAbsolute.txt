@@ -459,7 +459,6 @@ C:\dev\FreteManager\FreteManager\obj\Debug\net8.0\staticwebassets\msbuild.build.
 C:\dev\FreteManager\FreteManager\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.FreteManager.props
 C:\dev\FreteManager\FreteManager\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.FreteManager.props
 C:\dev\FreteManager\FreteManager\obj\Debug\net8.0\staticwebassets.pack.json
-C:\dev\FreteManager\FreteManager\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\dev\FreteManager\FreteManager\obj\Debug\net8.0\FreteMan.4F683163.Up2Date
 C:\dev\FreteManager\FreteManager\obj\Debug\net8.0\FreteManager.dll
 C:\dev\FreteManager\FreteManager\obj\Debug\net8.0\refint\FreteManager.dll

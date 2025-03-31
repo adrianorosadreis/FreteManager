@@ -4,6 +4,21 @@
         <name>FreteManager.Tests</name>
     </assembly>
     <members>
+        <member name="T:FreteManager.Tests.Data.InMemoryApplicationDbContext">
+            <summary>
+            Versão do ApplicationDbContext específica para testes em memória
+            </summary>
+        </member>
+        <member name="M:FreteManager.Tests.Data.InMemoryApplicationDbContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)">
+            <summary>
+            Configuração específica para o contexto de testes
+            </summary>
+        </member>
+        <member name="M:FreteManager.Tests.Data.InMemoryApplicationDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            Ajusta o modelo específico para testes
+            </summary>
+        </member>
         <member name="T:FreteManager.Tests.Integration.AuthControllerIntegrationTests">
             <summary>
             Testes de integração para AuthController
@@ -195,18 +210,6 @@
         <member name="T:FreteManager.Tests.Services.PedidoServiceTests">
             <summary>
             Testes unitários para o serviço de pedidos
-            </summary>
-        </member>
-        <member name="T:FreteManager.Tests.TestProgram">
-            <summary>
-            Classe de marcação para testes de integração
-            Não define método Main para evitar conflito de pontos de entrada
-            </summary>
-        </member>
-        <member name="T:FreteManager.Tests.TestSupport">
-            <summary>
-            Classe de suporte para testes de integração
-            Ajuda na descoberta de configurações sem criar ponto de entrada
             </summary>
         </member>
     </members>
