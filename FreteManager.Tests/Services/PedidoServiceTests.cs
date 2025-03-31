@@ -1,14 +1,10 @@
-﻿using System;
-using System.Threading.Tasks;
-using Xunit;
-using Moq;
-using Microsoft.Extensions.Logging;
-using FreteManager.Services;
-using FreteManager.Repositories;
-using FreteManager.Models;
-using FreteManager.DTOs;
+﻿using FreteManager.DTOs;
 using FreteManager.Exceptions;
-using FreteManager.Helpers;
+using FreteManager.Models;
+using FreteManager.Repositories;
+using FreteManager.Services;
+using Microsoft.Extensions.Logging;
+using Moq;
 using static FreteManager.Models.FreteModels;
 
 namespace FreteManager.Tests.Services

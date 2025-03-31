@@ -1,13 +1,10 @@
-﻿using System;
-using System.Threading.Tasks;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging;
-using Xunit;
-using Moq;
-using FreteManager.Data;
+﻿using FreteManager.Data;
+using FreteManager.Exceptions;
 using FreteManager.Models;
 using FreteManager.Repositories;
-using FreteManager.Exceptions;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
+using Moq;
 
 namespace FreteManager.Tests.Repositories
 {

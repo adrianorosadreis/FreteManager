@@ -1,16 +1,12 @@
-﻿using System;
-using System.Net;
-using System.Net.Http;
-using System.Text;
-using System.Text.Json;
-using System.Threading.Tasks;
+﻿using FreteManager.Services;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Moq;
 using Moq.Protected;
-using Xunit;
-using FreteManager.Services;
+using System.Net;
+using System.Text;
+using System.Text.Json;
 using static FreteManager.Models.FreteModels;
 
 namespace FreteManager.Tests.Services
