@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FreteManager.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("v1/[controller]")]
     [ApiController]
     public class PedidosController : ControllerBase
     {
@@ -24,16 +24,13 @@ namespace FreteManager.Controllers
         [Authorize]
         public async Task<ActionResult<IEnumerable<PedidoRespostaDTO>>> GetPedidos()
         {
-            try
-            {
-                var pedidos = await _pedidoService.ListarTodosAsync();
-                return Ok(pedidos);
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Erro ao listar pedidos");
-                return StatusCode(500, "Erro interno do servidor");
-            }
+            _logger.LogInformation("Requisição GET para listar todos os pedidos");
+
+            // Não precisamos de try-catch pois o middleware global tratará as exceções
+            var pedidos = await _pedidoService.ListarTodosAsync();
+
+            _logger.LogInformation($"Retornando {pedidos.Count()} pedidos");
+            return Ok(pedidos);
         }
 
         // GET: api/pedidos/5
@@ -41,21 +38,12 @@ namespace FreteManager.Controllers
         [Authorize]
         public async Task<ActionResult<PedidoRespostaDTO>> GetPedido(int id)
         {
-            try
-            {
-                var pedido = await _pedidoService.ObterPorIdAsync(id);
-                return Ok(pedido);
-            }
-            catch (KeyNotFoundException ex)
-            {
-                _logger.LogWarning(ex, $"Pedido com ID {id} não encontrado");
-                return NotFound(ex.Message);
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, $"Erro ao obter pedido com ID {id}");
-                return StatusCode(500, "Erro interno do servidor");
-            }
+            _logger.LogInformation($"Requisição GET para obter pedido ID {id}");
+
+            var pedido = await _pedidoService.ObterPorIdAsync(id);
+
+            _logger.LogInformation($"Retornando dados do pedido ID {id}");
+            return Ok(pedido);
         }
 
         // GET: api/pedidos/cliente/5
@@ -63,21 +51,12 @@ namespace FreteManager.Controllers
         [Authorize]
         public async Task<ActionResult<IEnumerable<PedidoRespostaDTO>>> GetPedidosPorCliente(int clienteId)
         {
-            try
-            {
-                var pedidos = await _pedidoService.ListarPorClienteAsync(clienteId);
-                return Ok(pedidos);
-            }
-            catch (KeyNotFoundException ex)
-            {
-                _logger.LogWarning(ex, $"Cliente com ID {clienteId} não encontrado");
-                return NotFound(ex.Message);
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, $"Erro ao listar pedidos do cliente com ID {clienteId}");
-                return StatusCode(500, "Erro interno do servidor");
-            }
+            _logger.LogInformation($"Requisição GET para listar pedidos do cliente ID {clienteId}");
+
+            var pedidos = await _pedidoService.ListarPorClienteAsync(clienteId);
+
+            _logger.LogInformation($"Retornando {pedidos.Count()} pedidos do cliente ID {clienteId}");
+            return Ok(pedidos);
         }
 
         // POST: api/pedidos
@@ -85,29 +64,18 @@ namespace FreteManager.Controllers
         [Authorize]
         public async Task<ActionResult<PedidoRespostaDTO>> PostPedido(CriarPedidoDTO pedidoDTO)
         {
-            try
-            {
-                if (!ModelState.IsValid)
-                {
-                    return BadRequest(ModelState);
-                }
+            _logger.LogInformation("Requisição POST para criar novo pedido");
 
-                var pedidoCriado = await _pedidoService.CriarAsync(pedidoDTO);
-
-                _logger.LogInformation($"Pedido criado com ID {pedidoCriado.Id}");
-
-                return CreatedAtAction(nameof(GetPedido), new { id = pedidoCriado.Id }, pedidoCriado);
-            }
-            catch (KeyNotFoundException ex)
+            if (!ModelState.IsValid)
             {
-                _logger.LogWarning(ex, "Cliente não encontrado ao criar pedido");
-                return NotFound(ex.Message);
+                _logger.LogWarning("Modelo inválido na criação de pedido");
+                return BadRequest(ModelState);
             }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Erro ao criar pedido");
-                return StatusCode(500, "Erro interno do servidor");
-            }
+
+            var pedidoCriado = await _pedidoService.CriarAsync(pedidoDTO);
+
+            _logger.LogInformation($"Pedido criado com ID {pedidoCriado.Id}");
+            return CreatedAtAction(nameof(GetPedido), new { id = pedidoCriado.Id }, pedidoCriado);
         }
 
         // PUT: api/pedidos/5
@@ -115,34 +83,24 @@ namespace FreteManager.Controllers
         [Authorize]
         public async Task<IActionResult> PutPedido(int id, AtualizarPedidoDTO pedidoDTO)
         {
-            try
+            _logger.LogInformation($"Requisição PUT para atualizar pedido ID {id}");
+
+            if (id != pedidoDTO.Id)
             {
-                if (id != pedidoDTO.Id)
-                {
-                    return BadRequest("ID do pedido na rota não corresponde ao ID no corpo da requisição");
-                }
-
-                if (!ModelState.IsValid)
-                {
-                    return BadRequest(ModelState);
-                }
-
-                await _pedidoService.AtualizarAsync(pedidoDTO);
-
-                _logger.LogInformation($"Pedido com ID {id} atualizado");
-
-                return NoContent();
+                _logger.LogWarning($"ID da rota ({id}) não corresponde ao ID no corpo da requisição ({pedidoDTO.Id})");
+                return BadRequest("ID do pedido na rota não corresponde ao ID no corpo da requisição");
             }
-            catch (KeyNotFoundException ex)
+
+            if (!ModelState.IsValid)
             {
-                _logger.LogWarning(ex, $"Pedido ou Cliente não encontrado para atualização");
-                return NotFound(ex.Message);
+                _logger.LogWarning("Modelo inválido na atualização de pedido");
+                return BadRequest(ModelState);
             }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, $"Erro ao atualizar pedido com ID {id}");
-                return StatusCode(500, "Erro interno do servidor");
-            }
+
+            await _pedidoService.AtualizarAsync(pedidoDTO);
+
+            _logger.LogInformation($"Pedido ID {id} atualizado com sucesso");
+            return NoContent();
         }
 
         // DELETE: api/pedidos/5
@@ -150,24 +108,12 @@ namespace FreteManager.Controllers
         [Authorize]
         public async Task<IActionResult> DeletePedido(int id)
         {
-            try
-            {
-                await _pedidoService.ExcluirAsync(id);
+            _logger.LogInformation($"Requisição DELETE para excluir pedido ID {id}");
 
-                _logger.LogInformation($"Pedido com ID {id} excluído");
+            await _pedidoService.ExcluirAsync(id);
 
-                return NoContent();
-            }
-            catch (KeyNotFoundException ex)
-            {
-                _logger.LogWarning(ex, $"Pedido com ID {id} não encontrado para exclusão");
-                return NotFound(ex.Message);
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, $"Erro ao excluir pedido com ID {id}");
-                return StatusCode(500, "Erro interno do servidor");
-            }
+            _logger.LogInformation($"Pedido ID {id} excluído com sucesso");
+            return NoContent();
         }
 
         // PATCH: api/pedidos/5/status
@@ -175,34 +121,18 @@ namespace FreteManager.Controllers
         [Authorize]
         public async Task<ActionResult<PedidoRespostaDTO>> AtualizarStatus(int id, [FromBody] StatusUpdateModel model)
         {
-            try
-            {
-                if (!ModelState.IsValid)
-                {
-                    return BadRequest(ModelState);
-                }
+            _logger.LogInformation($"Requisição PATCH para atualizar status do pedido ID {id} para {model.NovoStatus}");
 
-                var pedidoAtualizado = await _pedidoService.AtualizarStatusAsync(id, model.NovoStatus);
+            if (!ModelState.IsValid)
+            {
+                _logger.LogWarning("Modelo inválido na atualização de status");
+                return BadRequest(ModelState);
+            }
 
-                _logger.LogInformation($"Status do pedido com ID {id} atualizado para {model.NovoStatus}");
+            var pedidoAtualizado = await _pedidoService.AtualizarStatusAsync(id, model.NovoStatus);
 
-                return Ok(pedidoAtualizado);
-            }
-            catch (KeyNotFoundException ex)
-            {
-                _logger.LogWarning(ex, $"Pedido com ID {id} não encontrado para atualização de status");
-                return NotFound(ex.Message);
-            }
-            catch (InvalidOperationException ex)
-            {
-                _logger.LogWarning(ex, $"Transição de status inválida para o pedido com ID {id}");
-                return BadRequest(ex.Message);
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, $"Erro ao atualizar status do pedido com ID {id}");
-                return StatusCode(500, "Erro interno do servidor");
-            }
+            _logger.LogInformation($"Status do pedido ID {id} atualizado para {model.NovoStatus}");
+            return Ok(pedidoAtualizado);
         }
     }
 

@@ -8,7 +8,7 @@ namespace FreteManager.Controllers
     /// <summary>
     /// Controlador para operações de cálculo de frete
     /// </summary>
-    [Route("api/[controller]")]
+    [Route("v1/[controller]")]
     [ApiController]
     public class FreteController : ControllerBase
     {
@@ -31,48 +31,40 @@ namespace FreteManager.Controllers
         public async Task<ActionResult<decimal>> CalcularFrete(
             [FromBody] ParametrosFrete parametros)
         {
-            try
+            _logger.LogInformation($"Requisição POST para calcular frete de {parametros.CepOrigem} para {parametros.CepDestino}");
+
+            if (parametros == null)
             {
-                if (parametros == null)
-                {
-                    return BadRequest("Parâmetros inválidos");
-                }
-
-                if (string.IsNullOrWhiteSpace(parametros.CepOrigem) ||
-                    string.IsNullOrWhiteSpace(parametros.CepDestino))
-                {
-                    return BadRequest("CEP de origem e destino são obrigatórios");
-                }
-
-                if (parametros.Pacotes == null || !parametros.Pacotes.Any())
-                {
-                    return BadRequest("É necessário informar pelo menos um pacote");
-                }
-
-                var valorFrete = await _freteService.CalcularFreteDetalhadoAsync(parametros);
-
-                _logger.LogInformation(
-                    $"Frete calculado de {parametros.CepOrigem} para {parametros.CepDestino}: {valorFrete:C}");
-
-                return Ok(new
-                {
-                    valorFrete,
-                    cepOrigem = parametros.CepOrigem,
-                    cepDestino = parametros.CepDestino,
-                    valorDeclarado = parametros.ValorDeclarado,
-                    quantidadePacotes = parametros.Pacotes.Sum(p => p.Quantidade)
-                });
+                _logger.LogWarning("Parâmetros de frete nulos");
+                return BadRequest("Parâmetros inválidos");
             }
-            catch (ArgumentException ex)
+
+            if (string.IsNullOrWhiteSpace(parametros.CepOrigem) ||
+                string.IsNullOrWhiteSpace(parametros.CepDestino))
             {
-                _logger.LogWarning(ex, "Erro de validação no cálculo de frete");
-                return BadRequest(ex.Message);
+                _logger.LogWarning("CEP de origem ou destino não informado");
+                return BadRequest("CEP de origem e destino são obrigatórios");
             }
-            catch (Exception ex)
+
+            if (parametros.Pacotes == null || !parametros.Pacotes.Any())
             {
-                _logger.LogError(ex, "Erro ao calcular frete");
-                return StatusCode(500, "Erro interno ao calcular o frete");
+                _logger.LogWarning("Nenhum pacote informado");
+                return BadRequest("É necessário informar pelo menos um pacote");
             }
+
+            var valorFrete = await _freteService.CalcularFreteDetalhadoAsync(parametros);
+
+            _logger.LogInformation(
+                $"Frete calculado de {parametros.CepOrigem} para {parametros.CepDestino}: {valorFrete:C}");
+
+            return Ok(new
+            {
+                valorFrete,
+                cepOrigem = parametros.CepOrigem,
+                cepDestino = parametros.CepDestino,
+                valorDeclarado = parametros.ValorDeclarado,
+                quantidadePacotes = parametros.Pacotes.Sum(p => p.Quantidade)
+            });
         }
     }
 }

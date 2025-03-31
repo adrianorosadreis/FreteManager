@@ -52,10 +52,5 @@
             <param name="parametros">Parâmetros completos para cálculo</param>
             <returns>Valor do frete em reais</returns>
         </member>
-        <member name="M:FreteManager.Services.PedidoService.CalcularFreteParaPedidoAsync(FreteManager.Models.Pedido)">
-            <summary>
-            Calcula o frete para um pedido específico, considerando suas características
-            </summary>
-        </member>
     </members>
 </doc>

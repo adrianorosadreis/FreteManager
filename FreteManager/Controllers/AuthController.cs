@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FreteManager.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("v1/[controller]")]
     [ApiController]
     public class AuthController : ControllerBase
     {
@@ -23,63 +23,38 @@ namespace FreteManager.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromBody] RegisterRequest model)
         {
-            try
-            {
-                if (!ModelState.IsValid)
-                {
-                    return BadRequest(ModelState);
-                }
+            _logger.LogInformation($"Requisição POST para registrar usuário: {model.Email}");
 
-                var usuario = await _authService.RegisterAsync(model);
-
-                _logger.LogInformation($"Usuário registrado com sucesso: {model.Email}");
-
-                return Ok(new { message = "Usuário registrado com sucesso!", userId = usuario.Id });
-            }
-            catch (InvalidOperationException ex)
+            if (!ModelState.IsValid)
             {
-                _logger.LogWarning(ex, $"Falha ao registrar usuário: {model.Email}");
-                return BadRequest(ex.Message);
+                _logger.LogWarning("Modelo inválido no registro de usuário");
+                return BadRequest(ModelState);
             }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, $"Erro ao registrar usuário: {model.Email}");
-                return StatusCode(500, "Erro interno do servidor");
-            }
+
+            var usuario = await _authService.RegisterAsync(model);
+
+            _logger.LogInformation($"Usuário registrado com sucesso: {model.Email}, ID: {usuario.Id}");
+
+            return Ok(new { message = "Usuário registrado com sucesso!", userId = usuario.Id });
         }
 
         // POST: api/Auth/Login
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginRequest model)
         {
-            try
-            {
-                if (!ModelState.IsValid)
-                {
-                    return BadRequest(ModelState);
-                }
+            _logger.LogInformation($"Requisição POST para login: {model.Email}");
 
-                var response = await _authService.LoginAsync(model);
+            if (!ModelState.IsValid)
+            {
+                _logger.LogWarning("Modelo inválido no login");
+                return BadRequest(ModelState);
+            }
 
-                _logger.LogInformation($"Login bem-sucedido: {model.Email}");
+            var response = await _authService.LoginAsync(model);
 
-                return Ok(response);
-            }
-            catch (KeyNotFoundException ex)
-            {
-                _logger.LogWarning($"Tentativa de login com email não encontrado: {model.Email}");
-                return BadRequest("Credenciais inválidas");
-            }
-            catch (InvalidOperationException ex)
-            {
-                _logger.LogWarning($"Tentativa de login com senha incorreta: {model.Email}");
-                return BadRequest("Credenciais inválidas");
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, $"Erro ao fazer login: {model.Email}");
-                return StatusCode(500, "Erro interno do servidor");
-            }
+            _logger.LogInformation($"Login bem-sucedido: {model.Email}");
+
+            return Ok(response);
         }
     }
 }

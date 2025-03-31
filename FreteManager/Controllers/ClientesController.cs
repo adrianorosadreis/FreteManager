@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FreteManager.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("v1/[controller]")]
     [ApiController]
     public class ClientesController : ControllerBase
     {
@@ -23,16 +23,12 @@ namespace FreteManager.Controllers
         [Authorize]
         public async Task<ActionResult<IEnumerable<Cliente>>> GetClientes()
         {
-            try
-            {
-                var clientes = await _clienteService.ListarTodosAsync();
-                return Ok(clientes);
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Erro ao listar clientes");
-                return StatusCode(500, "Erro interno do servidor");
-            }
+            _logger.LogInformation("Requisição GET para listar todos os clientes");
+
+            var clientes = await _clienteService.ListarTodosAsync();
+
+            _logger.LogInformation($"Retornando {clientes.Count()} clientes");
+            return Ok(clientes);
         }
 
         // GET: api/clientes/5
@@ -40,23 +36,12 @@ namespace FreteManager.Controllers
         [Authorize]
         public async Task<ActionResult<Cliente>> GetCliente(int id)
         {
-            try
-            {
-                var cliente = await _clienteService.ObterPorIdAsync(id);
+            _logger.LogInformation($"Requisição GET para obter cliente ID {id}");
 
-                if (cliente == null)
-                {
-                    _logger.LogWarning($"Cliente com ID {id} não encontrado");
-                    return NotFound($"Cliente com ID {id} não encontrado");
-                }
+            var cliente = await _clienteService.ObterPorIdAsync(id);
 
-                return Ok(cliente);
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, $"Erro ao obter cliente com ID {id}");
-                return StatusCode(500, "Erro interno do servidor");
-            }
+            _logger.LogInformation($"Retornando dados do cliente ID {id}: {cliente.Nome}");
+            return Ok(cliente);
         }
 
         // POST: api/clientes
@@ -64,29 +49,18 @@ namespace FreteManager.Controllers
         [Authorize]
         public async Task<ActionResult<Cliente>> PostCliente(Cliente cliente)
         {
-            try
-            {
-                if (!ModelState.IsValid)
-                {
-                    return BadRequest(ModelState);
-                }
+            _logger.LogInformation("Requisição POST para criar novo cliente");
 
-                var clienteCriado = await _clienteService.CadastrarAsync(cliente);
-
-                _logger.LogInformation($"Cliente criado com ID {clienteCriado.Id}");
-
-                return CreatedAtAction(nameof(GetCliente), new { id = clienteCriado.Id }, clienteCriado);
-            }
-            catch (InvalidOperationException ex)
+            if (!ModelState.IsValid)
             {
-                _logger.LogWarning(ex, "Erro de validação ao criar cliente");
-                return BadRequest(ex.Message);
+                _logger.LogWarning("Modelo inválido na criação de cliente");
+                return BadRequest(ModelState);
             }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, "Erro ao criar cliente");
-                return StatusCode(500, "Erro interno do servidor");
-            }
+
+            var clienteCriado = await _clienteService.CadastrarAsync(cliente);
+
+            _logger.LogInformation($"Cliente criado com ID {clienteCriado.Id}: {clienteCriado.Nome}");
+            return CreatedAtAction(nameof(GetCliente), new { id = clienteCriado.Id }, clienteCriado);
         }
 
         // PUT: api/clientes/5
@@ -94,39 +68,24 @@ namespace FreteManager.Controllers
         [Authorize]
         public async Task<IActionResult> PutCliente(int id, Cliente cliente)
         {
-            try
-            {
-                if (id != cliente.Id)
-                {
-                    return BadRequest("ID do cliente na rota não corresponde ao ID no corpo da requisição");
-                }
+            _logger.LogInformation($"Requisição PUT para atualizar cliente ID {id}");
 
-                if (!ModelState.IsValid)
-                {
-                    return BadRequest(ModelState);
-                }
-
-                await _clienteService.AtualizarAsync(cliente);
-
-                _logger.LogInformation($"Cliente com ID {id} atualizado");
-
-                return NoContent();
-            }
-            catch (KeyNotFoundException ex)
+            if (id != cliente.Id)
             {
-                _logger.LogWarning(ex, $"Cliente com ID {id} não encontrado para atualização");
-                return NotFound(ex.Message);
+                _logger.LogWarning($"ID da rota ({id}) não corresponde ao ID no corpo da requisição ({cliente.Id})");
+                return BadRequest("ID do cliente na rota não corresponde ao ID no corpo da requisição");
             }
-            catch (InvalidOperationException ex)
+
+            if (!ModelState.IsValid)
             {
-                _logger.LogWarning(ex, "Erro de validação ao atualizar cliente");
-                return BadRequest(ex.Message);
+                _logger.LogWarning("Modelo inválido na atualização de cliente");
+                return BadRequest(ModelState);
             }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, $"Erro ao atualizar cliente com ID {id}");
-                return StatusCode(500, "Erro interno do servidor");
-            }
+
+            await _clienteService.AtualizarAsync(cliente);
+
+            _logger.LogInformation($"Cliente ID {id} atualizado com sucesso");
+            return NoContent();
         }
 
         // DELETE: api/clientes/5
@@ -134,24 +93,12 @@ namespace FreteManager.Controllers
         [Authorize]
         public async Task<IActionResult> DeleteCliente(int id)
         {
-            try
-            {
-                await _clienteService.ExcluirAsync(id);
+            _logger.LogInformation($"Requisição DELETE para excluir cliente ID {id}");
 
-                _logger.LogInformation($"Cliente com ID {id} excluído");
+            await _clienteService.ExcluirAsync(id);
 
-                return NoContent();
-            }
-            catch (KeyNotFoundException ex)
-            {
-                _logger.LogWarning(ex, $"Cliente com ID {id} não encontrado para exclusão");
-                return NotFound(ex.Message);
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError(ex, $"Erro ao excluir cliente com ID {id}");
-                return StatusCode(500, "Erro interno do servidor");
-            }
+            _logger.LogInformation($"Cliente ID {id} excluído com sucesso");
+            return NoContent();
         }
     }
 }

@@ -9,7 +9,7 @@
     "version": "v1"
   },
   "paths": {
-    "/api/Auth/register": {
+    "/v1/Auth/register": {
       "post": {
         "tags": [
           "Auth"
@@ -40,7 +40,7 @@
         }
       }
     },
-    "/api/Auth/login": {
+    "/v1/Auth/login": {
       "post": {
         "tags": [
           "Auth"
@@ -71,7 +71,7 @@
         }
       }
     },
-    "/api/Clientes": {
+    "/v1/Clientes": {
       "get": {
         "tags": [
           "Clientes"
@@ -155,7 +155,7 @@
         }
       }
     },
-    "/api/Clientes/{id}": {
+    "/v1/Clientes/{id}": {
       "get": {
         "tags": [
           "Clientes"
@@ -256,7 +256,7 @@
         }
       }
     },
-    "/api/Frete/calcular-frete": {
+    "/v1/Frete/calcular-frete": {
       "post": {
         "tags": [
           "Frete"
@@ -309,7 +309,7 @@
         }
       }
     },
-    "/api/Pedidos": {
+    "/v1/Pedidos": {
       "get": {
         "tags": [
           "Pedidos"
@@ -393,7 +393,7 @@
         }
       }
     },
-    "/api/Pedidos/{id}": {
+    "/v1/Pedidos/{id}": {
       "get": {
         "tags": [
           "Pedidos"
@@ -494,7 +494,7 @@
         }
       }
     },
-    "/api/Pedidos/cliente/{clienteId}": {
+    "/v1/Pedidos/cliente/{clienteId}": {
       "get": {
         "tags": [
           "Pedidos"
@@ -543,7 +543,7 @@
         }
       }
     },
-    "/api/Pedidos/{id}/status": {
+    "/v1/Pedidos/{id}/status": {
       "patch": {
         "tags": [
           "Pedidos"

@@ -2,7 +2,7 @@
   {
     "ContainingType": "FreteManager.Controllers.AuthController",
     "Method": "Login",
-    "RelativePath": "api/Auth/login",
+    "RelativePath": "v1/Auth/login",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -18,7 +18,7 @@
   {
     "ContainingType": "FreteManager.Controllers.AuthController",
     "Method": "Register",
-    "RelativePath": "api/Auth/register",
+    "RelativePath": "v1/Auth/register",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -34,7 +34,7 @@
   {
     "ContainingType": "FreteManager.Controllers.ClientesController",
     "Method": "GetClientes",
-    "RelativePath": "api/Clientes",
+    "RelativePath": "v1/Clientes",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -54,7 +54,7 @@
   {
     "ContainingType": "FreteManager.Controllers.ClientesController",
     "Method": "PostCliente",
-    "RelativePath": "api/Clientes",
+    "RelativePath": "v1/Clientes",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -80,7 +80,7 @@
   {
     "ContainingType": "FreteManager.Controllers.ClientesController",
     "Method": "GetCliente",
-    "RelativePath": "api/Clientes/{id}",
+    "RelativePath": "v1/Clientes/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -106,7 +106,7 @@
   {
     "ContainingType": "FreteManager.Controllers.ClientesController",
     "Method": "PutCliente",
-    "RelativePath": "api/Clientes/{id}",
+    "RelativePath": "v1/Clientes/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -127,7 +127,7 @@
   {
     "ContainingType": "FreteManager.Controllers.ClientesController",
     "Method": "DeleteCliente",
-    "RelativePath": "api/Clientes/{id}",
+    "RelativePath": "v1/Clientes/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -143,7 +143,7 @@
   {
     "ContainingType": "FreteManager.Controllers.FreteController",
     "Method": "CalcularFrete",
-    "RelativePath": "api/Frete/calcular-frete",
+    "RelativePath": "v1/Frete/calcular-frete",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -169,7 +169,7 @@
   {
     "ContainingType": "FreteManager.Controllers.PedidosController",
     "Method": "GetPedidos",
-    "RelativePath": "api/Pedidos",
+    "RelativePath": "v1/Pedidos",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -189,7 +189,7 @@
   {
     "ContainingType": "FreteManager.Controllers.PedidosController",
     "Method": "PostPedido",
-    "RelativePath": "api/Pedidos",
+    "RelativePath": "v1/Pedidos",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -215,7 +215,7 @@
   {
     "ContainingType": "FreteManager.Controllers.PedidosController",
     "Method": "GetPedido",
-    "RelativePath": "api/Pedidos/{id}",
+    "RelativePath": "v1/Pedidos/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -241,7 +241,7 @@
   {
     "ContainingType": "FreteManager.Controllers.PedidosController",
     "Method": "PutPedido",
-    "RelativePath": "api/Pedidos/{id}",
+    "RelativePath": "v1/Pedidos/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -262,7 +262,7 @@
   {
     "ContainingType": "FreteManager.Controllers.PedidosController",
     "Method": "DeletePedido",
-    "RelativePath": "api/Pedidos/{id}",
+    "RelativePath": "v1/Pedidos/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -278,7 +278,7 @@
   {
     "ContainingType": "FreteManager.Controllers.PedidosController",
     "Method": "AtualizarStatus",
-    "RelativePath": "api/Pedidos/{id}/status",
+    "RelativePath": "v1/Pedidos/{id}/status",
     "HttpMethod": "PATCH",
     "IsController": true,
     "Order": 0,
@@ -309,7 +309,7 @@
   {
     "ContainingType": "FreteManager.Controllers.PedidosController",
     "Method": "GetPedidosPorCliente",
-    "RelativePath": "api/Pedidos/cliente/{clienteId}",
+    "RelativePath": "v1/Pedidos/cliente/{clienteId}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

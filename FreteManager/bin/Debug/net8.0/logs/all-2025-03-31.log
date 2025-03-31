@@ -143,3 +143,222 @@ System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or propert
    at Microsoft.Data.SqlClient.SqlDataReader.GetDecimal(Int32 i)
    at lambda_method222(Closure, QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator)
    at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+2025-03-31 10:28:56.9398|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Altura' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 10:28:56.9996|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Comprimento' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 10:28:56.9996|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Largura' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 10:28:56.9996|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Peso' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 10:28:56.9996|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'ValorDeclarado' on entity type 'Pedido'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 10:28:56.9996|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'ValorFrete' on entity type 'Pedido'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 10:28:57.6959|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 10:31:50.5430|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para registrar usuário: adr@adr.com 
+2025-03-31 10:31:50.5498|0|INFO|AuthService|Iniciando registro de novo usuário: adr@adr.com 
+2025-03-31 10:31:51.2997|0|INFO|AuthService|Usuário adr@adr.com registrado com sucesso. ID: 2 
+2025-03-31 10:31:51.2997|0|INFO|FreteManager.Controllers.AuthController|Usuário registrado com sucesso: adr@adr.com, ID: 2 
+2025-03-31 10:32:14.9773|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: adr@adr.com 
+2025-03-31 10:32:14.9773|0|INFO|AuthService|Tentativa de login: adr@adr.com 
+2025-03-31 10:32:15.0571|0|INFO|AuthService|Login bem-sucedido: adr@adr.com 
+2025-03-31 10:32:15.0571|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: adr@adr.com 
+2025-03-31 10:32:41.6969|0|INFO|FreteManager.Controllers.ClientesController|Requisição GET para listar todos os clientes 
+2025-03-31 10:32:41.6969|0|INFO|FreteManager.Services.ClienteService|Listando todos os clientes 
+2025-03-31 10:32:41.7278|0|INFO|FreteManager.Repositories.ClienteRepository|Recuperados 3 clientes 
+2025-03-31 10:32:41.7278|0|INFO|FreteManager.Controllers.ClientesController|Retornando 3 clientes 
+2025-03-31 10:34:09.3184|0|INFO|FreteManager.Controllers.ClientesController|Requisição POST para criar novo cliente 
+2025-03-31 10:34:09.3184|0|INFO|FreteManager.Services.ClienteService|Iniciando cadastro de novo cliente: Novo cliente A 
+2025-03-31 10:34:09.4162|0|INFO|FreteManager.Repositories.ClienteRepository|Cliente Novo cliente A adicionado com sucesso. ID gerado: 4 
+2025-03-31 10:34:09.4162|0|INFO|FreteManager.Services.ClienteService|Cliente cadastrado com sucesso. ID: 4 
+2025-03-31 10:34:09.4162|0|INFO|FreteManager.Controllers.ClientesController|Cliente criado com ID 4: Novo cliente A 
+2025-03-31 10:36:34.1390|0|INFO|FreteManager.Controllers.ClientesController|Requisição GET para obter cliente ID 4 
+2025-03-31 10:36:34.1390|0|INFO|FreteManager.Services.ClienteService|Obtendo cliente com ID 4 
+2025-03-31 10:36:34.1907|0|INFO|FreteManager.Controllers.ClientesController|Retornando dados do cliente ID 4: Novo cliente A 
+2025-03-31 10:36:58.7274|0|INFO|FreteManager.Controllers.ClientesController|Requisição PUT para atualizar cliente ID 4 
+2025-03-31 10:36:58.7274|0|INFO|FreteManager.Services.ClienteService|Iniciando atualização do cliente ID 4 
+2025-03-31 10:36:58.7605|0|INFO|FreteManager.Repositories.ClienteRepository|Cliente ID 4 atualizado com sucesso 
+2025-03-31 10:36:58.7605|0|INFO|FreteManager.Services.ClienteService|Cliente ID 4 atualizado com sucesso 
+2025-03-31 10:36:58.7605|0|INFO|FreteManager.Controllers.ClientesController|Cliente ID 4 atualizado com sucesso 
+2025-03-31 10:37:21.8863|0|INFO|FreteManager.Controllers.ClientesController|Requisição POST para criar novo cliente 
+2025-03-31 10:37:21.8863|0|INFO|FreteManager.Services.ClienteService|Iniciando cadastro de novo cliente: Novo cliente B 
+2025-03-31 10:37:21.8863|0|WARN|FreteManager.Services.ClienteService|Tentativa de cadastro com e-mail já existente: cli1@cli1.com 
+2025-03-31 10:37:22.2257|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|Este e-mail já está cadastrado. FreteManager.Exceptions.BusinessRuleViolationException: Este e-mail já está cadastrado.
+   at FreteManager.Services.ClienteService.CadastrarAsync(Cliente cliente) in C:\dev\FreteManager\FreteManager\Services\ClienteService.cs:line 48
+   at FreteManager.Controllers.ClientesController.PostCliente(Cliente cliente) in C:\dev\FreteManager\FreteManager\Controllers\ClientesController.cs:line 60
+   at lambda_method145(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 10:37:31.9111|0|INFO|FreteManager.Controllers.ClientesController|Requisição POST para criar novo cliente 
+2025-03-31 10:37:31.9111|0|INFO|FreteManager.Services.ClienteService|Iniciando cadastro de novo cliente: Novo cliente B 
+2025-03-31 10:37:31.9708|0|INFO|FreteManager.Repositories.ClienteRepository|Cliente Novo cliente B adicionado com sucesso. ID gerado: 5 
+2025-03-31 10:37:31.9751|0|INFO|FreteManager.Services.ClienteService|Cliente cadastrado com sucesso. ID: 5 
+2025-03-31 10:37:31.9751|0|INFO|FreteManager.Controllers.ClientesController|Cliente criado com ID 5: Novo cliente B 
+2025-03-31 10:37:42.3266|0|INFO|FreteManager.Controllers.ClientesController|Requisição DELETE para excluir cliente ID 5 
+2025-03-31 10:37:42.3266|0|INFO|FreteManager.Services.ClienteService|Iniciando exclusão do cliente ID 5 
+2025-03-31 10:37:42.3576|0|INFO|FreteManager.Repositories.ClienteRepository|Cliente ID 5 excluído com sucesso 
+2025-03-31 10:37:42.3576|0|INFO|FreteManager.Services.ClienteService|Cliente ID 5 excluído com sucesso 
+2025-03-31 10:37:42.3576|0|INFO|FreteManager.Controllers.ClientesController|Cliente ID 5 excluído com sucesso 
+2025-03-31 10:38:19.6543|0|INFO|FreteManager.Controllers.FreteController|Requisição POST para calcular frete de 37701281 para 37705038 
+2025-03-31 10:38:19.6896|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|Start processing HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 10:38:19.6911|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Sending HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 10:38:20.9531|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Received HTTP response headers after 1257.0815ms - 200 
+2025-03-31 10:38:20.9531|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|End processing HTTP request after 1270.4017ms - 200 
+2025-03-31 10:38:20.9652|0|INFO|FreteManager.Services.FreteService|Frete calculado: Correios - Sedex, Valor: 22.37, Prazo: 1 dias 
+2025-03-31 10:38:20.9652|0|INFO|FreteManager.Controllers.FreteController|Frete calculado de 37701281 para 37705038: R$ 22,37 
+2025-03-31 10:38:31.3733|0|INFO|FreteManager.Controllers.PedidosController|Requisição GET para listar todos os pedidos 
+2025-03-31 10:38:31.3733|0|INFO|FreteManager.Services.PedidoService|Listando todos os pedidos 
+2025-03-31 10:38:31.6438|0|INFO|FreteManager.Repositories.PedidoRepository|Recuperados 3 pedidos do banco de dados 
+2025-03-31 10:38:31.6438|0|INFO|FreteManager.Controllers.PedidosController|Retornando 3 pedidos 
+2025-03-31 10:39:33.6684|0|INFO|FreteManager.Controllers.PedidosController|Requisição POST para criar novo pedido 
+2025-03-31 10:39:33.6766|0|INFO|FreteManager.Services.PedidoService|Iniciando criação de pedido para cliente ID 4 
+2025-03-31 10:39:33.6935|0|INFO|FreteManager.Services.FreteService|Valor de frete recuperado do cache: 22.37 
+2025-03-31 10:39:33.6935|0|INFO|FreteManager.Services.PedidoService|Frete calculado: R$ 22,37 
+2025-03-31 10:39:33.6935|0|INFO|FreteManager.Services.PedidoService|Valor de frete calculado: R$ 22,37 
+2025-03-31 10:39:33.8651|0|INFO|FreteManager.Repositories.PedidoRepository|Pedido adicionado com sucesso. ID gerado: 4 
+2025-03-31 10:39:33.8651|0|INFO|FreteManager.Services.PedidoService|Pedido criado com sucesso, ID 4 
+2025-03-31 10:39:33.8651|0|INFO|FreteManager.Controllers.PedidosController|Pedido criado com ID 4 
+2025-03-31 10:40:13.2454|0|INFO|FreteManager.Controllers.PedidosController|Requisição GET para obter pedido ID 4 
+2025-03-31 10:40:13.2454|0|INFO|FreteManager.Services.PedidoService|Obtendo detalhes do pedido ID 4 
+2025-03-31 10:40:13.3081|0|INFO|FreteManager.Controllers.PedidosController|Retornando dados do pedido ID 4 
+2025-03-31 10:41:05.2742|0|INFO|FreteManager.Controllers.PedidosController|Requisição PUT para atualizar pedido ID 4 
+2025-03-31 10:41:05.2742|0|WARN|FreteManager.Controllers.PedidosController|ID da rota (4) não corresponde ao ID no corpo da requisição (0) 
+2025-03-31 10:41:38.4245|0|INFO|FreteManager.Controllers.PedidosController|Requisição PUT para atualizar pedido ID 4 
+2025-03-31 10:41:38.4245|0|INFO|FreteManager.Services.PedidoService|Iniciando atualização do pedido ID 4 
+2025-03-31 10:41:38.4549|0|WARN|FreteManager.Repositories.ClienteRepository|Cliente com ID 0 não encontrado 
+2025-03-31 10:41:38.5499|0|WARN|FreteManager.Services.PedidoService|Tentativa de atualizar pedido com cliente inexistente ID 0 
+2025-03-31 10:41:38.8414|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|A entidade Cliente com ID 0 não foi encontrada. FreteManager.Exceptions.EntityNotFoundException: A entidade Cliente com ID 0 não foi encontrada.
+   at FreteManager.Services.PedidoService.AtualizarAsync(AtualizarPedidoDTO pedidoDTO) in C:\dev\FreteManager\FreteManager\Services\PedidoService.cs:line 100
+   at FreteManager.Controllers.PedidosController.PutPedido(Int32 id, AtualizarPedidoDTO pedidoDTO) in C:\dev\FreteManager\FreteManager\Controllers\PedidosController.cs:line 100
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 10:42:16.9527|0|INFO|FreteManager.Controllers.PedidosController|Requisição PUT para atualizar pedido ID 4 
+2025-03-31 10:42:16.9560|0|INFO|FreteManager.Services.PedidoService|Iniciando atualização do pedido ID 4 
+2025-03-31 10:42:16.9851|0|WARN|FreteManager.Repositories.ClienteRepository|Cliente com ID 0 não encontrado 
+2025-03-31 10:42:17.1162|0|WARN|FreteManager.Services.PedidoService|Tentativa de atualizar pedido com cliente inexistente ID 0 
+2025-03-31 10:42:17.4198|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|A entidade Cliente com ID 0 não foi encontrada. FreteManager.Exceptions.EntityNotFoundException: A entidade Cliente com ID 0 não foi encontrada.
+   at FreteManager.Services.PedidoService.AtualizarAsync(AtualizarPedidoDTO pedidoDTO) in C:\dev\FreteManager\FreteManager\Services\PedidoService.cs:line 100
+   at FreteManager.Controllers.PedidosController.PutPedido(Int32 id, AtualizarPedidoDTO pedidoDTO) in C:\dev\FreteManager\FreteManager\Controllers\PedidosController.cs:line 100
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 10:43:41.8631|0|INFO|FreteManager.Controllers.PedidosController|Requisição PUT para atualizar pedido ID 4 
+2025-03-31 10:43:41.8631|0|INFO|FreteManager.Services.PedidoService|Iniciando atualização do pedido ID 4 
+2025-03-31 10:43:41.8942|0|INFO|FreteManager.Repositories.PedidoRepository|Pedido ID 4 atualizado com sucesso 
+2025-03-31 10:43:41.8942|0|INFO|FreteManager.Services.PedidoService|Pedido ID 4 atualizado com sucesso 
+2025-03-31 10:43:41.9089|0|INFO|FreteManager.Controllers.PedidosController|Pedido ID 4 atualizado com sucesso 
+2025-03-31 10:44:12.8421|0|INFO|FreteManager.Controllers.PedidosController|Requisição DELETE para excluir pedido ID 3 
+2025-03-31 10:44:12.8421|0|INFO|FreteManager.Services.PedidoService|Iniciando exclusão do pedido ID 3 
+2025-03-31 10:44:12.8759|0|INFO|FreteManager.Repositories.PedidoRepository|Pedido ID 3 excluído com sucesso 
+2025-03-31 10:44:12.8759|0|INFO|FreteManager.Services.PedidoService|Pedido ID 3 excluído com sucesso 
+2025-03-31 10:44:12.8759|0|INFO|FreteManager.Controllers.PedidosController|Pedido ID 3 excluído com sucesso 
+2025-03-31 10:44:18.0708|0|INFO|FreteManager.Controllers.PedidosController|Requisição DELETE para excluir pedido ID 3 
+2025-03-31 10:44:18.0708|0|INFO|FreteManager.Services.PedidoService|Iniciando exclusão do pedido ID 3 
+2025-03-31 10:44:18.0708|0|WARN|FreteManager.Repositories.PedidoRepository|Pedido com ID 3 não encontrado 
+2025-03-31 10:44:18.3676|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|A entidade Pedido com ID 3 não foi encontrada. FreteManager.Exceptions.EntityNotFoundException: A entidade Pedido com ID 3 não foi encontrada.
+   at FreteManager.Repositories.PedidoRepository.ObterPorIdAsync(Int32 id) in C:\dev\FreteManager\FreteManager\Repositories\PedidoRepository.cs:line 32
+   at FreteManager.Repositories.PedidoRepository.ExcluirAsync(Int32 id) in C:\dev\FreteManager\FreteManager\Repositories\PedidoRepository.cs:line 122
+   at FreteManager.Services.PedidoService.ExcluirAsync(Int32 id) in C:\dev\FreteManager\FreteManager\Services\PedidoService.cs:line 138
+   at FreteManager.Controllers.PedidosController.DeletePedido(Int32 id) in C:\dev\FreteManager\FreteManager\Controllers\PedidosController.cs:line 113
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 10:44:41.4749|0|INFO|FreteManager.Controllers.PedidosController|Requisição GET para listar pedidos do cliente ID 4 
+2025-03-31 10:44:41.4749|0|INFO|FreteManager.Services.PedidoService|Listando pedidos do cliente ID 4 
+2025-03-31 10:44:41.5493|0|INFO|FreteManager.Repositories.PedidoRepository|Recuperados 1 pedidos do cliente ID 4 
+2025-03-31 10:44:41.5493|0|INFO|FreteManager.Controllers.PedidosController|Retornando 1 pedidos do cliente ID 4 
+2025-03-31 10:45:03.3189|0|INFO|FreteManager.Controllers.PedidosController|Requisição POST para criar novo pedido 
+2025-03-31 10:45:03.3189|0|INFO|FreteManager.Services.PedidoService|Iniciando criação de pedido para cliente ID 4 
+2025-03-31 10:45:03.3812|0|INFO|FreteManager.Repositories.PedidoRepository|Pedido adicionado com sucesso. ID gerado: 5 
+2025-03-31 10:45:03.3812|0|INFO|FreteManager.Services.PedidoService|Pedido criado com sucesso, ID 5 
+2025-03-31 10:45:03.3812|0|INFO|FreteManager.Controllers.PedidosController|Pedido criado com ID 5 
+2025-03-31 10:45:09.0134|0|INFO|FreteManager.Controllers.PedidosController|Requisição GET para listar pedidos do cliente ID 4 
+2025-03-31 10:45:09.0134|0|INFO|FreteManager.Services.PedidoService|Listando pedidos do cliente ID 4 
+2025-03-31 10:45:09.0842|0|INFO|FreteManager.Repositories.PedidoRepository|Recuperados 2 pedidos do cliente ID 4 
+2025-03-31 10:45:09.0842|0|INFO|FreteManager.Controllers.PedidosController|Retornando 2 pedidos do cliente ID 4 
+2025-03-31 10:45:57.6969|0|INFO|FreteManager.Controllers.PedidosController|Requisição PATCH para atualizar status do pedido ID 5 para Enviado 
+2025-03-31 10:45:57.6969|0|INFO|FreteManager.Services.PedidoService|Atualizando status do pedido ID 5 para Enviado 
+2025-03-31 10:45:57.8038|0|WARN|FreteManager.Services.PedidoService|Transição de status inválida: de Entregue para Enviado 
+2025-03-31 10:45:57.9955|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|Não é possível alterar o status de um pedido já entregue FreteManager.Exceptions.BusinessRuleViolationException: Não é possível alterar o status de um pedido já entregue
+   at FreteManager.Services.PedidoService.ValidarTransicaoStatus(StatusPedido statusAtual, StatusPedido novoStatus) in C:\dev\FreteManager\FreteManager\Services\PedidoService.cs:line 267
+   at FreteManager.Services.PedidoService.AtualizarStatusAsync(Int32 id, StatusPedido novoStatus) in C:\dev\FreteManager\FreteManager\Services\PedidoService.cs:line 223
+   at FreteManager.Controllers.PedidosController.AtualizarStatus(Int32 id, StatusUpdateModel model) in C:\dev\FreteManager\FreteManager\Controllers\PedidosController.cs:line 132
+   at lambda_method610(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 10:46:12.2231|0|INFO|FreteManager.Controllers.PedidosController|Requisição PATCH para atualizar status do pedido ID 4 para Enviado 
+2025-03-31 10:46:12.2977|0|INFO|FreteManager.Services.PedidoService|Atualizando status do pedido ID 4 para Enviado 
+2025-03-31 10:46:12.3557|0|WARN|FreteManager.Services.PedidoService|Transição de status inválida: de Enviado para Enviado 
+2025-03-31 10:46:12.5734|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|Não é possível alterar o status de Enviado para Enviado FreteManager.Exceptions.BusinessRuleViolationException: Não é possível alterar o status de Enviado para Enviado
+   at FreteManager.Services.PedidoService.ValidarTransicaoStatus(StatusPedido statusAtual, StatusPedido novoStatus) in C:\dev\FreteManager\FreteManager\Services\PedidoService.cs:line 261
+   at FreteManager.Services.PedidoService.AtualizarStatusAsync(Int32 id, StatusPedido novoStatus) in C:\dev\FreteManager\FreteManager\Services\PedidoService.cs:line 223
+   at FreteManager.Controllers.PedidosController.AtualizarStatus(Int32 id, StatusUpdateModel model) in C:\dev\FreteManager\FreteManager\Controllers\PedidosController.cs:line 132
+   at lambda_method610(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 10:46:17.8176|0|INFO|FreteManager.Controllers.PedidosController|Requisição PATCH para atualizar status do pedido ID 4 para Entregue 
+2025-03-31 10:46:17.8972|0|INFO|FreteManager.Services.PedidoService|Atualizando status do pedido ID 4 para Entregue 
+2025-03-31 10:46:17.9164|0|INFO|FreteManager.Repositories.PedidoRepository|Pedido ID 4 atualizado com sucesso 
+2025-03-31 10:46:17.9164|0|INFO|FreteManager.Services.PedidoService|Status do pedido 4 atualizado de Enviado para Entregue 
+2025-03-31 10:46:17.9164|0|INFO|FreteManager.Controllers.PedidosController|Status do pedido ID 4 atualizado para Entregue 
+2025-03-31 11:00:56.5409|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Altura' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 11:00:56.5756|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Comprimento' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 11:00:56.5756|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Largura' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 11:00:56.5756|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Peso' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 11:00:56.5756|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'ValorDeclarado' on entity type 'Pedido'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 11:00:56.5756|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'ValorFrete' on entity type 'Pedido'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 11:00:57.0263|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 11:01:24.9326|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Altura' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 11:01:24.9744|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Comprimento' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 11:01:24.9744|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Largura' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 11:01:24.9744|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Peso' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 11:01:24.9744|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'ValorDeclarado' on entity type 'Pedido'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 11:01:24.9744|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'ValorFrete' on entity type 'Pedido'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 11:01:25.3736|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
