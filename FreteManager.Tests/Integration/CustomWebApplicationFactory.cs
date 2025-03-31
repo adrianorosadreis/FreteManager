@@ -1,10 +1,14 @@
 ﻿using FreteManager.Data;
 using FreteManager.Models;
+using FreteManager.Repositories;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
+using Microsoft.Extensions.Logging;
+using Moq;
 
 namespace FreteManager.Tests.Integration
 {
@@ -65,13 +69,41 @@ namespace FreteManager.Tests.Integration
             // Adicionar dados iniciais para testes de integração
             if (!context.Usuarios.Any())
             {
+                // Criar uma instância do AuthService para usar o método de hash
+                var configuration = new ConfigurationBuilder()
+                    .AddInMemoryCollection(new Dictionary<string, string>
+                    {
+                        ["Jwt:Secret"] = "YourSuperSecretKey123!@#$ThisShouldBeAtLeast32BytesLong"
+                    })
+                    .Build();
+
+                var loggerFactory = LoggerFactory.Create(builder => builder.AddConsole());
+                var logger = loggerFactory.CreateLogger<AuthService>();
+
+                var mockUsuarioRepository = new Mock<IUsuarioRepository>();
+                var authService = new AuthService(mockUsuarioRepository.Object, configuration, logger);
+
+                // Gerar o hash da senha
+                string senhaOriginal = "SenhaTesteSecurity123!";
+                string senhaHasheada = authService.HashSenha(senhaOriginal);
+
                 context.Usuarios.Add(new Usuario
                 {
                     Nome = "Usuário Teste",
                     Email = "teste@integracao.com",
-                    Senha = "SenhaTesteSecurity123!", // Em um cenário real, usar hash
+                    Senha = senhaHasheada,
                     Role = "Usuario"
                 });
+
+                // Usuário Admin
+                context.Usuarios.Add(new Usuario
+                {
+                    Nome = "Administrador",
+                    Email = "admin@fretemanager.com",
+                    Senha = authService.HashSenha("Admin@123"),
+                    Role = "Admin"
+                });
+
                 context.SaveChanges();
             }
 

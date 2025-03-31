@@ -46,14 +46,14 @@ namespace FreteManager.Services
 
             try
             {
-                // Sanitizar e validar os CEPs
+                //// Sanitizar e validar os CEPs
                 string cepOrigem = new string(parametros.CepOrigem.Where(char.IsDigit).ToArray());
                 string cepDestino = new string(parametros.CepDestino.Where(char.IsDigit).ToArray());
 
-                if (cepOrigem.Length != 8 || cepDestino.Length != 8)
-                {
-                    throw new ArgumentException("CEPs de origem e destino devem ter 8 dígitos");
-                }
+                //if (cepOrigem.Length != 8 || cepDestino.Length != 8)
+                //{
+                //    throw new ArgumentException("CEPs de origem e destino devem ter 8 dígitos");
+                //}
 
                 // Preparar o payload da requisição conforme documentação da Frenet
                 var shippingItems = parametros.Pacotes.Select(p => new

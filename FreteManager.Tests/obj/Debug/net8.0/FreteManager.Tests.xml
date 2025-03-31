@@ -43,27 +43,6 @@
             Adiciona o token de autenticação ao cabeçalho do cliente HTTP
             </summary>
         </member>
-        <member name="T:FreteManager.Tests.Integration.AuthenticationIntegrationTests">
-            <summary>
-            Testes de integração para autenticação e autorização
-            Verifica o comportamento do sistema de segurança em diferentes cenários
-            </summary>
-        </member>
-        <member name="P:FreteManager.Tests.Integration.AuthenticationIntegrationTests.InvalidCredentials">
-            <summary>
-            Conjunto de credenciais inválidas para teste
-            </summary>
-        </member>
-        <member name="T:FreteManager.Tests.Integration.AuthenticationIntegrationTests.UserRoleTestCase">
-            <summary>
-            Classe para representar diferentes perfis de teste
-            </summary>
-        </member>
-        <member name="P:FreteManager.Tests.Integration.AuthenticationIntegrationTests.UserRoleTestCases">
-            <summary>
-            Casos de teste para diferentes perfis de usuário
-            </summary>
-        </member>
         <member name="T:FreteManager.Tests.Integration.ClientesControllerIntegrationTests">
             <summary>
             Testes de integração para ClientesController

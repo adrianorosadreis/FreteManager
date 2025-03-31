@@ -1,0 +1,4 @@
+2025-03-31 18:59:05.7250|0|ERROR|FreteManager.Services.FreteService|Erro ao calcular frete System.ArgumentException: CEPs de origem e destino devem ter 8 dígitos
+   at FreteManager.Services.FreteService.CalcularFreteDetalhadoAsync(ParametrosFrete parametros) in C:\dev\FreteManager\FreteManager\Services\FreteService.cs:line 55
+2025-03-31 18:59:05.8163|0|ERROR|FreteManager.Services.FreteService|Erro ao calcular frete System.ArgumentException: CEPs de origem e destino devem ter 8 dígitos
+   at FreteManager.Services.FreteService.CalcularFreteDetalhadoAsync(ParametrosFrete parametros) in C:\dev\FreteManager\FreteManager\Services\FreteService.cs:line 55
