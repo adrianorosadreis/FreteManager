@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.12.35707.178 d17.12
+VisualStudioVersion = 17.12.35707.178
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreteManager", "FreteManager\FreteManager.csproj", "{692B35F0-3B6B-4603-84FC-F2DA86E03253}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreteManager.Tests", "FreteManager.Tests\FreteManager.Tests.csproj", "{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{692B35F0-3B6B-4603-84FC-F2DA86E03253}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{692B35F0-3B6B-4603-84FC-F2DA86E03253}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{692B35F0-3B6B-4603-84FC-F2DA86E03253}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D21A87B-60EC-4B65-A25E-2478EE0E9ECE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
