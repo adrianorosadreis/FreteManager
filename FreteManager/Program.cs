@@ -9,6 +9,7 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using NLog;
 using NLog.Web;
+using System.Reflection;
 using System.Text;
 
 public class Program
@@ -60,13 +61,6 @@ public class Program
         // Adicionar cache de memória
         builder.Services.AddMemoryCache();
 
-
-        //builder.Services.AddHttpClient<IFreteService, FreteService>(client =>
-        //{
-        //    // Configurar URL base para API de frete (em um cenário real)
-        //    // client.BaseAddress = new Uri("https://api.frete.com/");
-        //});
-
         builder.Services.AddAuthentication(options =>
         {
             options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -87,51 +81,52 @@ public class Program
             };
         });
 
-        builder.Services.AddSwaggerGen(options =>
+        builder.Services.AddSwaggerGen(c =>
         {
-            options.SwaggerDoc("v1", new OpenApiInfo
+            c.SwaggerDoc("v1", new OpenApiInfo
             {
                 Title = "FreteManager API",
                 Version = "v1",
-                Description = "API do Sistema de Gerenciamento de Pedidos para Logística",
+                Description = "API para gerenciamento de pedidos de transporte e logística",
                 Contact = new OpenApiContact
                 {
+                    Name = "Adriano Reis",
                     Email = "adrianorosadreis@gmail.com"
                 }
             });
 
-            // Configurar o Swagger para usar o JWT
-            options.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+            // Configuração para incluir comentários XML
+            var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
+            var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+            c.IncludeXmlComments(xmlPath);
+
+            // Configuração para autenticação JWT
+            c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
             {
+                Description = "JWT Authorization header usando o esquema Bearer. Exemplo: \"Authorization: Bearer {token}\"",
                 Name = "Authorization",
-                Type = SecuritySchemeType.ApiKey,
-                Scheme = "Bearer",
-                BearerFormat = "JWT",
                 In = ParameterLocation.Header,
-                Description = "JWT Authorization header usando o esquema Bearer.\r\n\r\n" +
-                              "Digite 'Bearer' [espaço] e então seu token.\r\n\r\n" +
-                              "Exemplo: \"Bearer 12345abcdef\""
+                Type = SecuritySchemeType.ApiKey,
+                Scheme = "Bearer"
             });
 
-            options.AddSecurityRequirement(new OpenApiSecurityRequirement
+            c.AddSecurityRequirement(new OpenApiSecurityRequirement
             {
-            {
-                new OpenApiSecurityScheme
                 {
-                    Reference = new OpenApiReference
+                    new OpenApiSecurityScheme
                     {
-                        Type = ReferenceType.SecurityScheme,
-                        Id = "Bearer"
-                    }
-                },
-                Array.Empty<string>()
-            }
+                        Reference = new OpenApiReference
+                        {
+                            Type = ReferenceType.SecurityScheme,
+                            Id = "Bearer"
+                        },
+                        Scheme = "oauth2",
+                        Name = "Bearer",
+                        In = ParameterLocation.Header
+                    },
+                    new List<string>()
+                }
             });
-
-
-
-            var xmlFilename = $"{System.Reflection.Assembly.GetExecutingAssembly().GetName().Name}.xml";
-            options.IncludeXmlComments(Path.Combine(AppContext.BaseDirectory, xmlFilename));
         });
 
         var app = builder.Build();
@@ -156,9 +151,7 @@ public class Program
 
         app.UseAuthorization();
 
-        app.MapControllerRoute(
-            name: "default",
-            pattern: "{controller=Home}/{action=Index}/{id?}");
+        app.MapControllers();
 
         app.Run();
     }

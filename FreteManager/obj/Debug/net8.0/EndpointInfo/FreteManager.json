@@ -2,8 +2,9 @@
   "openapi": "3.0.4",
   "info": {
     "title": "FreteManager API",
-    "description": "API do Sistema de Gerenciamento de Pedidos para Logística",
+    "description": "API para gerenciamento de pedidos de transporte e logística",
     "contact": {
+      "name": "Adriano Reis",
       "email": "adrianorosadreis@gmail.com"
     },
     "version": "v1"
@@ -14,7 +15,9 @@
         "tags": [
           "Auth"
         ],
+        "summary": "Registra um novo usuário no sistema",
         "requestBody": {
+          "description": "Dados de registro do usuário",
           "content": {
             "application/json": {
               "schema": {
@@ -35,7 +38,27 @@
         },
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Retorna quando o usuário é registrado com sucesso"
+          },
+          "400": {
+            "description": "Retorna quando o modelo é inválido ou o email já está em uso",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
           }
         }
       }
@@ -45,7 +68,9 @@
         "tags": [
           "Auth"
         ],
+        "summary": "Autentica um usuário e retorna um token JWT",
         "requestBody": {
+          "description": "Credenciais de login do usuário",
           "content": {
             "application/json": {
               "schema": {
@@ -66,7 +91,47 @@
         },
         "responses": {
           "200": {
-            "description": "OK"
+            "description": "Retorna quando o login é bem-sucedido"
+          },
+          "400": {
+            "description": "Retorna quando o modelo é inválido",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Retorna quando o usuário não é encontrado",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
           }
         }
       }
@@ -76,9 +141,10 @@
         "tags": [
           "Clientes"
         ],
+        "summary": "Obtém todos os clientes cadastrados",
         "responses": {
           "200": {
-            "description": "OK",
+            "description": "Retorna a lista de clientes",
             "content": {
               "text/plain": {
                 "schema": {
@@ -102,6 +168,26 @@
                   "items": {
                     "$ref": "#/components/schemas/Cliente"
                   }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Retorna quando o usuário não está autenticado",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
                 }
               }
             }
@@ -112,7 +198,9 @@
         "tags": [
           "Clientes"
         ],
+        "summary": "Cadastra um novo cliente",
         "requestBody": {
+          "description": "Dados do cliente a ser cadastrado",
           "content": {
             "application/json": {
               "schema": {
@@ -132,8 +220,8 @@
           }
         },
         "responses": {
-          "200": {
-            "description": "OK",
+          "201": {
+            "description": "Retorna quando o cliente é criado com sucesso",
             "content": {
               "text/plain": {
                 "schema": {
@@ -148,6 +236,46 @@
               "text/json": {
                 "schema": {
                   "$ref": "#/components/schemas/Cliente"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Retorna quando o modelo é inválido",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Retorna quando o usuário não está autenticado",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
                 }
               }
             }
@@ -160,10 +288,12 @@
         "tags": [
           "Clientes"
         ],
+        "summary": "Obtém um cliente específico pelo ID",
         "parameters": [
           {
             "name": "id",
             "in": "path",
+            "description": "ID do cliente",
             "required": true,
             "schema": {
               "type": "integer",
@@ -173,7 +303,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
+            "description": "Retorna os dados do cliente",
             "content": {
               "text/plain": {
                 "schema": {
@@ -191,6 +321,46 @@
                 }
               }
             }
+          },
+          "401": {
+            "description": "Retorna quando o usuário não está autenticado",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Retorna quando o cliente não é encontrado",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
           }
         }
       },
@@ -198,10 +368,12 @@
         "tags": [
           "Clientes"
         ],
+        "summary": "Atualiza os dados de um cliente existente",
         "parameters": [
           {
             "name": "id",
             "in": "path",
+            "description": "ID do cliente",
             "required": true,
             "schema": {
               "type": "integer",
@@ -210,6 +382,7 @@
           }
         ],
         "requestBody": {
+          "description": "Novos dados do cliente",
           "content": {
             "application/json": {
               "schema": {
@@ -229,8 +402,68 @@
           }
         },
         "responses": {
-          "200": {
-            "description": "OK"
+          "204": {
+            "description": "Retorna quando o cliente é atualizado com sucesso"
+          },
+          "400": {
+            "description": "Retorna quando o modelo é inválido ou o ID não corresponde",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Retorna quando o usuário não está autenticado",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Retorna quando o cliente não é encontrado",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
           }
         }
       },
@@ -238,10 +471,12 @@
         "tags": [
           "Clientes"
         ],
+        "summary": "Exclui um cliente",
         "parameters": [
           {
             "name": "id",
             "in": "path",
+            "description": "ID do cliente a ser excluído",
             "required": true,
             "schema": {
               "type": "integer",
@@ -250,8 +485,48 @@
           }
         ],
         "responses": {
-          "200": {
-            "description": "OK"
+          "204": {
+            "description": "Retorna quando o cliente é excluído com sucesso"
+          },
+          "401": {
+            "description": "Retorna quando o usuário não está autenticado",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Retorna quando o cliente não é encontrado",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
           }
         }
       }
@@ -284,7 +559,7 @@
         },
         "responses": {
           "200": {
-            "description": "OK",
+            "description": "Retorna o valor do frete calculado",
             "content": {
               "text/plain": {
                 "schema": {
@@ -302,6 +577,46 @@
                 "schema": {
                   "type": "number",
                   "format": "double"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Retorna quando os parâmetros são inválidos",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Retorna quando o usuário não está autenticado",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
                 }
               }
             }
@@ -314,9 +629,10 @@
         "tags": [
           "Pedidos"
         ],
+        "summary": "Obtém todos os pedidos cadastrados",
         "responses": {
           "200": {
-            "description": "OK",
+            "description": "Retorna a lista de pedidos",
             "content": {
               "text/plain": {
                 "schema": {
@@ -343,6 +659,26 @@
                 }
               }
             }
+          },
+          "401": {
+            "description": "Retorna quando o usuário não está autenticado",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
           }
         }
       },
@@ -350,7 +686,9 @@
         "tags": [
           "Pedidos"
         ],
+        "summary": "Cria um novo pedido",
         "requestBody": {
+          "description": "Dados do pedido a ser criado",
           "content": {
             "application/json": {
               "schema": {
@@ -370,8 +708,8 @@
           }
         },
         "responses": {
-          "200": {
-            "description": "OK",
+          "201": {
+            "description": "Retorna quando o pedido é criado com sucesso",
             "content": {
               "text/plain": {
                 "schema": {
@@ -386,6 +724,66 @@
               "text/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PedidoRespostaDTO"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Retorna quando o modelo é inválido",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Retorna quando o usuário não está autenticado",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Retorna quando o cliente não é encontrado",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
                 }
               }
             }
@@ -398,10 +796,12 @@
         "tags": [
           "Pedidos"
         ],
+        "summary": "Obtém um pedido específico pelo ID",
         "parameters": [
           {
             "name": "id",
             "in": "path",
+            "description": "ID do pedido",
             "required": true,
             "schema": {
               "type": "integer",
@@ -411,7 +811,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
+            "description": "Retorna os dados do pedido",
             "content": {
               "text/plain": {
                 "schema": {
@@ -429,6 +829,46 @@
                 }
               }
             }
+          },
+          "401": {
+            "description": "Retorna quando o usuário não está autenticado",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Retorna quando o pedido não é encontrado",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
           }
         }
       },
@@ -436,10 +876,12 @@
         "tags": [
           "Pedidos"
         ],
+        "summary": "Atualiza os dados de um pedido existente",
         "parameters": [
           {
             "name": "id",
             "in": "path",
+            "description": "ID do pedido",
             "required": true,
             "schema": {
               "type": "integer",
@@ -448,6 +890,7 @@
           }
         ],
         "requestBody": {
+          "description": "Novos dados do pedido",
           "content": {
             "application/json": {
               "schema": {
@@ -467,8 +910,68 @@
           }
         },
         "responses": {
-          "200": {
-            "description": "OK"
+          "204": {
+            "description": "Retorna quando o pedido é atualizado com sucesso"
+          },
+          "400": {
+            "description": "Retorna quando o modelo é inválido ou o ID não corresponde",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Retorna quando o usuário não está autenticado",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Retorna quando o pedido ou cliente não é encontrado",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
           }
         }
       },
@@ -476,10 +979,12 @@
         "tags": [
           "Pedidos"
         ],
+        "summary": "Exclui um pedido",
         "parameters": [
           {
             "name": "id",
             "in": "path",
+            "description": "ID do pedido a ser excluído",
             "required": true,
             "schema": {
               "type": "integer",
@@ -488,8 +993,48 @@
           }
         ],
         "responses": {
-          "200": {
-            "description": "OK"
+          "204": {
+            "description": "Retorna quando o pedido é excluído com sucesso"
+          },
+          "401": {
+            "description": "Retorna quando o usuário não está autenticado",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Retorna quando o pedido não é encontrado",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
           }
         }
       }
@@ -499,10 +1044,12 @@
         "tags": [
           "Pedidos"
         ],
+        "summary": "Obtém todos os pedidos de um cliente específico",
         "parameters": [
           {
             "name": "clienteId",
             "in": "path",
+            "description": "ID do cliente",
             "required": true,
             "schema": {
               "type": "integer",
@@ -512,7 +1059,7 @@
         ],
         "responses": {
           "200": {
-            "description": "OK",
+            "description": "Retorna a lista de pedidos do cliente",
             "content": {
               "text/plain": {
                 "schema": {
@@ -536,6 +1083,46 @@
                   "items": {
                     "$ref": "#/components/schemas/PedidoRespostaDTO"
                   }
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Retorna quando o usuário não está autenticado",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Retorna quando o cliente não é encontrado",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
                 }
               }
             }
@@ -548,10 +1135,12 @@
         "tags": [
           "Pedidos"
         ],
+        "summary": "Atualiza o status de um pedido",
         "parameters": [
           {
             "name": "id",
             "in": "path",
+            "description": "ID do pedido",
             "required": true,
             "schema": {
               "type": "integer",
@@ -560,6 +1149,7 @@
           }
         ],
         "requestBody": {
+          "description": "Novo status do pedido",
           "content": {
             "application/json": {
               "schema": {
@@ -580,7 +1170,7 @@
         },
         "responses": {
           "200": {
-            "description": "OK",
+            "description": "Retorna os dados atualizados do pedido",
             "content": {
               "text/plain": {
                 "schema": {
@@ -595,6 +1185,66 @@
               "text/json": {
                 "schema": {
                   "$ref": "#/components/schemas/PedidoRespostaDTO"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Retorna quando o modelo é inválido ou a transição de status não é permitida",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "401": {
+            "description": "Retorna quando o usuário não está autenticado",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Retorna quando o pedido não é encontrado",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
                 }
               }
             }
@@ -897,6 +1547,33 @@
         },
         "additionalProperties": false
       },
+      "ProblemDetails": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "nullable": true
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "detail": {
+            "type": "string",
+            "nullable": true
+          },
+          "instance": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": { }
+      },
       "RegisterRequest": {
         "required": [
           "email",
@@ -950,7 +1627,7 @@
     "securitySchemes": {
       "Bearer": {
         "type": "apiKey",
-        "description": "JWT Authorization header usando o esquema Bearer.\r\n\r\nDigite 'Bearer' [espaço] e então seu token.\r\n\r\nExemplo: \"Bearer 12345abcdef\"",
+        "description": "JWT Authorization header usando o esquema Bearer. Exemplo: \"Authorization: Bearer {token}\"",
         "name": "Authorization",
         "in": "header"
       }

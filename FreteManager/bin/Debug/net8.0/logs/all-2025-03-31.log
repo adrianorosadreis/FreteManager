@@ -369,3 +369,411 @@ System.Data.SqlTypes.SqlNullValueException: Data is Null. This method or propert
 2025-03-31 17:41:35.2737|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'ValorDeclarado' on entity type 'Pedido'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
 2025-03-31 17:41:35.2737|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'ValorFrete' on entity type 'Pedido'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
 2025-03-31 17:41:35.8603|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 20:20:53.9834|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Altura' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 20:20:54.0204|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Comprimento' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 20:20:54.0204|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Largura' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 20:20:54.0204|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Peso' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 20:20:54.0204|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'ValorDeclarado' on entity type 'Pedido'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 20:20:54.0204|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'ValorFrete' on entity type 'Pedido'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 20:20:55.1269|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 20:23:29.6230|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Altura' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 20:23:29.6571|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Comprimento' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 20:23:29.6571|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Largura' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 20:23:29.6571|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Peso' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 20:23:29.6571|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'ValorDeclarado' on entity type 'Pedido'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 20:23:29.6571|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'ValorFrete' on entity type 'Pedido'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 20:23:30.2108|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 21:08:37.6789|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Altura' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 21:08:37.7158|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Comprimento' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 21:08:37.7158|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Largura' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 21:08:37.7158|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Peso' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 21:08:37.7158|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'ValorDeclarado' on entity type 'Pedido'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 21:08:37.7175|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'ValorFrete' on entity type 'Pedido'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 21:08:38.3046|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 21:25:29.1466|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Altura' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 21:25:29.1827|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Comprimento' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 21:25:29.1827|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Largura' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 21:25:29.1827|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Peso' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 21:25:29.1827|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'ValorDeclarado' on entity type 'Pedido'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 21:25:29.1827|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'ValorFrete' on entity type 'Pedido'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 21:25:29.8330|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 21:26:50.9718|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: adr@adr.com 
+2025-03-31 21:26:50.9718|0|INFO|AuthService|Tentativa de login: adr@adr.com 
+2025-03-31 21:26:51.8068|0|WARN|AuthService|Tentativa de login com senha incorreta: adr@adr.com 
+2025-03-31 21:26:52.1557|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|Credenciais inválidas. FreteManager.Exceptions.UnauthorizedOperationException: Credenciais inválidas.
+   at AuthService.LoginAsync(LoginRequest model) in C:\dev\FreteManager\FreteManager\Services\AuthService.cs:line 72
+   at FreteManager.Controllers.AuthController.Login(LoginRequest model) in C:\dev\FreteManager\FreteManager\Controllers\AuthController.cs:line 53
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 21:28:02.6224|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: adr@adr.com 
+2025-03-31 21:28:32.2055|0|INFO|AuthService|Tentativa de login: adr@adr.com 
+2025-03-31 21:35:42.3709|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Altura' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 21:35:42.4156|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Comprimento' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 21:35:42.4156|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Largura' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 21:35:42.4156|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Peso' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 21:35:42.4156|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'ValorDeclarado' on entity type 'Pedido'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 21:35:42.4156|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'ValorFrete' on entity type 'Pedido'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 21:35:42.9844|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 21:36:38.4837|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: adr@adr.com 
+2025-03-31 21:36:38.5035|0|INFO|AuthService|Tentativa de login: adr@adr.com 
+2025-03-31 21:36:39.3531|0|WARN|AuthService|Tentativa de login com senha incorreta: adr@adr.com 
+2025-03-31 21:36:39.6675|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|Credenciais inválidas. FreteManager.Exceptions.UnauthorizedOperationException: Credenciais inválidas.
+   at AuthService.LoginAsync(LoginRequest model) in C:\dev\FreteManager\FreteManager\Services\AuthService.cs:line 72
+   at FreteManager.Controllers.AuthController.Login(LoginRequest model) in C:\dev\FreteManager\FreteManager\Controllers\AuthController.cs:line 53
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 21:37:19.1001|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para registrar usuário: adr@aaa.com 
+2025-03-31 21:37:19.1001|0|INFO|AuthService|Iniciando registro de novo usuário: adr@aaa.com 
+2025-03-31 21:37:19.4466|0|INFO|AuthService|Usuário adr@aaa.com registrado com sucesso. ID: 3 
+2025-03-31 21:37:19.4466|0|INFO|FreteManager.Controllers.AuthController|Usuário registrado com sucesso: adr@aaa.com, ID: 3 
+2025-03-31 21:37:42.1313|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: adr@aaa.com 
+2025-03-31 21:37:42.1415|0|INFO|AuthService|Tentativa de login: adr@aaa.com 
+2025-03-31 21:37:42.3580|0|INFO|AuthService|Login bem-sucedido: adr@aaa.com 
+2025-03-31 21:37:42.4383|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: adr@aaa.com 
+2025-03-31 21:44:38.9194|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Altura' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 21:44:38.9671|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Comprimento' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 21:44:38.9680|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Largura' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 21:44:38.9680|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Peso' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 21:44:38.9680|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'ValorDeclarado' on entity type 'Pedido'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 21:44:38.9680|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'ValorFrete' on entity type 'Pedido'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 21:44:39.4594|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 21:46:57.2320|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Altura' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 21:46:57.2714|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Comprimento' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 21:46:57.2714|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Largura' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 21:46:57.2714|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Peso' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 21:46:57.2714|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'ValorDeclarado' on entity type 'Pedido'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 21:46:57.2714|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'ValorFrete' on entity type 'Pedido'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 21:46:57.7103|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 21:49:09.3119|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para registrar usuário: user@exaample.com 
+2025-03-31 21:49:09.3119|0|INFO|AuthService|Iniciando registro de novo usuário: user@exaample.com 
+2025-03-31 21:49:10.4830|0|INFO|AuthService|Usuário user@exaample.com registrado com sucesso. ID: 4 
+2025-03-31 21:49:10.4852|0|INFO|FreteManager.Controllers.AuthController|Usuário registrado com sucesso: user@exaample.com, ID: 4 
+2025-03-31 21:49:32.3113|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: user@exaample.com 
+2025-03-31 21:49:32.3113|0|INFO|AuthService|Tentativa de login: user@exaample.com 
+2025-03-31 21:49:32.3864|0|INFO|AuthService|Login bem-sucedido: user@exaample.com 
+2025-03-31 21:49:32.3864|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: user@exaample.com 
+2025-03-31 21:51:26.8322|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Altura' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 21:51:26.8703|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Comprimento' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 21:51:26.8703|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Largura' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 21:51:26.8703|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Peso' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 21:51:26.8703|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'ValorDeclarado' on entity type 'Pedido'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 21:51:26.8703|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'ValorFrete' on entity type 'Pedido'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 21:51:27.3107|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 21:51:54.5207|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: user@exaample.com 
+2025-03-31 21:51:54.5207|0|INFO|AuthService|Tentativa de login: user@exaample.com 
+2025-03-31 21:51:55.2768|0|INFO|AuthService|Login bem-sucedido: user@exaample.com 
+2025-03-31 21:51:55.2768|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: user@exaample.com 
+2025-03-31 21:52:14.8452|0|INFO|FreteManager.Controllers.ClientesController|Requisição GET para listar todos os clientes 
+2025-03-31 21:52:14.8452|0|INFO|FreteManager.Services.ClienteService|Listando todos os clientes 
+2025-03-31 21:52:14.8839|0|INFO|FreteManager.Repositories.ClienteRepository|Recuperados 4 clientes 
+2025-03-31 21:52:14.8839|0|INFO|FreteManager.Controllers.ClientesController|Retornando 4 clientes 
+2025-03-31 21:53:14.2211|0|INFO|FreteManager.Controllers.ClientesController|Requisição POST para criar novo cliente 
+2025-03-31 21:53:14.2211|0|INFO|FreteManager.Services.ClienteService|Iniciando cadastro de novo cliente: AAAA 
+2025-03-31 21:53:14.5891|0|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (31ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (Size = 200), @p3='?' (Size = 100), @p4='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Clientes] ([Id], [Email], [Endereco], [Nome], [Telefone])
+VALUES (@p0, @p1, @p2, @p3, @p4); 
+2025-03-31 21:53:14.6559|0|ERROR|Microsoft.EntityFrameworkCore.Update|An exception occurred in the database while saving changes for context type 'FreteManager.Data.ApplicationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Clientes' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:0591ced4-ef14-4bcd-a71f-9b56fb75a678
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Clientes' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:0591ced4-ef14-4bcd-a71f-9b56fb75a678
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-03-31 21:53:14.8119|0|ERROR|FreteManager.Repositories.ClienteRepository|Erro ao adicionar cliente: AAAA Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Clientes' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:0591ced4-ef14-4bcd-a71f-9b56fb75a678
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at FreteManager.Repositories.ClienteRepository.AdicionarAsync(Cliente cliente) in C:\dev\FreteManager\FreteManager\Repositories\ClienteRepository.cs:line 59
+2025-03-31 21:53:15.4036|0|ERROR|FreteManager.Middleware.ErrorHandlingMiddleware|Erro ao salvar o cliente no banco de dados FreteManager.Exceptions.DataIntegrityException: Erro ao salvar o cliente no banco de dados
+ ---> Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Clientes' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:0591ced4-ef14-4bcd-a71f-9b56fb75a678
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at FreteManager.Repositories.ClienteRepository.AdicionarAsync(Cliente cliente) in C:\dev\FreteManager\FreteManager\Repositories\ClienteRepository.cs:line 59
+   --- End of inner exception stack trace ---
+   at FreteManager.Repositories.ClienteRepository.AdicionarAsync(Cliente cliente) in C:\dev\FreteManager\FreteManager\Repositories\ClienteRepository.cs:line 73
+   at FreteManager.Services.ClienteService.CadastrarAsync(Cliente cliente) in C:\dev\FreteManager\FreteManager\Services\ClienteService.cs:line 51
+   at FreteManager.Controllers.ClientesController.PostCliente(Cliente cliente) in C:\dev\FreteManager\FreteManager\Controllers\ClientesController.cs:line 95
+   at lambda_method107(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 21:53:43.6879|0|INFO|FreteManager.Controllers.ClientesController|Requisição POST para criar novo cliente 
+2025-03-31 21:53:43.6879|0|INFO|FreteManager.Services.ClienteService|Iniciando cadastro de novo cliente: Adrr 
+2025-03-31 21:53:43.7068|0|ERROR|Microsoft.EntityFrameworkCore.Database.Command|Failed executing DbCommand (3ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000), @p2='?' (Size = 200), @p3='?' (Size = 100), @p4='?' (Size = 4000)], CommandType='Text', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Clientes] ([Id], [Email], [Endereco], [Nome], [Telefone])
+VALUES (@p0, @p1, @p2, @p3, @p4); 
+2025-03-31 21:53:43.7068|0|ERROR|Microsoft.EntityFrameworkCore.Update|An exception occurred in the database while saving changes for context type 'FreteManager.Data.ApplicationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Clientes' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:0591ced4-ef14-4bcd-a71f-9b56fb75a678
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken) Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Clientes' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:0591ced4-ef14-4bcd-a71f-9b56fb75a678
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-03-31 21:53:43.9002|0|ERROR|FreteManager.Repositories.ClienteRepository|Erro ao adicionar cliente: Adrr Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Clientes' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:0591ced4-ef14-4bcd-a71f-9b56fb75a678
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at FreteManager.Repositories.ClienteRepository.AdicionarAsync(Cliente cliente) in C:\dev\FreteManager\FreteManager\Repositories\ClienteRepository.cs:line 59
+2025-03-31 21:53:44.4545|0|ERROR|FreteManager.Middleware.ErrorHandlingMiddleware|Erro ao salvar o cliente no banco de dados FreteManager.Exceptions.DataIntegrityException: Erro ao salvar o cliente no banco de dados
+ ---> Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert explicit value for identity column in table 'Clientes' when IDENTITY_INSERT is set to OFF.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:0591ced4-ef14-4bcd-a71f-9b56fb75a678
+Error Number:544,State:1,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at FreteManager.Repositories.ClienteRepository.AdicionarAsync(Cliente cliente) in C:\dev\FreteManager\FreteManager\Repositories\ClienteRepository.cs:line 59
+   --- End of inner exception stack trace ---
+   at FreteManager.Repositories.ClienteRepository.AdicionarAsync(Cliente cliente) in C:\dev\FreteManager\FreteManager\Repositories\ClienteRepository.cs:line 73
+   at FreteManager.Services.ClienteService.CadastrarAsync(Cliente cliente) in C:\dev\FreteManager\FreteManager\Services\ClienteService.cs:line 51
+   at FreteManager.Controllers.ClientesController.PostCliente(Cliente cliente) in C:\dev\FreteManager\FreteManager\Controllers\ClientesController.cs:line 95
+   at lambda_method107(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 21:54:03.1450|0|INFO|FreteManager.Controllers.ClientesController|Requisição POST para criar novo cliente 
+2025-03-31 21:54:03.1450|0|INFO|FreteManager.Services.ClienteService|Iniciando cadastro de novo cliente: Adrr 
+2025-03-31 21:54:03.2229|0|INFO|FreteManager.Repositories.ClienteRepository|Cliente Adrr adicionado com sucesso. ID gerado: 6 
+2025-03-31 21:54:03.2229|0|INFO|FreteManager.Services.ClienteService|Cliente cadastrado com sucesso. ID: 6 
+2025-03-31 21:54:03.2229|0|INFO|FreteManager.Controllers.ClientesController|Cliente criado com ID 6: Adrr 
+2025-03-31 21:55:27.0598|0|INFO|FreteManager.Controllers.ClientesController|Requisição GET para obter cliente ID 3 
+2025-03-31 21:55:27.0625|0|INFO|FreteManager.Services.ClienteService|Obtendo cliente com ID 3 
+2025-03-31 21:55:27.1067|0|INFO|FreteManager.Controllers.ClientesController|Retornando dados do cliente ID 3: Comércio Rápido 
+2025-03-31 21:55:30.9628|0|INFO|FreteManager.Controllers.ClientesController|Requisição GET para obter cliente ID 4 
+2025-03-31 21:55:30.9628|0|INFO|FreteManager.Services.ClienteService|Obtendo cliente com ID 4 
+2025-03-31 21:55:31.0152|0|INFO|FreteManager.Controllers.ClientesController|Retornando dados do cliente ID 4: Novo Alterado 
+2025-03-31 21:55:34.5324|0|INFO|FreteManager.Controllers.ClientesController|Requisição GET para obter cliente ID 6 
+2025-03-31 21:55:34.5324|0|INFO|FreteManager.Services.ClienteService|Obtendo cliente com ID 6 
+2025-03-31 21:55:34.5324|0|INFO|FreteManager.Controllers.ClientesController|Retornando dados do cliente ID 6: Adrr 
+2025-03-31 21:55:53.3303|0|INFO|FreteManager.Controllers.ClientesController|Requisição PUT para atualizar cliente ID 3 
+2025-03-31 21:55:53.3303|0|INFO|FreteManager.Services.ClienteService|Iniciando atualização do cliente ID 3 
+2025-03-31 21:55:53.3622|0|INFO|FreteManager.Repositories.ClienteRepository|Cliente ID 3 atualizado com sucesso 
+2025-03-31 21:55:53.3622|0|INFO|FreteManager.Services.ClienteService|Cliente ID 3 atualizado com sucesso 
+2025-03-31 21:55:53.3622|0|INFO|FreteManager.Controllers.ClientesController|Cliente ID 3 atualizado com sucesso 
+2025-03-31 21:56:10.2965|0|INFO|FreteManager.Controllers.ClientesController|Requisição GET para obter cliente ID 3 
+2025-03-31 21:56:10.2965|0|INFO|FreteManager.Services.ClienteService|Obtendo cliente com ID 3 
+2025-03-31 21:56:10.2965|0|INFO|FreteManager.Controllers.ClientesController|Retornando dados do cliente ID 3: string 
+2025-03-31 21:57:08.7571|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Altura' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 21:57:08.7983|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Comprimento' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 21:57:08.7983|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Largura' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 21:57:08.7983|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Peso' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 21:57:08.7983|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'ValorDeclarado' on entity type 'Pedido'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 21:57:08.7983|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'ValorFrete' on entity type 'Pedido'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 21:57:09.2146|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 22:01:41.0621|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Altura' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 22:01:41.0972|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Comprimento' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 22:01:41.0972|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Largura' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 22:01:41.0972|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Peso' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 22:01:41.0972|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'ValorDeclarado' on entity type 'Pedido'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 22:01:41.0972|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'ValorFrete' on entity type 'Pedido'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 22:01:41.6817|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 

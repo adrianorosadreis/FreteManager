@@ -6,6 +6,9 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace FreteManager.Controllers
 {
+    /// <summary>
+    /// Controller para gerenciamento de pedidos
+    /// </summary>
     [Route("v1/[controller]")]
     [ApiController]
     public class PedidosController : ControllerBase
@@ -13,15 +16,27 @@ namespace FreteManager.Controllers
         private readonly IPedidoService _pedidoService;
         private readonly ILogger<PedidosController> _logger;
 
+        /// <summary>
+        /// Construtor do PedidosController
+        /// </summary>
+        /// <param name="pedidoService">Serviço de pedidos</param>
+        /// <param name="logger">Serviço de log</param>
         public PedidosController(IPedidoService pedidoService, ILogger<PedidosController> logger)
         {
             _pedidoService = pedidoService;
             _logger = logger;
         }
 
-        // GET: api/pedidos
+        /// <summary>
+        /// Obtém todos os pedidos cadastrados
+        /// </summary>
+        /// <returns>Lista de pedidos</returns>
+        /// <response code="200">Retorna a lista de pedidos</response>
+        /// <response code="401">Retorna quando o usuário não está autenticado</response>
         [HttpGet]
         [Authorize]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         public async Task<ActionResult<IEnumerable<PedidoRespostaDTO>>> GetPedidos()
         {
             _logger.LogInformation("Requisição GET para listar todos os pedidos");
@@ -33,9 +48,19 @@ namespace FreteManager.Controllers
             return Ok(pedidos);
         }
 
-        // GET: api/pedidos/5
+        /// <summary>
+        /// Obtém um pedido específico pelo ID
+        /// </summary>
+        /// <param name="id">ID do pedido</param>
+        /// <returns>Dados do pedido</returns>
+        /// <response code="200">Retorna os dados do pedido</response>
+        /// <response code="401">Retorna quando o usuário não está autenticado</response>
+        /// <response code="404">Retorna quando o pedido não é encontrado</response>
         [HttpGet("{id}")]
         [Authorize]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<ActionResult<PedidoRespostaDTO>> GetPedido(int id)
         {
             _logger.LogInformation($"Requisição GET para obter pedido ID {id}");
@@ -46,9 +71,19 @@ namespace FreteManager.Controllers
             return Ok(pedido);
         }
 
-        // GET: api/pedidos/cliente/5
+        /// <summary>
+        /// Obtém todos os pedidos de um cliente específico
+        /// </summary>
+        /// <param name="clienteId">ID do cliente</param>
+        /// <returns>Lista de pedidos do cliente</returns>
+        /// <response code="200">Retorna a lista de pedidos do cliente</response>
+        /// <response code="401">Retorna quando o usuário não está autenticado</response>
+        /// <response code="404">Retorna quando o cliente não é encontrado</response>
         [HttpGet("cliente/{clienteId}")]
         [Authorize]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<ActionResult<IEnumerable<PedidoRespostaDTO>>> GetPedidosPorCliente(int clienteId)
         {
             _logger.LogInformation($"Requisição GET para listar pedidos do cliente ID {clienteId}");
@@ -59,9 +94,21 @@ namespace FreteManager.Controllers
             return Ok(pedidos);
         }
 
-        // POST: api/pedidos
+        /// <summary>
+        /// Cria um novo pedido
+        /// </summary>
+        /// <param name="pedidoDTO">Dados do pedido a ser criado</param>
+        /// <returns>Dados do pedido criado</returns>
+        /// <response code="201">Retorna quando o pedido é criado com sucesso</response>
+        /// <response code="400">Retorna quando o modelo é inválido</response>
+        /// <response code="401">Retorna quando o usuário não está autenticado</response>
+        /// <response code="404">Retorna quando o cliente não é encontrado</response>
         [HttpPost]
         [Authorize]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<ActionResult<PedidoRespostaDTO>> PostPedido(CriarPedidoDTO pedidoDTO)
         {
             _logger.LogInformation("Requisição POST para criar novo pedido");
@@ -78,9 +125,22 @@ namespace FreteManager.Controllers
             return CreatedAtAction(nameof(GetPedido), new { id = pedidoCriado.Id }, pedidoCriado);
         }
 
-        // PUT: api/pedidos/5
+        /// <summary>
+        /// Atualiza os dados de um pedido existente
+        /// </summary>
+        /// <param name="id">ID do pedido</param>
+        /// <param name="pedidoDTO">Novos dados do pedido</param>
+        /// <returns>Sem conteúdo em caso de sucesso</returns>
+        /// <response code="204">Retorna quando o pedido é atualizado com sucesso</response>
+        /// <response code="400">Retorna quando o modelo é inválido ou o ID não corresponde</response>
+        /// <response code="401">Retorna quando o usuário não está autenticado</response>
+        /// <response code="404">Retorna quando o pedido ou cliente não é encontrado</response>
         [HttpPut("{id}")]
         [Authorize]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> PutPedido(int id, AtualizarPedidoDTO pedidoDTO)
         {
             _logger.LogInformation($"Requisição PUT para atualizar pedido ID {id}");
@@ -103,9 +163,19 @@ namespace FreteManager.Controllers
             return NoContent();
         }
 
-        // DELETE: api/pedidos/5
+        /// <summary>
+        /// Exclui um pedido
+        /// </summary>
+        /// <param name="id">ID do pedido a ser excluído</param>
+        /// <returns>Sem conteúdo em caso de sucesso</returns>
+        /// <response code="204">Retorna quando o pedido é excluído com sucesso</response>
+        /// <response code="401">Retorna quando o usuário não está autenticado</response>
+        /// <response code="404">Retorna quando o pedido não é encontrado</response>
         [HttpDelete("{id}")]
         [Authorize]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<IActionResult> DeletePedido(int id)
         {
             _logger.LogInformation($"Requisição DELETE para excluir pedido ID {id}");
@@ -116,9 +186,22 @@ namespace FreteManager.Controllers
             return NoContent();
         }
 
-        // PATCH: api/pedidos/5/status
+        /// <summary>
+        /// Atualiza o status de um pedido
+        /// </summary>
+        /// <param name="id">ID do pedido</param>
+        /// <param name="model">Novo status do pedido</param>
+        /// <returns>Dados atualizados do pedido</returns>
+        /// <response code="200">Retorna os dados atualizados do pedido</response>
+        /// <response code="400">Retorna quando o modelo é inválido ou a transição de status não é permitida</response>
+        /// <response code="401">Retorna quando o usuário não está autenticado</response>
+        /// <response code="404">Retorna quando o pedido não é encontrado</response>
         [HttpPatch("{id}/status")]
         [Authorize]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<ActionResult<PedidoRespostaDTO>> AtualizarStatus(int id, [FromBody] StatusUpdateModel model)
         {
             _logger.LogInformation($"Requisição PATCH para atualizar status do pedido ID {id} para {model.NovoStatus}");
@@ -139,6 +222,9 @@ namespace FreteManager.Controllers
     // Modelo para atualização de status
     public class StatusUpdateModel
     {
+        /// <summary>
+        /// O novo status a ser aplicado ao pedido
+        /// </summary>
         public StatusPedido NovoStatus { get; set; }
     }
 }

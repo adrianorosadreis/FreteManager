@@ -121,13 +121,13 @@ public class AuthService : IAuthService
     {
         // Gerar um sal único para cada hash
         byte[] salt = new byte[16];
-        using (var rng = new System.Security.Cryptography.RNGCryptoServiceProvider())
+        using (var rng = RandomNumberGenerator.Create()) // Usando a versão moderna recomendada
         {
             rng.GetBytes(salt);
         }
 
         // Usar PBKDF2 com HMACSHA256 para hash de senha
-        using (var pbkdf2 = new System.Security.Cryptography.Rfc2898DeriveBytes(
+        using (var pbkdf2 = new Rfc2898DeriveBytes(
             senha,
             salt,
             iterations: 10000, // Número de iterações de hashing
@@ -135,8 +135,8 @@ public class AuthService : IAuthService
         {
             byte[] hash = pbkdf2.GetBytes(32); // Hash de 256 bits
 
-            // Combinar sal e hash
-            byte[] hashBytes = new byte[48]; // 16 bytes de sal + 32 bytes de hash
+            // Combinar salt e hash
+            byte[] hashBytes = new byte[48]; // 16 bytes de salt + 32 bytes de hash
             Array.Copy(salt, 0, hashBytes, 0, 16);
             Array.Copy(hash, 0, hashBytes, 16, 32);
 
@@ -147,29 +147,59 @@ public class AuthService : IAuthService
 
     public bool VerificarSenha(string senhaArmazenada, string senhaInformada)
     {
-        // Decodificar a senha armazenada
-        byte[] hashBytes = Convert.FromBase64String(senhaArmazenada);
-
-        // Extrair o sal
-        byte[] salt = new byte[16];
-        Array.Copy(hashBytes, 0, salt, 0, 16);
-
-        // Calcular o hash da senha informada usando o mesmo sal
-        using (var pbkdf2 = new System.Security.Cryptography.Rfc2898DeriveBytes(
-            senhaInformada,
-            salt,
-            iterations: 10000,
-            HashAlgorithmName.SHA256))
+        try
         {
-            byte[] hash = pbkdf2.GetBytes(32);
+            // Decodificar a senha armazenada
+            byte[] hashBytes = Convert.FromBase64String(senhaArmazenada);
 
-            // Comparar o hash calculado com o hash armazenado
-            for (int i = 0; i < 32; i++)
+            // Verificar se o formato do hash é válido
+            if (hashBytes.Length != 48) // 16 bytes de sal + 32 bytes de hash
             {
-                if (hashBytes[i + 16] != hash[i])
-                    return false;
+                return false; // Formato inválido
             }
-            return true;
+
+            // Extrair o salt
+            byte[] salt = new byte[16];
+            Array.Copy(hashBytes, 0, salt, 0, 16);
+
+            // Extrair o hash original
+            byte[] hashOriginal = new byte[32];
+            Array.Copy(hashBytes, 16, hashOriginal, 0, 32);
+
+            // Calcular o hash da senha informada usando o mesmo salt
+            using (var pbkdf2 = new Rfc2898DeriveBytes(
+                senhaInformada,
+                salt,
+                iterations: 10000,
+                HashAlgorithmName.SHA256))
+            {
+                byte[] hashCalculado = pbkdf2.GetBytes(32);
+
+                // Comparar o hash calculado com o hash armazenado usando um método seguro
+                return CompararHashes(hashOriginal, hashCalculado);
+            }
         }
+        catch (Exception)
+        {
+            // Tratamento de exceções (como formato Base64 inválido)
+            return false;
+        }
+    }
+
+    // Método para comparação segura (tempo constante) de hashes
+    private bool CompararHashes(byte[] a, byte[] b)
+    {
+        if (a.Length != b.Length)
+            return false;
+
+        // Usando XOR e um acumulador para fazer uma comparação de tempo constante
+        // que é resistente a ataques de tempo
+        int diferenca = 0;
+        for (int i = 0; i < a.Length; i++)
+        {
+            diferenca |= a[i] ^ b[i];
+        }
+
+        return diferenca == 0;
     }
 }

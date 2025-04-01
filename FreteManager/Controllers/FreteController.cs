@@ -15,6 +15,11 @@ namespace FreteManager.Controllers
         private readonly IFreteService _freteService;
         private readonly ILogger<FreteController> _logger;
 
+        /// <summary>
+        /// Construtor do FreteController
+        /// </summary>
+        /// <param name="freteService">Serviço de cálculo de frete</param>
+        /// <param name="logger">Serviço de log</param>
         public FreteController(IFreteService freteService, ILogger<FreteController> logger)
         {
             _freteService = freteService;
@@ -25,9 +30,15 @@ namespace FreteManager.Controllers
         /// Calcula o frete usando parâmetros detalhados como dimensões e peso
         /// </summary>
         /// <param name="parametros">Parâmetros completos para cálculo de frete</param>
-        /// <returns>Valor do frete em reais</returns>
+        /// <returns>Valor do frete em reais e detalhes da cotação</returns>
+        /// <response code="200">Retorna o valor do frete calculado</response>
+        /// <response code="400">Retorna quando os parâmetros são inválidos</response>
+        /// <response code="401">Retorna quando o usuário não está autenticado</response>
         [HttpPost("calcular-frete")]
         [Authorize]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         public async Task<ActionResult<decimal>> CalcularFrete(
             [FromBody] ParametrosFrete parametros)
         {
