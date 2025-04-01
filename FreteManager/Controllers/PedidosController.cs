@@ -41,7 +41,6 @@ namespace FreteManager.Controllers
         {
             _logger.LogInformation("Requisição GET para listar todos os pedidos");
 
-            // Não precisamos de try-catch pois o middleware global tratará as exceções
             var pedidos = await _pedidoService.ListarTodosAsync();
 
             _logger.LogInformation($"Retornando {pedidos.Count()} pedidos");

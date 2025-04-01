@@ -969,3 +969,59 @@ Error Number:544,State:1,Class:16
 2025-03-31 22:41:28.0621|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'ValorDeclarado' on entity type 'Pedido'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
 2025-03-31 22:41:28.0621|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'ValorFrete' on entity type 'Pedido'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
 2025-03-31 22:41:28.5118|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 22:51:05.6648|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Altura' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 22:51:05.7027|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Comprimento' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 22:51:05.7027|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Largura' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 22:51:05.7027|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Peso' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 22:51:05.7027|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'ValorDeclarado' on entity type 'Pedido'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 22:51:05.7027|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'ValorFrete' on entity type 'Pedido'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 22:51:06.2721|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 22:52:07.2558|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para registrar usuário: patilene@aaa.com 
+2025-03-31 22:52:07.2558|0|INFO|AuthService|Iniciando registro de novo usuário: patilene@aaa.com 
+2025-03-31 22:52:08.2245|0|INFO|AuthService|Usuário patilene@aaa.com registrado com sucesso. ID: 6 
+2025-03-31 22:52:08.2245|0|INFO|FreteManager.Controllers.AuthController|Usuário registrado com sucesso: patilene@aaa.com, ID: 6 
+2025-03-31 22:52:34.6574|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: patilene@aaa.com 
+2025-03-31 22:52:34.6574|0|INFO|AuthService|Tentativa de login: patilene@aaa.com 
+2025-03-31 22:52:34.7639|0|INFO|AuthService|Login bem-sucedido: patilene@aaa.com 
+2025-03-31 22:52:34.7639|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: patilene@aaa.com 
+2025-03-31 22:52:55.7077|0|INFO|FreteManager.Controllers.ClientesController|Requisição GET para listar todos os clientes 
+2025-03-31 22:52:55.7077|0|INFO|FreteManager.Services.ClienteService|Listando todos os clientes 
+2025-03-31 22:52:55.7538|0|INFO|FreteManager.Repositories.ClienteRepository|Recuperados 5 clientes 
+2025-03-31 22:52:55.7538|0|INFO|FreteManager.Controllers.ClientesController|Retornando 5 clientes 
+2025-03-31 22:53:31.0208|0|INFO|FreteManager.Controllers.ClientesController|Requisição GET para obter cliente ID 6 
+2025-03-31 22:53:31.0208|0|INFO|FreteManager.Services.ClienteService|Obtendo cliente com ID 6 
+2025-03-31 22:53:31.1025|0|INFO|FreteManager.Controllers.ClientesController|Retornando dados do cliente ID 6: Adrr 
+2025-03-31 22:54:06.7472|0|INFO|FreteManager.Controllers.ClientesController|Requisição PUT para atualizar cliente ID 6 
+2025-03-31 22:54:06.7508|0|INFO|FreteManager.Services.ClienteService|Iniciando atualização do cliente ID 6 
+2025-03-31 22:54:06.8505|0|INFO|FreteManager.Repositories.ClienteRepository|Cliente ID 6 atualizado com sucesso 
+2025-03-31 22:54:06.8505|0|INFO|FreteManager.Services.ClienteService|Cliente ID 6 atualizado com sucesso 
+2025-03-31 22:54:06.8505|0|INFO|FreteManager.Controllers.ClientesController|Cliente ID 6 atualizado com sucesso 
+2025-03-31 22:54:12.5087|0|INFO|FreteManager.Controllers.ClientesController|Requisição GET para obter cliente ID 6 
+2025-03-31 22:54:12.5087|0|INFO|FreteManager.Services.ClienteService|Obtendo cliente com ID 6 
+2025-03-31 22:54:12.5153|0|INFO|FreteManager.Controllers.ClientesController|Retornando dados do cliente ID 6: Empresa ABC Ltda 
+2025-03-31 22:54:34.4388|0|INFO|FreteManager.Controllers.ClientesController|Requisição DELETE para excluir cliente ID 6 
+2025-03-31 22:54:34.4388|0|INFO|FreteManager.Services.ClienteService|Iniciando exclusão do cliente ID 6 
+2025-03-31 22:54:34.4894|0|INFO|FreteManager.Repositories.ClienteRepository|Cliente ID 6 excluído com sucesso 
+2025-03-31 22:54:34.4894|0|INFO|FreteManager.Services.ClienteService|Cliente ID 6 excluído com sucesso 
+2025-03-31 22:54:34.4894|0|INFO|FreteManager.Controllers.ClientesController|Cliente ID 6 excluído com sucesso 
+2025-03-31 22:56:43.1476|0|INFO|FreteManager.Controllers.FreteController|Requisição POST para calcular frete de 37701281 para 37705038 
+2025-03-31 22:56:43.2043|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|Start processing HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 22:56:43.2375|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Sending HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 22:56:46.1415|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Received HTTP response headers after 2896.3159ms - 200 
+2025-03-31 22:56:46.1415|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|End processing HTTP request after 2958.1762ms - 200 
+2025-03-31 22:56:46.1415|0|INFO|FreteManager.Services.FreteService|Frete calculado: Jadlog - Jadlog Package, Valor: 1028.03, Prazo: 7 dias 
+2025-03-31 22:56:46.1564|0|INFO|FreteManager.Controllers.FreteController|Frete calculado de 37701281 para 37705038: R$ 1.028,03 
+2025-03-31 22:58:32.6768|0|INFO|FreteManager.Controllers.FreteController|Requisição POST para calcular frete de 37701281 para 37705038 
+2025-03-31 22:58:32.6768|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|Start processing HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 22:58:32.6768|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Sending HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 22:58:34.5198|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Received HTTP response headers after 1833.657ms - 200 
+2025-03-31 22:58:34.5198|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|End processing HTTP request after 1839.0129ms - 200 
+2025-03-31 22:58:34.5198|0|INFO|FreteManager.Services.FreteService|Frete calculado: Correios - Sedex, Valor: 62.68, Prazo: 1 dias 
+2025-03-31 22:58:34.5198|0|INFO|FreteManager.Controllers.FreteController|Frete calculado de 37701281 para 37705038: R$ 62,68 
+2025-03-31 22:58:54.0361|0|INFO|FreteManager.Controllers.FreteController|Requisição POST para calcular frete de 37701281 para 37705038 
+2025-03-31 22:58:54.1006|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|Start processing HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 22:58:54.1194|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Sending HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 22:58:54.8886|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Received HTTP response headers after 768.8052ms - 200 
+2025-03-31 22:58:54.8886|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|End processing HTTP request after 788.3789ms - 200 
+2025-03-31 22:58:54.8903|0|INFO|FreteManager.Services.FreteService|Frete calculado: Correios - Sedex, Valor: 131.74, Prazo: 1 dias 
+2025-03-31 22:58:54.8903|0|INFO|FreteManager.Controllers.FreteController|Frete calculado de 37701281 para 37705038: R$ 131,74 

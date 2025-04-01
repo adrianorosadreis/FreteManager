@@ -1,11 +1,7 @@
-﻿using System;
+﻿using FreteManager.Exceptions;
+using FreteManager.Models;
 using System.Net;
 using System.Text.Json;
-using System.Threading.Tasks;
-using FreteManager.Exceptions;
-using FreteManager.Models;
-using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Logging;
 
 namespace FreteManager.Middleware
 {
@@ -95,7 +91,6 @@ namespace FreteManager.Middleware
 
             response.Status = (int)statusCode;
 
-            // Em ambiente de produção, não expor detalhes de exceções internas
             if (statusCode == HttpStatusCode.InternalServerError &&
                 context.RequestServices.GetService(typeof(Microsoft.AspNetCore.Hosting.IWebHostEnvironment)) is Microsoft.AspNetCore.Hosting.IWebHostEnvironment env &&
                 env.EnvironmentName != "Development")

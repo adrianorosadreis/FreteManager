@@ -29,7 +29,7 @@ A aplicação foi desenvolvida em C# com .NET 8.0, utilizando Entity Framework C
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/seu-usuario/FreteManager.git
+   git clone https://github.com/adrianorosadreis/FreteManager.git
    cd FreteManager
    ```
 
@@ -62,8 +62,6 @@ A aplicação foi desenvolvida em C# com .NET 8.0, utilizando Entity Framework C
      "Token": "SeuTokenDaApiFrenet"
    }
    ```
-
-   > **Importante**: Em ambiente de produção, utilize o User Secrets ou variáveis de ambiente para armazenar informações sensíveis.
 
 ## Como Executar a Aplicação
 
@@ -104,24 +102,6 @@ A aplicação foi desenvolvida em C# com .NET 8.0, utilizando Entity Framework C
 1. Abra o Test Explorer (Gerenciador de Testes) pelo menu "Exibir" > "Gerenciador de Testes"
 2. Clique em "Executar Todos os Testes" ou selecione categorias específicas
 
-### Via Linha de Comando
-
-1. Para executar todos os testes:
-   ```bash
-   dotnet test
-   ```
-
-2. Para executar testes de uma categoria específica:
-   ```bash
-   dotnet test --filter "Category=Integration" # Testes de integração
-   dotnet test --filter "Category=Unit" # Testes unitários
-   ```
-
-3. Para executar testes com relatório de cobertura de código:
-   ```bash
-   dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
-   ```
-
 ## Documentação da API
 
 A API é documentada usando Swagger/OpenAPI, que fornece uma interface interativa para explorar e testar os endpoints. Após iniciar a aplicação, acesse a raiz da URL para abrir a documentação.
@@ -161,60 +141,94 @@ Todos os endpoints (exceto login e registro) exigem autenticação via token JWT
    Authorization: Bearer seu_token_aqui
    ```
 
-## Respostas ao Questionário
+### Respostas ao Questionário
 
-### Seção 1: Decisões de Arquitetura
+### Seção 1: C# e Desenvolvimento de API RESTful
+Qual é o propósito do comando using em C#?
+Resposta: B) Importar um namespace
 
-1. **Padrão de Design**: O projeto segue o padrão Repository com Service Layer, separando claramente a lógica de acesso a dados da lógica de negócios. Isso facilita a manutenção, testabilidade e possíveis alterações futuras, como a substituição do mecanismo de persistência.
+Qual é o tipo de dado mais apropriado para armazenar uma data e hora em C#?
+Resposta: C) DateTime
 
-2. **Tratamento de Erros**: Implementamos um sistema centralizado de tratamento de exceções usando middleware. Criamos exceções personalizadas como `EntityNotFoundException` e `BusinessRuleViolationException` para capturar cenários específicos de negócio. O middleware transforma essas exceções em respostas HTTP padronizadas no formato RFC 7807 (Problem Details).
+Qual é o método mais comum para criar uma instância de uma classe em C#?
+Resposta: A) new
 
-3. **Segurança**: A segurança é implementada em várias camadas:
-   - Autenticação via JWT com expiração de token
-   - Senha armazenada como hash usando PBKDF2 com salt
-   - Validação de modelo para prevenir ataques de injeção
-   - Proteção de endpoints sensíveis com o atributo [Authorize]
-   - Testes específicos para verificar vulnerabilidades de segurança
+Qual é o propósito do atributo [ApiController] em ASP.NET Core?
+Resposta: A) Definir um controlador de API
 
-4. **Performance**: Otimizamos a performance com:
-   - Cache em memória para resultados do cálculo de frete
-   - Uso de consultas assíncronas para não bloquear threads
-   - Carregamento seletivo de dados utilizando projeções do EF Core
-   - Índices adequados no banco de dados
+Qual é o tipo de retorno mais comum para um método de API RESTful em C#?
+Resposta: D) IActionResult
 
-### Seção 2: Desafios e Soluções
+Qual é o propósito do método ConfigureServices no arquivo Startup.cs em ASP.NET Core?
+Resposta: A) Configurar os serviços de dependência
 
-1. **Integração com API Externa**: O maior desafio foi criar uma integração robusta com a API externa de cálculo de frete. Implementamos:
-   - Tratamento abrangente de erros
-   - Mecanismo de fallback para quando a API está indisponível
-   - Sistema de cache para reduzir chamadas repetidas
-   - Validação rigorosa de parâmetros antes de chamar a API
+Qual é o propósito do atributo [Route] em ASP.NET Core?
+Resposta: A) Definir uma rota de API
 
-2. **Gestão do Ciclo de Vida de Pedidos**: Implementamos um sistema de transição de estados que impede transições inválidas (por exemplo, não permite que um pedido cancelado volte a ser processado). Isso garante a integridade dos dados e previne inconsistências.
+Qual é o tipo de retorno mais comum para um método de API RESTful que retorna uma lista de objetos em C#?
+Resposta: B) IEnumerable<T>
 
-3. **Tratamento de Relacionamentos Complexos**: Os relacionamentos entre pedidos e pacotes exigiram atenção especial. Criamos lógica específica para garantir que a atualização de pedidos lide adequadamente com adições, remoções e modificações de pacotes.
+Qual é o propósito do método AddDbContext no arquivo Startup.cs em ASP.NET Core?
+Resposta: A) Adicionar um contexto de banco de dados
 
-### Seção 3: Possíveis Melhorias
+Qual é o tipo de dado mais apropriado para armazenar uma chave primária em C#?
+Resposta: C) Guid
 
-1. **Escalabilidade**: Para melhorar a escalabilidade, poderíamos:
-   - Implementar cache distribuído usando Redis
-   - Adotar mensageria para processamento assíncrono de operações demoradas
-   - Configurar a aplicação para execução em contêineres com Kubernetes
+Qual é o propósito do método AddSwaggerGen no arquivo Startup.cs em ASP.NET Core?
+Resposta: D) Gerar documentação de API com Swagger
 
-2. **Monitoramento**: Adicionaríamos:
-   - Integração com ferramentas como Application Insights ou Prometheus
-   - Métricas personalizadas para monitorar tempos de resposta
-   - Sistema de alertas para falhas críticas
+Qual é o tipo de exceção mais comum para lidar com erros de validação de dados em C#?
+Resposta: B) ValidationException
 
-3. **UI**: O próximo passo seria desenvolver:
-   - Interface web usando Blazor ou React
-   - Aplicativo móvel para rastreamento de pedidos
-   - Dashboard para análise de dados e relatórios
+### Seção 2: Banco de Dados Microsoft SQL Server
+Qual é o comando SQL utilizado para criar uma tabela no Microsoft SQL Server?
+Resposta: A) CREATE TABLE
 
-4. **Integrações Adicionais**: Poderíamos expandir as integrações:
-   - Serviços de mapas para visualização de rotas
-   - Serviços de SMS/email para notificações
-   - APIs de transportadoras adicionais
+Qual é o tipo de dado mais comum utilizado para armazenar datas e horas no Microsoft SQL Server?
+Resposta: C) DATETIME
+
+Qual é o comando SQL utilizado para atualizar dados em uma tabela no Microsoft SQL Server?
+Resposta: A) UPDATE
+
+Qual é o comando SQL utilizado para excluir dados de uma tabela no Microsoft SQL Server?
+Resposta: A) DELETE
+
+Qual é o conceito de transação no Microsoft SQL Server?
+Resposta: A) Conjunto de operações que devem ser executadas como uma unidade
+
+Qual é o comando SQL utilizado para criar um índice em uma tabela no Microsoft SQL Server?
+Resposta: A) CREATE INDEX
+
+Qual é o comando SQL utilizado para criar uma visão em uma tabela no Microsoft SQL Server?
+Resposta: A) CREATE VIEW
+
+Qual é o objetivo do uso de particionamento de tabelas no SQL Server?
+Resposta: A) Melhorar a performance de consultas
+
+Qual é o uso do comando WITH (NOLOCK) em uma consulta SQL Server?
+Resposta: B) Para evitar bloqueios de tabela durante a consulta
+
+Qual é o objetivo do uso de índices compostos no SQL Server?
+Resposta: B) Melhorar a performance de consultas que usam várias colunas
+
+Qual é o objetivo do uso de triggers no SQL Server?
+Resposta: D) Automatizar tarefas de manutenção de dados
+
+Qual é o uso do comando CHECKPOINT no SQL Server?
+Resposta: D) Para forçar a gravação de dados no disco
+
+### Seção 3: Padrão Swagger
+Qual é o objetivo principal do Swagger?
+Resposta: A) Documentar APIs RESTful
+
+Qual é o padrão de especificação de API mais comumente utilizado em conjunto com o Swagger?
+Resposta: A) OpenAPI
+
+Qual é o benefício de utilizar o Swagger First em desenvolvimento de APIs?
+Resposta: C) Melhorar a documentação da API
+
+Qual é o recurso do Swagger que permite gerar código mínimo para APIs?
+Resposta: A) Swagger Codegen
 
 ---
 
@@ -229,15 +243,12 @@ Todos os endpoints (exceto login e registro) exigem autenticação via token JWT
 - **Testes**: xUnit, Moq, Microsoft.EntityFrameworkCore.InMemory
 - **Ferramentas de Qualidade**: Microsoft.NET.Test.Sdk, coverlet
 
-## Licença
-
-Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE para detalhes.
 
 ## Contato
 
 Para questões, sugestões ou problemas, entre em contato através de:
-- Email: contato@fretemanager.com
-- GitHub: [https://github.com/seu-usuario/FreteManager](https://github.com/seu-usuario/FreteManager)
+- Email: adrianorosadreis@gmail.com
+- GitHub: [[https://github.com/seu-usuario/FreteManager](https://github.com/seu-usuario/FreteManager](https://github.com/adrianorosadreis/FreteManager))
 
 ---
 
