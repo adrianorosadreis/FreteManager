@@ -143,7 +143,7 @@ Todos os endpoints (exceto login e registro) exigem autenticação via token JWT
 
 ### Respostas ao Questionário
 
-###Seção 1: C# e Desenvolvimento de API RESTful
+### Seção 1: C# e Desenvolvimento de API RESTful
 Qual é o propósito do comando using em C#?
 Resposta: B) Importar um namespace
 
@@ -180,7 +180,7 @@ Resposta: D) Gerar documentação de API com Swagger
 Qual é o tipo de exceção mais comum para lidar com erros de validação de dados em C#?
 Resposta: B) ValidationException
 
-###Seção 2: Banco de Dados Microsoft SQL Server
+### Seção 2: Banco de Dados Microsoft SQL Server
 Qual é o comando SQL utilizado para criar uma tabela no Microsoft SQL Server?
 Resposta: A) CREATE TABLE
 
@@ -217,7 +217,7 @@ Resposta: D) Automatizar tarefas de manutenção de dados
 Qual é o uso do comando CHECKPOINT no SQL Server?
 Resposta: D) Para forçar a gravação de dados no disco
 
-###Seção 3: Padrão Swagger
+### Seção 3: Padrão Swagger
 Qual é o objetivo principal do Swagger?
 Resposta: A) Documentar APIs RESTful
 
