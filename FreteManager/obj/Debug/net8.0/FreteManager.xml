@@ -209,6 +209,514 @@
             O novo status a ser aplicado ao pedido
             </summary>
         </member>
+        <member name="T:FreteManager.DTOs.CriarPedidoDTO">
+            <summary>
+            DTO para receber os dados na criação de pedido
+            </summary>
+        </member>
+        <member name="P:FreteManager.DTOs.CriarPedidoDTO.ClienteId">
+            <summary>
+            Identificador do cliente associado ao pedido
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:FreteManager.DTOs.CriarPedidoDTO.Origem">
+            <summary>
+            CEP ou endereço de origem do pedido
+            </summary>
+            <example>01000-000</example>
+        </member>
+        <member name="P:FreteManager.DTOs.CriarPedidoDTO.Destino">
+            <summary>
+            CEP ou endereço de destino do pedido
+            </summary>
+            <example>02000-000</example>
+        </member>
+        <member name="P:FreteManager.DTOs.CriarPedidoDTO.Status">
+            <summary>
+            Status inicial do pedido. Se não informado, será definido como "Em Processamento"
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:FreteManager.DTOs.CriarPedidoDTO.ValorFrete">
+            <summary>
+            Valor do frete. Se não informado, será calculado automaticamente
+            </summary>
+            <example>50.00</example>
+        </member>
+        <member name="P:FreteManager.DTOs.CriarPedidoDTO.ValorDeclarado">
+            <summary>
+            Valor declarado da mercadoria para fins de cálculo de frete e seguro
+            </summary>
+            <example>1000.00</example>
+        </member>
+        <member name="P:FreteManager.DTOs.CriarPedidoDTO.Pacotes">
+            <summary>
+            Lista de pacotes associados ao pedido
+            </summary>
+        </member>
+        <member name="T:FreteManager.DTOs.AtualizarPedidoDTO">
+            <summary>
+            DTO para receber os dados na atualização de pedido
+            </summary>
+        </member>
+        <member name="P:FreteManager.DTOs.AtualizarPedidoDTO.Id">
+            <summary>
+            Identificador único do pedido
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:FreteManager.DTOs.AtualizarPedidoDTO.ClienteId">
+            <summary>
+            Identificador do cliente associado ao pedido
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:FreteManager.DTOs.AtualizarPedidoDTO.Origem">
+            <summary>
+            CEP ou endereço de origem do pedido
+            </summary>
+            <example>01000-000</example>
+        </member>
+        <member name="P:FreteManager.DTOs.AtualizarPedidoDTO.Destino">
+            <summary>
+            CEP ou endereço de destino do pedido
+            </summary>
+            <example>02000-000</example>
+        </member>
+        <member name="P:FreteManager.DTOs.AtualizarPedidoDTO.Status">
+            <summary>
+            Status atual do pedido
+            </summary>
+            <example>2</example>
+        </member>
+        <member name="P:FreteManager.DTOs.AtualizarPedidoDTO.ValorFrete">
+            <summary>
+            Valor do frete. Se não informado, será recalculado se necessário
+            </summary>
+            <example>50.00</example>
+        </member>
+        <member name="P:FreteManager.DTOs.AtualizarPedidoDTO.ValorDeclarado">
+            <summary>
+            Valor declarado da mercadoria para fins de cálculo de frete e seguro
+            </summary>
+            <example>1000.00</example>
+        </member>
+        <member name="P:FreteManager.DTOs.AtualizarPedidoDTO.Pacotes">
+            <summary>
+            Lista de pacotes associados ao pedido
+            </summary>
+        </member>
+        <member name="T:FreteManager.DTOs.PacoteDTO">
+            <summary>
+            DTO para representar um pacote sem referência circular
+            </summary>
+        </member>
+        <member name="P:FreteManager.DTOs.PacoteDTO.Id">
+            <summary>
+            Identificador único do pacote. Opcional, só informado em atualizações
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:FreteManager.DTOs.PacoteDTO.Altura">
+            <summary>
+            Altura do pacote em centímetros
+            </summary>
+            <example>20</example>
+        </member>
+        <member name="P:FreteManager.DTOs.PacoteDTO.Largura">
+            <summary>
+            Largura do pacote em centímetros
+            </summary>
+            <example>30</example>
+        </member>
+        <member name="P:FreteManager.DTOs.PacoteDTO.Comprimento">
+            <summary>
+            Comprimento do pacote em centímetros
+            </summary>
+            <example>40</example>
+        </member>
+        <member name="P:FreteManager.DTOs.PacoteDTO.Peso">
+            <summary>
+            Peso do pacote em quilogramas
+            </summary>
+            <example>5.0</example>
+        </member>
+        <member name="P:FreteManager.DTOs.PacoteDTO.Quantidade">
+            <summary>
+            Quantidade de pacotes com essas mesmas dimensões
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="T:FreteManager.DTOs.PedidoRespostaDTO">
+            <summary>
+            DTO para retornar dados completos de um pedido
+            </summary>
+        </member>
+        <member name="P:FreteManager.DTOs.PedidoRespostaDTO.Id">
+            <summary>
+            Identificador único do pedido
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:FreteManager.DTOs.PedidoRespostaDTO.ClienteId">
+            <summary>
+            Identificador do cliente associado ao pedido
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:FreteManager.DTOs.PedidoRespostaDTO.ClienteNome">
+            <summary>
+            Nome do cliente associado ao pedido
+            </summary>
+            <example>Empresa ABC</example>
+        </member>
+        <member name="P:FreteManager.DTOs.PedidoRespostaDTO.Origem">
+            <summary>
+            CEP ou endereço de origem do pedido
+            </summary>
+            <example>01000-000</example>
+        </member>
+        <member name="P:FreteManager.DTOs.PedidoRespostaDTO.Destino">
+            <summary>
+            CEP ou endereço de destino do pedido
+            </summary>
+            <example>02000-000</example>
+        </member>
+        <member name="P:FreteManager.DTOs.PedidoRespostaDTO.DataCriacao">
+            <summary>
+            Data e hora de criação do pedido
+            </summary>
+            <example>2025-03-31T14:30:00</example>
+        </member>
+        <member name="P:FreteManager.DTOs.PedidoRespostaDTO.Status">
+            <summary>
+            Status atual do pedido
+            </summary>
+            <example>2</example>
+        </member>
+        <member name="P:FreteManager.DTOs.PedidoRespostaDTO.StatusDescricao">
+            <summary>
+            Descrição textual do status atual do pedido
+            </summary>
+            <example>Enviado</example>
+        </member>
+        <member name="P:FreteManager.DTOs.PedidoRespostaDTO.ValorFrete">
+            <summary>
+            Valor do frete em reais
+            </summary>
+            <example>50.00</example>
+        </member>
+        <member name="P:FreteManager.DTOs.PedidoRespostaDTO.ValorDeclarado">
+            <summary>
+            Valor declarado da mercadoria para fins de cálculo de frete e seguro
+            </summary>
+            <example>1000.00</example>
+        </member>
+        <member name="P:FreteManager.DTOs.PedidoRespostaDTO.Pacotes">
+            <summary>
+            Lista de pacotes associados ao pedido
+            </summary>
+        </member>
+        <member name="T:FreteManager.Models.Cliente">
+            <summary>
+            Modelo que representa um cliente no sistema
+            </summary>
+        </member>
+        <member name="P:FreteManager.Models.Cliente.Id">
+            <summary>
+            Identificador único do cliente
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:FreteManager.Models.Cliente.Nome">
+            <summary>
+            Nome completo ou razão social do cliente
+            </summary>
+            <example>Empresa ABC Ltda</example>
+        </member>
+        <member name="P:FreteManager.Models.Cliente.Endereco">
+            <summary>
+            Endereço completo do cliente
+            </summary>
+            <example>Av. Paulista, 1000, São Paulo, SP</example>
+        </member>
+        <member name="P:FreteManager.Models.Cliente.Telefone">
+            <summary>
+            Telefone de contato do cliente
+            </summary>
+            <example>(11) 3456-7890</example>
+        </member>
+        <member name="P:FreteManager.Models.Cliente.Email">
+            <summary>
+            Email principal do cliente
+            </summary>
+            <example>contato@empresaabc.com</example>
+        </member>
+        <member name="T:FreteManager.Models.FreteModels">
+            <summary>
+            Classes para manipulação de dados de frete
+            </summary>
+        </member>
+        <member name="T:FreteManager.Models.FreteModels.PacoteFrete">
+            <summary>
+            Representa um pacote individual para cálculo de frete
+            </summary>
+        </member>
+        <member name="P:FreteManager.Models.FreteModels.PacoteFrete.Altura">
+            <summary>
+            Altura do pacote em centímetros
+            </summary>
+            <example>20</example>
+        </member>
+        <member name="P:FreteManager.Models.FreteModels.PacoteFrete.Largura">
+            <summary>
+            Largura do pacote em centímetros
+            </summary>
+            <example>30</example>
+        </member>
+        <member name="P:FreteManager.Models.FreteModels.PacoteFrete.Comprimento">
+            <summary>
+            Comprimento do pacote em centímetros
+            </summary>
+            <example>40</example>
+        </member>
+        <member name="P:FreteManager.Models.FreteModels.PacoteFrete.Peso">
+            <summary>
+            Peso do pacote em quilogramas
+            </summary>
+            <example>5.0</example>
+        </member>
+        <member name="P:FreteManager.Models.FreteModels.PacoteFrete.Quantidade">
+            <summary>
+            Quantidade de pacotes com essas mesmas dimensões
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="T:FreteManager.Models.FreteModels.ParametrosFrete">
+            <summary>
+            Parâmetros para cálculo de frete junto à API de transportadoras
+            </summary>
+        </member>
+        <member name="P:FreteManager.Models.FreteModels.ParametrosFrete.CepOrigem">
+            <summary>
+            CEP de origem da mercadoria (apenas números ou formatado)
+            </summary>
+            <example>01000000</example>
+        </member>
+        <member name="P:FreteManager.Models.FreteModels.ParametrosFrete.CepDestino">
+            <summary>
+            CEP de destino da mercadoria (apenas números ou formatado)
+            </summary>
+            <example>02000000</example>
+        </member>
+        <member name="P:FreteManager.Models.FreteModels.ParametrosFrete.ValorDeclarado">
+            <summary>
+            Valor declarado da mercadoria para fins de cálculo de frete e seguro
+            </summary>
+            <example>1000.00</example>
+        </member>
+        <member name="P:FreteManager.Models.FreteModels.ParametrosFrete.Pacotes">
+            <summary>
+            Lista de pacotes para envio
+            </summary>
+        </member>
+        <member name="T:FreteManager.Models.StatusPedido">
+            <summary>
+            Enumerar os possíveis status de um pedido
+            </summary>
+        </member>
+        <member name="F:FreteManager.Models.StatusPedido.EmProcessamento">
+            <summary>
+            Pedido criado e em fase de processamento inicial
+            </summary>
+        </member>
+        <member name="F:FreteManager.Models.StatusPedido.Enviado">
+            <summary>
+            Pedido despachado para entrega
+            </summary>
+        </member>
+        <member name="F:FreteManager.Models.StatusPedido.Entregue">
+            <summary>
+            Pedido entregue ao destinatário
+            </summary>
+        </member>
+        <member name="F:FreteManager.Models.StatusPedido.Cancelado">
+            <summary>
+            Pedido cancelado (não será entregue)
+            </summary>
+        </member>
+        <member name="T:FreteManager.Models.Pedido">
+            <summary>
+            Modelo que representa um pedido de transporte
+            </summary>
+        </member>
+        <member name="P:FreteManager.Models.Pedido.Id">
+            <summary>
+            Identificador único do pedido
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:FreteManager.Models.Pedido.ClienteId">
+            <summary>
+            Identificador do cliente associado ao pedido
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:FreteManager.Models.Pedido.Cliente">
+            <summary>
+            Referência para o objeto Cliente (usado pelo Entity Framework)
+            </summary>
+        </member>
+        <member name="P:FreteManager.Models.Pedido.Origem">
+            <summary>
+            CEP ou endereço de origem do pedido
+            </summary>
+            <example>01000-000</example>
+        </member>
+        <member name="P:FreteManager.Models.Pedido.Destino">
+            <summary>
+            CEP ou endereço de destino do pedido
+            </summary>
+            <example>02000-000</example>
+        </member>
+        <member name="P:FreteManager.Models.Pedido.DataCriacao">
+            <summary>
+            Data e hora de criação do pedido
+            </summary>
+            <example>2025-03-31T14:30:00</example>
+        </member>
+        <member name="P:FreteManager.Models.Pedido.Status">
+            <summary>
+            Status atual do pedido
+            </summary>
+            <example>1</example>
+        </member>
+        <member name="P:FreteManager.Models.Pedido.ValorFrete">
+            <summary>
+            Valor calculado do frete em reais
+            </summary>
+            <example>50.00</example>
+        </member>
+        <member name="P:FreteManager.Models.Pedido.ValorDeclarado">
+            <summary>
+            Valor declarado da mercadoria para fins de cálculo de frete e seguro
+            </summary>
+            <example>1000.00</example>
+        </member>
+        <member name="P:FreteManager.Models.Pedido.Pacotes">
+            <summary>
+            Coleção de pacotes associados ao pedido
+            </summary>
+        </member>
+        <member name="T:FreteManager.Models.Usuario">
+            <summary>
+            Modelo que representa um usuário no sistema
+            </summary>
+        </member>
+        <member name="P:FreteManager.Models.Usuario.Id">
+            <summary>
+            Identificador único do usuário
+            </summary>
+        </member>
+        <member name="P:FreteManager.Models.Usuario.Nome">
+            <summary>
+            Nome completo do usuário
+            </summary>
+            <example>João Silva</example>
+        </member>
+        <member name="P:FreteManager.Models.Usuario.Email">
+            <summary>
+            Email do usuário (usado para login)
+            </summary>
+            <example>joao.silva@exemplo.com</example>
+        </member>
+        <member name="P:FreteManager.Models.Usuario.Senha">
+            <summary>
+            Senha do usuário (armazenada como hash)
+            </summary>
+        </member>
+        <member name="P:FreteManager.Models.Usuario.Role">
+            <summary>
+            Papel/função do usuário no sistema
+            </summary>
+            <example>Usuario</example>
+        </member>
+        <member name="T:FreteManager.Models.LoginRequest">
+            <summary>
+            Modelo para requisição de login
+            </summary>
+        </member>
+        <member name="P:FreteManager.Models.LoginRequest.Email">
+            <summary>
+            Email do usuário
+            </summary>
+            <example>usuario@exemplo.com</example>
+        </member>
+        <member name="P:FreteManager.Models.LoginRequest.Senha">
+            <summary>
+            Senha do usuário
+            </summary>
+            <example>Senha123!</example>
+        </member>
+        <member name="T:FreteManager.Models.LoginResponse">
+            <summary>
+            Modelo para resposta de login bem-sucedido
+            </summary>
+        </member>
+        <member name="P:FreteManager.Models.LoginResponse.Token">
+            <summary>
+            Token JWT para autenticação
+            </summary>
+            <example>eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...</example>
+        </member>
+        <member name="P:FreteManager.Models.LoginResponse.Nome">
+            <summary>
+            Nome do usuário
+            </summary>
+            <example>João Silva</example>
+        </member>
+        <member name="P:FreteManager.Models.LoginResponse.Email">
+            <summary>
+            Email do usuário
+            </summary>
+            <example>joao.silva@exemplo.com</example>
+        </member>
+        <member name="P:FreteManager.Models.LoginResponse.Expiracao">
+            <summary>
+            Data e hora de expiração do token
+            </summary>
+            <example>2025-04-01T14:30:00</example>
+        </member>
+        <member name="T:FreteManager.Models.RegisterRequest">
+            <summary>
+            Modelo para requisição de registro de novo usuário
+            </summary>
+        </member>
+        <member name="P:FreteManager.Models.RegisterRequest.Nome">
+            <summary>
+            Nome completo do usuário
+            </summary>
+            <example>Maria Souza</example>
+        </member>
+        <member name="P:FreteManager.Models.RegisterRequest.Email">
+            <summary>
+            Email do usuário (será usado para login)
+            </summary>
+            <example>maria.souza@exemplo.com</example>
+        </member>
+        <member name="P:FreteManager.Models.RegisterRequest.Senha">
+            <summary>
+            Senha do usuário
+            </summary>
+            <example>Senha123!</example>
+        </member>
+        <member name="P:FreteManager.Models.RegisterRequest.ConfirmacaoSenha">
+            <summary>
+            Confirmação da senha (deve ser igual à senha)
+            </summary>
+            <example>Senha123!</example>
+        </member>
         <member name="T:FreteManager.Services.FreteService">
             Serviço que integra com a Frenet API para cálculo de frete com sistema de cache
         </member>

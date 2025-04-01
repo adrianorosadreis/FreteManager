@@ -33,6 +33,7 @@ namespace FreteManager.Helpers
         // Atualiza uma entidade Pedido com os dados de um DTO de atualização
         public static void AtualizarPedido(Pedido pedido, AtualizarPedidoDTO dto)
         {
+            // Atualizar propriedades básicas do pedido
             pedido.ClienteId = dto.ClienteId;
             pedido.Origem = dto.Origem;
             pedido.Destino = dto.Destino;
@@ -40,8 +41,54 @@ namespace FreteManager.Helpers
             pedido.ValorFrete = dto.ValorFrete;
             pedido.ValorDeclarado = dto.ValorDeclarado;
 
-            // Aqui, a lógica de atualização de pacotes pode ser mais complexa
-            // Precisamos identificar quais pacotes foram adicionados, atualizados ou removidos
+            // Tratamento dos pacotes
+            if (dto.Pacotes != null)
+            {
+                // Dicionário para facilitar a busca de pacotes existentes pelo ID
+                var pacotesExistentes = pedido.Pacotes.ToDictionary(p => p.Id);
+
+                // Lista para armazenar os pacotes que devem ser mantidos
+                var pacotesAtualizados = new List<Pacote>();
+
+                foreach (var pacoteDto in dto.Pacotes)
+                {
+                    if (pacoteDto.Id.HasValue && pacotesExistentes.TryGetValue(pacoteDto.Id.Value, out var pacoteExistente))
+                    {
+                        // Atualizar pacote existente
+                        pacoteExistente.Altura = pacoteDto.Altura;
+                        pacoteExistente.Largura = pacoteDto.Largura;
+                        pacoteExistente.Comprimento = pacoteDto.Comprimento;
+                        pacoteExistente.Peso = pacoteDto.Peso;
+                        pacoteExistente.Quantidade = pacoteDto.Quantidade;
+
+                        pacotesAtualizados.Add(pacoteExistente);
+                        pacotesExistentes.Remove(pacoteDto.Id.Value); // Remove do dicionário para marcar como processado
+                    }
+                    else
+                    {
+                        // Adicionar novo pacote
+                        var novoPacote = new Pacote
+                        {
+                            PedidoId = pedido.Id,
+                            Altura = pacoteDto.Altura,
+                            Largura = pacoteDto.Largura,
+                            Comprimento = pacoteDto.Comprimento,
+                            Peso = pacoteDto.Peso,
+                            Quantidade = pacoteDto.Quantidade
+                        };
+
+                        pacotesAtualizados.Add(novoPacote);
+                    }
+                }
+
+                // Substitui a coleção de pacotes pelos pacotes atualizados
+                // Os pacotes que não estavam no DTO serão removidos automaticamente pelo Entity Framework
+                pedido.Pacotes.Clear();
+                foreach (var pacote in pacotesAtualizados)
+                {
+                    pedido.Pacotes.Add(pacote);
+                }
+            }
         }
 
         // Converte uma entidade Pedido para um DTO de resposta

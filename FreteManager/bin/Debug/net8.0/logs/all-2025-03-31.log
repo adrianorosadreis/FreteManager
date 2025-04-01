@@ -777,3 +777,195 @@ Error Number:544,State:1,Class:16
 2025-03-31 22:01:41.0972|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'ValorDeclarado' on entity type 'Pedido'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
 2025-03-31 22:01:41.0972|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'ValorFrete' on entity type 'Pedido'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
 2025-03-31 22:01:41.6817|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 22:12:49.9576|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Altura' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 22:12:50.0013|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Comprimento' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 22:12:50.0013|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Largura' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 22:12:50.0013|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Peso' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 22:12:50.0013|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'ValorDeclarado' on entity type 'Pedido'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 22:12:50.0013|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'ValorFrete' on entity type 'Pedido'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 22:12:50.6992|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 22:13:25.3866|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para registrar usuário: maria.souza@exemplo.com 
+2025-03-31 22:13:25.3934|0|INFO|AuthService|Iniciando registro de novo usuário: maria.souza@exemplo.com 
+2025-03-31 22:13:26.2909|0|INFO|AuthService|Usuário maria.souza@exemplo.com registrado com sucesso. ID: 5 
+2025-03-31 22:13:26.2909|0|INFO|FreteManager.Controllers.AuthController|Usuário registrado com sucesso: maria.souza@exemplo.com, ID: 5 
+2025-03-31 22:13:39.7280|0|INFO|FreteManager.Controllers.AuthController|Requisição POST para login: maria.souza@exemplo.com 
+2025-03-31 22:13:39.7280|0|INFO|AuthService|Tentativa de login: maria.souza@exemplo.com 
+2025-03-31 22:13:39.8603|0|INFO|AuthService|Login bem-sucedido: maria.souza@exemplo.com 
+2025-03-31 22:13:39.8603|0|INFO|FreteManager.Controllers.AuthController|Login bem-sucedido: maria.souza@exemplo.com 
+2025-03-31 22:13:56.9338|0|INFO|FreteManager.Controllers.ClientesController|Requisição GET para listar todos os clientes 
+2025-03-31 22:13:56.9365|0|INFO|FreteManager.Services.ClienteService|Listando todos os clientes 
+2025-03-31 22:13:56.9802|0|INFO|FreteManager.Repositories.ClienteRepository|Recuperados 5 clientes 
+2025-03-31 22:13:56.9802|0|INFO|FreteManager.Controllers.ClientesController|Retornando 5 clientes 
+2025-03-31 22:14:36.3962|0|INFO|FreteManager.Controllers.ClientesController|Requisição POST para criar novo cliente 
+2025-03-31 22:14:36.3962|0|INFO|FreteManager.Services.ClienteService|Iniciando cadastro de novo cliente: Empresa BBB Ltda 
+2025-03-31 22:14:36.4393|0|INFO|FreteManager.Repositories.ClienteRepository|Cliente Empresa BBB Ltda adicionado com sucesso. ID gerado: 7 
+2025-03-31 22:14:36.4393|0|INFO|FreteManager.Services.ClienteService|Cliente cadastrado com sucesso. ID: 7 
+2025-03-31 22:14:36.4393|0|INFO|FreteManager.Controllers.ClientesController|Cliente criado com ID 7: Empresa BBB Ltda 
+2025-03-31 22:14:50.9748|0|INFO|FreteManager.Controllers.ClientesController|Requisição GET para obter cliente ID 7 
+2025-03-31 22:14:50.9748|0|INFO|FreteManager.Services.ClienteService|Obtendo cliente com ID 7 
+2025-03-31 22:14:51.0400|0|INFO|FreteManager.Controllers.ClientesController|Retornando dados do cliente ID 7: Empresa BBB Ltda 
+2025-03-31 22:15:13.5909|0|INFO|FreteManager.Controllers.ClientesController|Requisição PUT para atualizar cliente ID 7 
+2025-03-31 22:15:13.6009|0|INFO|FreteManager.Services.ClienteService|Iniciando atualização do cliente ID 7 
+2025-03-31 22:15:13.6842|0|INFO|FreteManager.Repositories.ClienteRepository|Cliente ID 7 atualizado com sucesso 
+2025-03-31 22:15:13.6842|0|INFO|FreteManager.Services.ClienteService|Cliente ID 7 atualizado com sucesso 
+2025-03-31 22:15:13.6842|0|INFO|FreteManager.Controllers.ClientesController|Cliente ID 7 atualizado com sucesso 
+2025-03-31 22:15:22.5511|0|INFO|FreteManager.Controllers.ClientesController|Requisição GET para obter cliente ID 7 
+2025-03-31 22:15:22.5511|0|INFO|FreteManager.Services.ClienteService|Obtendo cliente com ID 7 
+2025-03-31 22:15:22.5511|0|INFO|FreteManager.Controllers.ClientesController|Retornando dados do cliente ID 7: Empresa ASDASDLtda 
+2025-03-31 22:15:32.0539|0|INFO|FreteManager.Controllers.ClientesController|Requisição DELETE para excluir cliente ID 7 
+2025-03-31 22:15:32.0539|0|INFO|FreteManager.Services.ClienteService|Iniciando exclusão do cliente ID 7 
+2025-03-31 22:15:32.1343|0|INFO|FreteManager.Repositories.ClienteRepository|Cliente ID 7 excluído com sucesso 
+2025-03-31 22:15:32.1343|0|INFO|FreteManager.Services.ClienteService|Cliente ID 7 excluído com sucesso 
+2025-03-31 22:15:32.1408|0|INFO|FreteManager.Controllers.ClientesController|Cliente ID 7 excluído com sucesso 
+2025-03-31 22:15:52.5454|0|INFO|FreteManager.Controllers.ClientesController|Requisição GET para obter cliente ID 7 
+2025-03-31 22:15:52.5462|0|INFO|FreteManager.Services.ClienteService|Obtendo cliente com ID 7 
+2025-03-31 22:15:52.5462|0|WARN|FreteManager.Repositories.ClienteRepository|Cliente com ID 7 não encontrado 
+2025-03-31 22:15:52.9826|0|WARN|FreteManager.Middleware.ErrorHandlingMiddleware|A entidade Cliente com ID 7 não foi encontrada. FreteManager.Exceptions.EntityNotFoundException: A entidade Cliente com ID 7 não foi encontrada.
+   at FreteManager.Repositories.ClienteRepository.ObterPorIdAsync(Int32 id) in C:\dev\FreteManager\FreteManager\Repositories\ClienteRepository.cs:line 28
+   at FreteManager.Services.ClienteService.ObterPorIdAsync(Int32 id) in C:\dev\FreteManager\FreteManager\Services\ClienteService.cs:line 23
+   at FreteManager.Controllers.ClientesController.GetCliente(Int32 id) in C:\dev\FreteManager\FreteManager\Controllers\ClientesController.cs:line 66
+   at lambda_method191(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FreteManager.Middleware.ErrorHandlingMiddleware.InvokeAsync(HttpContext context) in C:\dev\FreteManager\FreteManager\Middleware\ErrorHandlingMiddleware.cs:line 27
+2025-03-31 22:16:04.7888|0|INFO|FreteManager.Controllers.PedidosController|Requisição GET para listar todos os pedidos 
+2025-03-31 22:16:04.7888|0|INFO|FreteManager.Services.PedidoService|Listando todos os pedidos 
+2025-03-31 22:16:04.9754|0|INFO|FreteManager.Repositories.PedidoRepository|Recuperados 4 pedidos do banco de dados 
+2025-03-31 22:16:04.9754|0|INFO|FreteManager.Controllers.PedidosController|Retornando 4 pedidos 
+2025-03-31 22:16:29.5536|0|INFO|FreteManager.Controllers.PedidosController|Requisição POST para criar novo pedido 
+2025-03-31 22:16:29.5615|0|INFO|FreteManager.Services.PedidoService|Iniciando criação de pedido para cliente ID 1 
+2025-03-31 22:16:29.6537|0|INFO|FreteManager.Repositories.PedidoRepository|Pedido adicionado com sucesso. ID gerado: 6 
+2025-03-31 22:16:29.6537|0|INFO|FreteManager.Services.PedidoService|Pedido criado com sucesso, ID 6 
+2025-03-31 22:16:29.6537|0|INFO|FreteManager.Controllers.PedidosController|Pedido criado com ID 6 
+2025-03-31 22:16:53.8280|0|INFO|FreteManager.Controllers.PedidosController|Requisição POST para criar novo pedido 
+2025-03-31 22:16:53.8280|0|INFO|FreteManager.Services.PedidoService|Iniciando criação de pedido para cliente ID 1 
+2025-03-31 22:16:53.8556|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|Start processing HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 22:16:53.8556|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Sending HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 22:16:56.4854|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Received HTTP response headers after 2620.2779ms - 200 
+2025-03-31 22:16:56.4854|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|End processing HTTP request after 2635.5153ms - 200 
+2025-03-31 22:16:56.5029|0|WARN|FreteManager.Services.FreteService|Nenhuma opção de frete válida disponível 
+2025-03-31 22:16:56.5029|0|WARN|FreteManager.Services.FreteService|Usando cálculo de frete fallback 
+2025-03-31 22:16:56.5029|0|INFO|FreteManager.Services.PedidoService|Frete calculado: R$ 27,50 
+2025-03-31 22:16:56.5029|0|INFO|FreteManager.Services.PedidoService|Valor de frete calculado: R$ 27,50 
+2025-03-31 22:16:56.5269|0|INFO|FreteManager.Repositories.PedidoRepository|Pedido adicionado com sucesso. ID gerado: 7 
+2025-03-31 22:16:56.5269|0|INFO|FreteManager.Services.PedidoService|Pedido criado com sucesso, ID 7 
+2025-03-31 22:16:56.5269|0|INFO|FreteManager.Controllers.PedidosController|Pedido criado com ID 7 
+2025-03-31 22:18:02.8622|0|INFO|FreteManager.Controllers.PedidosController|Requisição GET para obter pedido ID 7 
+2025-03-31 22:18:02.8622|0|INFO|FreteManager.Services.PedidoService|Obtendo detalhes do pedido ID 7 
+2025-03-31 22:18:02.9252|0|INFO|FreteManager.Controllers.PedidosController|Retornando dados do pedido ID 7 
+2025-03-31 22:18:44.0766|0|INFO|FreteManager.Controllers.PedidosController|Requisição PUT para atualizar pedido ID 7 
+2025-03-31 22:18:44.0975|0|INFO|FreteManager.Services.PedidoService|Iniciando atualização do pedido ID 7 
+2025-03-31 22:18:44.1098|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|Start processing HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 22:18:44.1098|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Sending HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 22:18:45.9249|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Received HTTP response headers after 1814.3955ms - 200 
+2025-03-31 22:18:45.9249|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|End processing HTTP request after 1817.2118ms - 200 
+2025-03-31 22:18:45.9249|0|WARN|FreteManager.Services.FreteService|Nenhuma opção de frete válida disponível 
+2025-03-31 22:18:45.9249|0|WARN|FreteManager.Services.FreteService|Usando cálculo de frete fallback 
+2025-03-31 22:18:45.9249|0|INFO|FreteManager.Services.PedidoService|Frete calculado: R$ 27,50 
+2025-03-31 22:18:45.9249|0|INFO|FreteManager.Services.PedidoService|Novo valor de frete calculado: R$ 27,50 
+2025-03-31 22:18:45.9249|0|INFO|FreteManager.Repositories.PedidoRepository|Pedido ID 7 atualizado com sucesso 
+2025-03-31 22:18:45.9249|0|INFO|FreteManager.Services.PedidoService|Pedido ID 7 atualizado com sucesso 
+2025-03-31 22:18:45.9249|0|INFO|FreteManager.Controllers.PedidosController|Pedido ID 7 atualizado com sucesso 
+2025-03-31 22:20:19.1849|0|INFO|FreteManager.Controllers.PedidosController|Requisição PUT para atualizar pedido ID 7 
+2025-03-31 22:20:19.1871|0|INFO|FreteManager.Services.PedidoService|Iniciando atualização do pedido ID 7 
+2025-03-31 22:20:19.2047|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|Start processing HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 22:20:19.2047|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Sending HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 22:20:19.9008|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Received HTTP response headers after 695.0094ms - 200 
+2025-03-31 22:20:19.9008|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|End processing HTTP request after 696.456ms - 200 
+2025-03-31 22:20:19.9008|0|WARN|FreteManager.Services.FreteService|Nenhuma opção de frete válida disponível 
+2025-03-31 22:20:19.9008|0|WARN|FreteManager.Services.FreteService|Usando cálculo de frete fallback 
+2025-03-31 22:20:19.9008|0|INFO|FreteManager.Services.PedidoService|Frete calculado: R$ 27,50 
+2025-03-31 22:20:19.9008|0|INFO|FreteManager.Services.PedidoService|Novo valor de frete calculado: R$ 27,50 
+2025-03-31 22:20:19.9008|0|INFO|FreteManager.Repositories.PedidoRepository|Pedido ID 7 atualizado com sucesso 
+2025-03-31 22:20:19.9008|0|INFO|FreteManager.Services.PedidoService|Pedido ID 7 atualizado com sucesso 
+2025-03-31 22:20:19.9066|0|INFO|FreteManager.Controllers.PedidosController|Pedido ID 7 atualizado com sucesso 
+2025-03-31 22:21:13.1648|0|INFO|FreteManager.Controllers.PedidosController|Requisição PUT para atualizar pedido ID 7 
+2025-03-31 22:21:13.1648|0|INFO|FreteManager.Services.PedidoService|Iniciando atualização do pedido ID 7 
+2025-03-31 22:21:13.1841|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|Start processing HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 22:21:13.1871|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Sending HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 22:21:13.8750|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Received HTTP response headers after 687.5279ms - 200 
+2025-03-31 22:21:13.8750|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|End processing HTTP request after 692.3646ms - 200 
+2025-03-31 22:21:13.8750|0|WARN|FreteManager.Services.FreteService|Nenhuma opção de frete válida disponível 
+2025-03-31 22:21:13.8750|0|WARN|FreteManager.Services.FreteService|Usando cálculo de frete fallback 
+2025-03-31 22:21:13.8750|0|INFO|FreteManager.Services.PedidoService|Frete calculado: R$ 27,50 
+2025-03-31 22:21:13.8913|0|INFO|FreteManager.Services.PedidoService|Novo valor de frete calculado: R$ 27,50 
+2025-03-31 22:21:13.8913|0|INFO|FreteManager.Repositories.PedidoRepository|Pedido ID 7 atualizado com sucesso 
+2025-03-31 22:21:13.8913|0|INFO|FreteManager.Services.PedidoService|Pedido ID 7 atualizado com sucesso 
+2025-03-31 22:21:13.8913|0|INFO|FreteManager.Controllers.PedidosController|Pedido ID 7 atualizado com sucesso 
+2025-03-31 22:22:26.4530|0|INFO|FreteManager.Controllers.PedidosController|Requisição PUT para atualizar pedido ID 7 
+2025-03-31 22:22:47.7825|0|INFO|FreteManager.Services.PedidoService|Iniciando atualização do pedido ID 7 
+2025-03-31 22:28:04.6093|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Altura' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 22:28:04.6426|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Comprimento' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 22:28:04.6426|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Largura' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 22:28:04.6426|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Peso' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 22:28:04.6426|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'ValorDeclarado' on entity type 'Pedido'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 22:28:04.6426|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'ValorFrete' on entity type 'Pedido'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 22:28:05.0945|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 
+2025-03-31 22:31:17.4243|0|INFO|FreteManager.Controllers.PedidosController|Requisição PUT para atualizar pedido ID 7 
+2025-03-31 22:31:17.4243|0|INFO|FreteManager.Services.PedidoService|Iniciando atualização do pedido ID 7 
+2025-03-31 22:31:22.3385|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|Start processing HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 22:31:22.3385|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Sending HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 22:31:23.2571|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Received HTTP response headers after 910.6039ms - 200 
+2025-03-31 22:31:23.2571|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|End processing HTTP request after 924.0175ms - 200 
+2025-03-31 22:31:23.2707|0|WARN|FreteManager.Services.FreteService|Nenhuma opção de frete válida disponível 
+2025-03-31 22:31:23.2707|0|WARN|FreteManager.Services.FreteService|Usando cálculo de frete fallback 
+2025-03-31 22:31:23.2707|0|INFO|FreteManager.Services.PedidoService|Frete calculado: R$ 52,50 
+2025-03-31 22:31:23.2707|0|INFO|FreteManager.Services.PedidoService|Novo valor de frete calculado: R$ 52,50 
+2025-03-31 22:31:23.6036|0|INFO|FreteManager.Repositories.PedidoRepository|Pedido ID 7 atualizado com sucesso 
+2025-03-31 22:31:23.6036|0|INFO|FreteManager.Services.PedidoService|Pedido ID 7 atualizado com sucesso 
+2025-03-31 22:31:23.6136|0|INFO|FreteManager.Controllers.PedidosController|Pedido ID 7 atualizado com sucesso 
+2025-03-31 22:32:40.3749|0|INFO|FreteManager.Controllers.PedidosController|Requisição PUT para atualizar pedido ID 7 
+2025-03-31 22:32:40.3749|0|INFO|FreteManager.Services.PedidoService|Iniciando atualização do pedido ID 7 
+2025-03-31 22:32:40.3934|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|Start processing HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 22:32:40.3934|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Sending HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 22:32:41.2937|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Received HTTP response headers after 899.164ms - 200 
+2025-03-31 22:32:41.2937|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|End processing HTTP request after 900.5882ms - 200 
+2025-03-31 22:32:41.2937|0|WARN|FreteManager.Services.FreteService|Nenhuma opção de frete válida disponível 
+2025-03-31 22:32:41.2937|0|WARN|FreteManager.Services.FreteService|Usando cálculo de frete fallback 
+2025-03-31 22:32:41.2960|0|INFO|FreteManager.Services.PedidoService|Frete calculado: R$ 165,00 
+2025-03-31 22:32:41.2960|0|INFO|FreteManager.Services.PedidoService|Novo valor de frete calculado: R$ 165,00 
+2025-03-31 22:32:41.2960|0|INFO|FreteManager.Repositories.PedidoRepository|Pedido ID 7 atualizado com sucesso 
+2025-03-31 22:32:41.2960|0|INFO|FreteManager.Services.PedidoService|Pedido ID 7 atualizado com sucesso 
+2025-03-31 22:32:41.3118|0|INFO|FreteManager.Controllers.PedidosController|Pedido ID 7 atualizado com sucesso 
+2025-03-31 22:33:24.0228|0|INFO|FreteManager.Controllers.PedidosController|Requisição PUT para atualizar pedido ID 7 
+2025-03-31 22:33:24.0228|0|INFO|FreteManager.Services.PedidoService|Iniciando atualização do pedido ID 7 
+2025-03-31 22:33:24.0360|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|Start processing HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 22:33:24.0360|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Sending HTTP request POST https://api.frenet.com.br/shipping/quote 
+2025-03-31 22:33:24.5050|0|INFO|System.Net.Http.HttpClient.IFreteService.ClientHandler|Received HTTP response headers after 468.2364ms - 200 
+2025-03-31 22:33:24.5050|0|INFO|System.Net.Http.HttpClient.IFreteService.LogicalHandler|End processing HTTP request after 472.301ms - 200 
+2025-03-31 22:33:24.5050|0|WARN|FreteManager.Services.FreteService|Nenhuma opção de frete válida disponível 
+2025-03-31 22:33:24.5050|0|WARN|FreteManager.Services.FreteService|Usando cálculo de frete fallback 
+2025-03-31 22:33:24.5050|0|INFO|FreteManager.Services.PedidoService|Frete calculado: R$ 302,50 
+2025-03-31 22:33:24.5147|0|INFO|FreteManager.Services.PedidoService|Novo valor de frete calculado: R$ 302,50 
+2025-03-31 22:33:24.5460|0|INFO|FreteManager.Repositories.PedidoRepository|Pedido ID 7 atualizado com sucesso 
+2025-03-31 22:33:24.5460|0|INFO|FreteManager.Services.PedidoService|Pedido ID 7 atualizado com sucesso 
+2025-03-31 22:33:24.5460|0|INFO|FreteManager.Controllers.PedidosController|Pedido ID 7 atualizado com sucesso 
+2025-03-31 22:33:48.8551|0|INFO|FreteManager.Controllers.PedidosController|Requisição DELETE para excluir pedido ID 6 
+2025-03-31 22:33:48.8551|0|INFO|FreteManager.Services.PedidoService|Iniciando exclusão do pedido ID 6 
+2025-03-31 22:33:48.8977|0|INFO|FreteManager.Repositories.PedidoRepository|Pedido ID 6 excluído com sucesso 
+2025-03-31 22:33:48.8977|0|INFO|FreteManager.Services.PedidoService|Pedido ID 6 excluído com sucesso 
+2025-03-31 22:33:48.8977|0|INFO|FreteManager.Controllers.PedidosController|Pedido ID 6 excluído com sucesso 
+2025-03-31 22:34:08.5002|0|INFO|FreteManager.Controllers.PedidosController|Requisição GET para listar pedidos do cliente ID 4 
+2025-03-31 22:34:08.5002|0|INFO|FreteManager.Services.PedidoService|Listando pedidos do cliente ID 4 
+2025-03-31 22:34:08.5704|0|INFO|FreteManager.Repositories.PedidoRepository|Recuperados 2 pedidos do cliente ID 4 
+2025-03-31 22:34:08.5704|0|INFO|FreteManager.Controllers.PedidosController|Retornando 2 pedidos do cliente ID 4 
+2025-03-31 22:34:26.1161|0|INFO|FreteManager.Controllers.PedidosController|Requisição PATCH para atualizar status do pedido ID 7 para Enviado 
+2025-03-31 22:34:26.1161|0|INFO|FreteManager.Services.PedidoService|Atualizando status do pedido ID 7 para Enviado 
+2025-03-31 22:34:26.1336|0|INFO|FreteManager.Repositories.PedidoRepository|Pedido ID 7 atualizado com sucesso 
+2025-03-31 22:34:26.1336|0|INFO|FreteManager.Services.PedidoService|Status do pedido 7 atualizado de EmProcessamento para Enviado 
+2025-03-31 22:34:26.1336|0|INFO|FreteManager.Controllers.PedidosController|Status do pedido ID 7 atualizado para Enviado 
+2025-03-31 22:41:28.0281|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Altura' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 22:41:28.0621|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Comprimento' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 22:41:28.0621|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Largura' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 22:41:28.0621|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'Peso' on entity type 'Pacote'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 22:41:28.0621|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'ValorDeclarado' on entity type 'Pedido'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 22:41:28.0621|0|WARN|Microsoft.EntityFrameworkCore.Model.Validation|No store type was specified for the decimal property 'ValorFrete' on entity type 'Pedido'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'. 
+2025-03-31 22:41:28.5118|0|INFO|Program|Conexão com banco de dados estabelecida com sucesso. 

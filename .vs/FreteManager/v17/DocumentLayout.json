@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\dev\\FreteManager\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|c:\\dev\\fretemanager\\fretemanager\\dtos\\pedidodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|solutionrelative:fretemanager\\dtos\\pedidodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|c:\\dev\\fretemanager\\fretemanager\\helpers\\pedidomapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|solutionrelative:fretemanager\\helpers\\pedidomapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|c:\\dev\\fretemanager\\fretemanager\\controllers\\pedidoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,6 +13,34 @@
     {
       "AbsoluteMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|c:\\dev\\fretemanager\\fretemanager\\controllers\\fretecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|solutionrelative:fretemanager\\controllers\\fretecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|c:\\dev\\fretemanager\\fretemanager\\models\\apierror.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|solutionrelative:fretemanager\\models\\apierror.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|c:\\dev\\fretemanager\\fretemanager\\models\\pacote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|solutionrelative:fretemanager\\models\\pacote.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|c:\\dev\\fretemanager\\fretemanager\\models\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|solutionrelative:fretemanager\\models\\pedido.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|c:\\dev\\fretemanager\\fretemanager\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|solutionrelative:fretemanager\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|c:\\dev\\fretemanager\\fretemanager\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|solutionrelative:fretemanager\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|c:\\dev\\fretemanager\\fretemanager\\models\\fretemodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|solutionrelative:fretemanager\\models\\fretemodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|c:\\dev\\fretemanager\\fretemanager\\dtos\\pedidodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|solutionrelative:fretemanager\\dtos\\pedidodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{692B35F0-3B6B-4603-84FC-F2DA86E03253}|FreteManager\\FreteManager.csproj|c:\\dev\\fretemanager\\fretemanager\\controllers\\clientescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -43,12 +71,103 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "PedidoMapper.cs",
+              "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager\\Helpers\\PedidoMapper.cs",
+              "RelativeDocumentMoniker": "FreteManager\\Helpers\\PedidoMapper.cs",
+              "ToolTip": "C:\\dev\\FreteManager\\FreteManager\\Helpers\\PedidoMapper.cs",
+              "RelativeToolTip": "FreteManager\\Helpers\\PedidoMapper.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAUwB0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T01:24:03.743Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApiError.cs",
+              "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager\\Models\\ApiError.cs",
+              "RelativeDocumentMoniker": "FreteManager\\Models\\ApiError.cs",
+              "ToolTip": "C:\\dev\\FreteManager\\FreteManager\\Models\\ApiError.cs",
+              "RelativeToolTip": "FreteManager\\Models\\ApiError.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T01:12:30.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Pacote.cs",
+              "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager\\Models\\Pacote.cs",
+              "RelativeDocumentMoniker": "FreteManager\\Models\\Pacote.cs",
+              "ToolTip": "C:\\dev\\FreteManager\\FreteManager\\Models\\Pacote.cs",
+              "RelativeToolTip": "FreteManager\\Models\\Pacote.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T01:12:26.417Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Pedido.cs",
+              "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager\\Models\\Pedido.cs",
+              "RelativeDocumentMoniker": "FreteManager\\Models\\Pedido.cs",
+              "ToolTip": "C:\\dev\\FreteManager\\FreteManager\\Models\\Pedido.cs",
+              "RelativeToolTip": "FreteManager\\Models\\Pedido.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAgwBAAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T01:11:36.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager\\Models\\Cliente.cs",
+              "RelativeDocumentMoniker": "FreteManager\\Models\\Cliente.cs",
+              "ToolTip": "C:\\dev\\FreteManager\\FreteManager\\Models\\Cliente.cs",
+              "RelativeToolTip": "FreteManager\\Models\\Cliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T01:11:08.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "FreteManager\\Models\\Usuario.cs",
+              "ToolTip": "C:\\dev\\FreteManager\\FreteManager\\Models\\Usuario.cs",
+              "RelativeToolTip": "FreteManager\\Models\\Usuario.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAgwHsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T01:10:26.228Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "FreteModels.cs",
+              "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager\\Models\\FreteModels.cs",
+              "RelativeDocumentMoniker": "FreteManager\\Models\\FreteModels.cs",
+              "ToolTip": "C:\\dev\\FreteManager\\FreteManager\\Models\\FreteModels.cs",
+              "RelativeToolTip": "FreteManager\\Models\\FreteModels.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAmwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T01:08:37.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "PedidoDTO.cs",
               "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager\\DTOs\\PedidoDTO.cs",
               "RelativeDocumentMoniker": "FreteManager\\DTOs\\PedidoDTO.cs",
               "ToolTip": "C:\\dev\\FreteManager\\FreteManager\\DTOs\\PedidoDTO.cs",
               "RelativeToolTip": "FreteManager\\DTOs\\PedidoDTO.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAgwBAAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAMQAAAAAAAAAAAAswBwAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-01T01:00:53.051Z",
               "EditorCaption": ""
@@ -68,7 +187,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "AuthService.cs",
               "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager\\Services\\AuthService.cs",
               "RelativeDocumentMoniker": "FreteManager\\Services\\AuthService.cs",
@@ -76,12 +195,11 @@
               "RelativeToolTip": "FreteManager\\Services\\AuthService.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAuwBwAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T00:28:14.84Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T00:28:14.84Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "FreteManager\\Controllers\\AuthController.cs",
@@ -89,12 +207,11 @@
               "RelativeToolTip": "FreteManager\\Controllers\\AuthController.cs",
               "ViewState": "AgIAADMAAAAAAAAAAAAowDUAAABgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T00:27:40.684Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T00:27:40.684Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 12,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager\\Program.cs",
               "RelativeDocumentMoniker": "FreteManager\\Program.cs",
@@ -102,8 +219,7 @@
               "RelativeToolTip": "FreteManager\\Program.cs",
               "ViewState": "AgIAAIQAAAAAAAAAAAAQwJkAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-01T00:12:14.461Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-01T00:12:14.461Z"
             },
             {
               "$type": "Document",
@@ -113,14 +229,14 @@
               "RelativeDocumentMoniker": "FreteManager\\Controllers\\PedidosController.cs",
               "ToolTip": "C:\\dev\\FreteManager\\FreteManager\\Controllers\\PedidosController.cs",
               "RelativeToolTip": "FreteManager\\Controllers\\PedidosController.cs",
-              "ViewState": "AgIAAMUAAAAAAAAAAAAQwN0AAAAoAAAAAAAAAA==",
+              "ViewState": "AgIAAH8AAAAAAAAAAAAQwJEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-31T23:21:28.669Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 10,
               "Title": "ClientesController.cs",
               "DocumentMoniker": "C:\\dev\\FreteManager\\FreteManager\\Controllers\\ClientesController.cs",
               "RelativeDocumentMoniker": "FreteManager\\Controllers\\ClientesController.cs",
@@ -128,8 +244,7 @@
               "RelativeToolTip": "FreteManager\\Controllers\\ClientesController.cs",
               "ViewState": "AgIAAEIAAAAAAAAAAAAiwFQAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-31T23:19:07.024Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-31T23:19:07.024Z"
             }
           ]
         }
