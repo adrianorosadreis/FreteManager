@@ -243,9 +243,6 @@ Resposta: A) Swagger Codegen
 - **Testes**: xUnit, Moq, Microsoft.EntityFrameworkCore.InMemory
 - **Ferramentas de Qualidade**: Microsoft.NET.Test.Sdk, coverlet
 
-## Licença
-
-Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE para detalhes.
 
 ## Contato
 
