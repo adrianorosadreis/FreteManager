@@ -248,7 +248,7 @@ Resposta: A) Swagger Codegen
 
 Para questões, sugestões ou problemas, entre em contato através de:
 - Email: adrianorosadreis@gmail.com
-- GitHub: [[https://github.com/seu-usuario/FreteManager](https://github.com/seu-usuario/FreteManager](https://github.com/adrianorosadreis/FreteManager))
+- GitHub: [[https://github.com/seu-usuario/FreteManager](https://github.com/adrianorosadreis/FreteManager](https://github.com/adrianorosadreis/FreteManager))
 
 ---
 
