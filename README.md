@@ -141,7 +141,7 @@ Todos os endpoints (exceto login e registro) exigem autenticação via token JWT
    Authorization: Bearer seu_token_aqui
    ```
 
-### Respostas ao Questionário
+## Respostas ao Questionário
 
 ### Seção 1: C# e Desenvolvimento de API RESTful
 Qual é o propósito do comando using em C#?
@@ -248,7 +248,7 @@ Resposta: A) Swagger Codegen
 
 Para questões, sugestões ou problemas, entre em contato através de:
 - Email: adrianorosadreis@gmail.com
-- GitHub: [[https://github.com/seu-usuario/FreteManager](https://github.com/seu-usuario/FreteManager](https://github.com/adrianorosadreis/FreteManager))
+- GitHub: (https://github.com/adrianorosadreis/FreteManager)
 
 ---
 
